@@ -1,0 +1,16 @@
+{
+  "origin": "Day5~Day7과동일한수업용합성100건",
+  "date": "2026-10-28",
+  "splits": {
+    "train": 60,
+    "valid": 20,
+    "test": 20
+  },
+  "hashes": {
+    "requests.csv": "d67ff13153a36ef4c06ba739bda9ca1b68154d418a4142c52c688fc7181e9128",
+    "split_manifest.csv": "6f16a0aa99ade4c5d3239c7d174ccd559ff7f3ca74c0d192f3ae4d21741abf57",
+    "split_order.csv": "6fac172c5eda40b4d45a19f0088bccd700f86b2728945a3f0ee11f51583dabe1"
+  },
+  "test_policy": "최종선택동결후만사용",
+  "label": "failed: 0 success / 1 failure"
+}

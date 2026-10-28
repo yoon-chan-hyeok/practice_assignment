@@ -1,0 +1,4 @@
+request_id,input_chars,allowed_tools,task_type,priority
+N001,800.0,2.0,qa,normal
+N002,,3.0,translation,urgent
+N001,800.0,2.0,qa,normal

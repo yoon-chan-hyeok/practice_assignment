@@ -1,0 +1,17 @@
+{
+  "candidates": [
+    "Dummy",
+    "Logistic",
+    "KNN3",
+    "Tree",
+    "Forest",
+    "XGB",
+    "Logistic_FE"
+  ],
+  "criterion": "mean CV F1",
+  "threshold": 0.5,
+  "folds": 5,
+  "train_n": 60,
+  "valid_usage": "diagnostic",
+  "test_usage": "after freeze"
+}

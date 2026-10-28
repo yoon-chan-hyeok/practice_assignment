@@ -1,0 +1,11 @@
+확정 모델: Logistic_FE / 개발80·최종20
+ n  Accuracy  Precision  Recall     F1  ROC_AUC  TN  FP  FN  TP  actual_failed
+20      0.75        0.6     0.5 0.5455   0.7857  12   2   3   3              6
+K=3 군집
+ cluster  input_chars  allowed_tools  n
+       0     1542.250          4.125 24
+       1     1430.474          1.368 19
+       2      444.588          2.706 17
+군집 silhouette: 0.453
+저장: outputs/test_predictions.csv, test_metrics.json, pipeline.joblib 등
+최종 성능을 본 뒤 다시 탐색하지 않습니다. 다음은 restore.py로 재현 확인입니다.

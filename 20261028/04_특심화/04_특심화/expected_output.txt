@@ -1,0 +1,6 @@
+ fold  fit_n  eval_n  chars_median  own_fit
+    1     48      12        1309.0     True
+    2     48      12        1303.0     True
+    3     48      12        1315.0     True
+    4     48      12        1315.0     True
+    5     48      12        1338.0     True

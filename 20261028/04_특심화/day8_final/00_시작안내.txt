@@ -1,0 +1,3 @@
+README.md에서TODO D8-P01~P04를완성한뒤main.py를실행합니다.
+실습08은D8-P07을완성하고verify_submission.py로검증합니다.
+응용P05~P06,심화P08~P09는선택확장입니다.

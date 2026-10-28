@@ -1,0 +1,6 @@
+{
+  "same_number_fraction": 0.0,
+  "ARI": 1.0,
+  "same_partition": true
+}
+확장설계: KMeans.transform을특성으로쓸때수치전처리와군집학습도CV안에넣습니다.

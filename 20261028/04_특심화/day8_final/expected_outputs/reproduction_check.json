@@ -1,0 +1,7 @@
+{
+  "same_lock": true,
+  "same_probabilities": true,
+  "same_predictions": true,
+  "same_metrics": true,
+  "reselection": false
+}

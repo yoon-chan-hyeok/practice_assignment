@@ -1,0 +1,3 @@
+﻿model,Accuracy,Precision,Recall,F1,FP,FN,assumed_cost
+example,0.6,0.3333333333333333,0.3333333333333333,0.3333333333333333,4,4,24
+all_success,0.7,0.0,0.0,0.0,0,6,30

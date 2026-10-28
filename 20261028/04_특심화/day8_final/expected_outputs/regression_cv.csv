@@ -1,0 +1,11 @@
+﻿model,fold,RMSE_ms,scope
+Linear,1,596.57621569875869,train60_internal_cv
+Linear,2,628.62290159658244,train60_internal_cv
+Linear,3,715.7483242270157,train60_internal_cv
+Linear,4,694.94041014690674,train60_internal_cv
+Linear,5,563.27116891625951,train60_internal_cv
+KNN15,1,616.998198868852,train60_internal_cv
+KNN15,2,536.31758764263441,train60_internal_cv
+KNN15,3,702.26207279682205,train60_internal_cv
+KNN15,4,680.96807805750586,train60_internal_cv
+KNN15,5,457.70419527285344,train60_internal_cv

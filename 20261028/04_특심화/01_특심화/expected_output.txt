@@ -1,0 +1,18 @@
+          scenario       model  FP  FN  cost
+       miss_costly         E01   4   4    24
+       miss_costly All_success   0   6    30
+false_alarm_costly         E01   4   4    24
+false_alarm_costly All_success   0   6     6
+{
+  "Accuracy": 1.0,
+  "Precision": 0.0,
+  "Recall": 0.0,
+  "F1": 0.0,
+  "TN": 3,
+  "FP": 0,
+  "FN": 0,
+  "TP": 0,
+  "n": 3,
+  "positive_n": 0,
+  "note": "양성0건이므로P/R/F1을0으로기록하되실제양성수를함께보고"
+}

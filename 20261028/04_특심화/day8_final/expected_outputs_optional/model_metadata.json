@@ -1,0 +1,25 @@
+{
+  "model_sha256": "2c82216b9626ce4929d8e8fe7bd74ba0f2590310aba3709a3fa910052af76b5d",
+  "lock_sha256": "8d372dabb69687cb06295029bb13059e8b7a16938ce8217304c5b987942de1c8",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.1.3",
+    "joblib": "1.5.3"
+  },
+  "code_hashes": {
+    "data_io.py": "cbf8bda235f5d20971227a779bf3d664a326d1651d27c3c12f6f0035bd333bf2",
+    "feature_ops.py": "b1e107c7d3c57603e3dd97276ce68f2ab205eaf97d672b74824f232a514cac0e",
+    "preprocessing.py": "7c9a445ffff9fff15989c975ba16db5cbbcb1e113597cc4c4f5541a914cf9b6a",
+    "evaluate.py": "62f39906b0059df8b14a869a2b341e99f5b2280e83a4b4a8d5f4d58049e91bf8",
+    "clustering.py": "cdc81ba5b024dae50b106f67d6151d97b947048bf39f80867b0481e0c9e92afb",
+    "protocol.py": "7c83fa88bd55815a8318d1e92e532c29b55cc9530db75afcadad06929b7a20f3",
+    "main.py": "617d15c476ef686ec67052469f6360cef3de992bf6dcfdb0745e0093e314ec4d"
+  },
+  "input_sha256": "12c749fdbff813470a33aaeec3ee004b3e9d627fd395afbb69151643718826bb",
+  "expected_sha256": "e7af1769d3a239fbe428989c6e6963d9daf9f455ecbf7914174bf3dde4fbcc41",
+  "notice": "기존 valid20은 재학습 이후 재현 확인용이며 독립 성능평가가 아닙니다."
+}

@@ -1,0 +1,7 @@
+{
+  "new_process": true,
+  "probabilities_match": true,
+  "predictions_match": true,
+  "n": 20,
+  "feature_function_module": "feature_ops"
+}

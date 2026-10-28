@@ -1,0 +1,10 @@
+2026-10-28 Day8 실습자료
+
+1. 이 폴더를 VS Code에서 폴더 열기로 엽니다.
+2. README.md를 읽고 가상환경 및 requirements-lock.txt를 준비합니다.
+3. python check_env.py로 실제 실행기와 패키지를 확인합니다.
+4. ex01~ex06의 기본필수부터 구현합니다.
+5. ex07~ex08은 day8_final 하나를 이어서 사용합니다.
+6. outputs는 실행 결과, expected_outputs는 대조용 예시입니다.
+7. 수강생 코드의 NotImplementedError는 구현할 TODO 표시입니다.
+8. 최종 평가 뒤 모델·특성·임계값을 다시 선택하지 않습니다.

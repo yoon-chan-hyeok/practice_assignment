@@ -1,0 +1,5 @@
+개발 완료: 7후보 CV·특성 비교·군집·회귀 CV·fold 통계 / test 미사용
+설정 동결: Logistic_FE / threshold=0.5, strict > / 개발80건 재학습 허용
+최종 지표: {'Accuracy': 0.75, 'Precision': 0.6, 'Recall': 0.5, 'F1': 0.545455, 'ROC_AUC': 0.785714}
+TN FP FN TP: [12, 2, 3, 3]
+모델 저장: 자신의 final_pipeline.joblib + 코드·환경·해시·복원 대조 입력

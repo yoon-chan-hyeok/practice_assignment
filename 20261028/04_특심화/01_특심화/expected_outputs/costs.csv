@@ -1,0 +1,5 @@
+﻿scenario,model,FP,FN,cost
+miss_costly,E01,4,4,24
+miss_costly,All_success,0,6,30
+false_alarm_costly,E01,4,4,24
+false_alarm_costly,All_success,0,6,6

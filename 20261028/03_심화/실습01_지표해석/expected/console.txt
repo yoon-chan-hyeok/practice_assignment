@@ -1,0 +1,4 @@
+model  Accuracy  Precision  Recall    F1  FP  FN  assumed_cost
+    example       0.6      0.333   0.333 0.333   4   4            24
+all_success       0.7      0.000   0.000 0.000   0   6            30
+가정: 오탐 1회 비용1, 실제 실패를 놓친 비용5. 비용 단위는 임의 점수입니다.

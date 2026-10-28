@@ -1,0 +1,4 @@
+model  CV_F1  CV_std  valid_F1  features_after
+   Logistic 0.5219  0.2092    0.3333               8
+Logistic_FE 0.5514  0.1897    0.1818              10
+행별 규칙은 통계를 학습하지 않습니다. 대체·표준화·인코딩은 fold 학습 자료에서만 fit합니다.

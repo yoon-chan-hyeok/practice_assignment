@@ -1,0 +1,16 @@
+model  fold  RMSE_ms
+Linear     1   596.58
+Linear     2   628.62
+Linear     3   715.75
+Linear     4   694.94
+Linear     5   563.27
+ KNN15     1   617.00
+ KNN15     2   536.32
+ KNN15     3   702.26
+ KNN15     4   680.97
+ KNN15     5   457.70
+평균 RMSE(ms)
+model
+Linear    639.83
+KNN15     598.85
+회귀 교차검증의 정답은 elapsed_ms입니다. 입력에 elapsed_ms를 포함하지 않습니다.

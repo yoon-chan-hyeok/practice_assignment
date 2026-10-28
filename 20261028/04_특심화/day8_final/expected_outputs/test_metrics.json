@@ -1,0 +1,18 @@
+{
+  "Accuracy": 0.75,
+  "Precision": 0.6,
+  "Recall": 0.5,
+  "F1": 0.5454545454545454,
+  "TN": 12,
+  "FP": 2,
+  "FN": 3,
+  "TP": 3,
+  "n": 20,
+  "positive_n": 6,
+  "ROC_AUC": 0.7857142857142857,
+  "scope": "frozen_test20",
+  "model": "Logistic_FE",
+  "positive_label": 1,
+  "threshold": 0.5,
+  "decision_rule": "score > threshold; equality -> 0"
+}

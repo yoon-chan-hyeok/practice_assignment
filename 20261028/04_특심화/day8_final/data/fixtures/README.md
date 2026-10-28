@@ -1,0 +1,3 @@
+# 경계·실패 입력
+
+파일명에해당하는상황을고립해검사합니다. missing_priority/negative_numeric/infinite_numeric/duplicate_id/overlap_manifest는거부해야합니다. all_numeric_missing_new는학습후추론에서기존통계를재사용할경우허용할수있습니다. fixture를원본requests.csv에합치지않습니다.
