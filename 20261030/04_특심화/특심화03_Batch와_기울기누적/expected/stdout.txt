@@ -1,0 +1,31 @@
+[
+  {
+    "sizes": [
+      16,
+      16,
+      16,
+      16
+    ],
+    "samples": 64,
+    "gradient_close": true,
+    "parameter_close": true
+  },
+  {
+    "sizes": [
+      17,
+      13
+    ],
+    "samples": 30,
+    "gradient_close": true,
+    "parameter_close": true
+  },
+  {
+    "sizes": [
+      9
+    ],
+    "samples": 9,
+    "gradient_close": true,
+    "parameter_close": true
+  }
+]
+9개 micro-batch의 묶음: [4, 4, 1]

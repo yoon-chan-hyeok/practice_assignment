@@ -1,0 +1,4 @@
+torch: 2.10.0+cpu
+cuda_build: None
+cuda_available: False
+selected_device: cpu

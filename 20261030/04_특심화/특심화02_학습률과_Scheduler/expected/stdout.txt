@@ -1,0 +1,49 @@
+[
+  {
+    "scheduler": "plateau",
+    "best_valid_loss": 0.02761559747159481,
+    "changed_at_epoch": [
+      20
+    ],
+    "first_lr": 0.01,
+    "last_next_lr": 0.005
+  },
+  {
+    "scheduler": "cosine",
+    "best_valid_loss": 0.04317811504006386,
+    "changed_at_epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "first_lr": 0.01,
+    "last_next_lr": 1e-05
+  }
+]

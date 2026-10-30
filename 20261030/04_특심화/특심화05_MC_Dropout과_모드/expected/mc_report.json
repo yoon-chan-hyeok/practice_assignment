@@ -1,0 +1,7 @@
+{
+  "repeats": 30,
+  "same_seed_equal": true,
+  "mean_probability_variance": 0.017260627821087837,
+  "test_used": false,
+  "scope": "Exploratory prediction variability; not a calibrated risk."
+}

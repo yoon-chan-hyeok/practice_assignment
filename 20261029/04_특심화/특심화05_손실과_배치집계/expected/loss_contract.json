@@ -1,0 +1,16 @@
+{
+  "loss": 1000.0,
+  "reference": 1000.0,
+  "finite": true,
+  "gradient": [
+    [
+      0.5,
+      -0.5
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "weighted_mean": 0.3
+}

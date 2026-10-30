@@ -1,0 +1,10 @@
+{
+  "parameters": 42,
+  "output_shape": [
+    2,
+    2
+  ],
+  "same_logits": true,
+  "same_input_grad": true,
+  "independent_parameters": true
+}

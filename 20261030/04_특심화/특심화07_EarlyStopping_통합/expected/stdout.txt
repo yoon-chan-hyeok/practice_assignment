@@ -1,0 +1,9 @@
+{
+  "best_epoch": 34,
+  "best_loss": 0.057394467294216156,
+  "stop_epoch": 42,
+  "last_valid_loss": 0.06262007951736451,
+  "restored_valid_loss": 0.0573944628238678,
+  "restored_matches_best": true,
+  "test_used": false
+}

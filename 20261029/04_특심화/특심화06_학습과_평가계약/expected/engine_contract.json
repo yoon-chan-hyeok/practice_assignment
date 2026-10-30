@@ -1,0 +1,17 @@
+{
+  "train": {
+    "loss": 0.48364839809281485,
+    "accuracy": 0.5714285714285714,
+    "samples": 7,
+    "batches": 3
+  },
+  "evaluation": {
+    "loss": 0.44022212230733465,
+    "accuracy": 0.7142857142857143,
+    "samples": 7,
+    "batches": 3
+  },
+  "weights_preserved": true,
+  "gradients_preserved": true,
+  "mode_preserved": true
+}

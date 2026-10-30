@@ -1,0 +1,3 @@
+wd0 best epoch: 58 best valid loss: 0.011199 iterations: 8 lr 감소 epoch: []
+wd001 best epoch: 58 best valid loss: 0.009519 iterations: 8 lr 감소 epoch: []
+시간은 experiment_table.csv에 기록하며 CPU/GPU·실행 부하에 따라 달라집니다.

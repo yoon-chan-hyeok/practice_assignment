@@ -1,0 +1,5 @@
+baseline best epoch: 40 stop: 43 best valid loss: 0.020061
+dropout best epoch: 28 stop: 36 best valid loss: 0.035909
+batchnorm best epoch: 21 stop: 29 best valid loss: 0.035851
+weight_decay best epoch: 46 stop: 51 best valid loss: 0.013377
+선택: weight_decay / test 미사용 / validation 재사용에 따른 선택 편향 주의

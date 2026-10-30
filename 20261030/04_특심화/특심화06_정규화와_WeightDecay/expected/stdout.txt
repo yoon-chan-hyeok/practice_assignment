@@ -1,0 +1,25 @@
+seen  batch_mean_variance  running_mean_mse
+norm      batch_size                                              
+BatchNorm 2           240.0             0.252282          0.007867
+          8           240.0             0.063338          0.001519
+          32          240.0             0.013100          0.072565
+LayerNorm 2           240.0             0.252282               NaN
+          8           240.0             0.063338               NaN
+          32          240.0             0.013100               NaN
+{
+  "groups": [
+    {
+      "weight_decay": 0.01,
+      "tensors": 3,
+      "parameters": 320
+    },
+    {
+      "weight_decay": 0.0,
+      "tensors": 7,
+      "parameters": 98
+    }
+  ],
+  "trainable_parameters": 418,
+  "probe_rows": 30,
+  "test_used": false
+}

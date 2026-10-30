@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "weight_decay": 0.01,
+      "tensors": 3,
+      "parameters": 320
+    },
+    {
+      "weight_decay": 0.0,
+      "tensors": 7,
+      "parameters": 98
+    }
+  ],
+  "trainable_parameters": 418,
+  "probe_rows": 30,
+  "test_used": false
+}

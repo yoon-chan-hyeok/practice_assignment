@@ -1,0 +1,6 @@
+numpy==2.3.5
+pandas==2.2.3
+Pillow==12.3.0
+matplotlib==3.10.8
+# torch/torchvision은 README의 CPU·CUDA 선택 안내에 따라 별도 설치합니다.
+# pytest는 특심화 공개 테스트에서만 추가합니다.

@@ -1,0 +1,10 @@
+{
+  "train_samples": 120,
+  "valid_samples": 40,
+  "test_ids_only": 40,
+  "test_used": false,
+  "epochs": 80,
+  "valid_loss": 0.05721661262214184,
+  "valid_accuracy": 1.0,
+  "device": "cpu"
+}

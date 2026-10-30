@@ -1,0 +1,19 @@
+{
+  "shape": [
+    2,
+    2
+  ],
+  "dtype": "torch.float32",
+  "device": "cpu",
+  "original_unchanged": true,
+  "gradient": [
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ]
+  ]
+}

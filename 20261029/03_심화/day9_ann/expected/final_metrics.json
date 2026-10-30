@@ -1,0 +1,11 @@
+{
+  "epochs": 80,
+  "device": "cpu",
+  "train_rows": 120,
+  "valid_rows": 40,
+  "test_used": false,
+  "initial_train_loss": 0.5658319592475891,
+  "final_train_loss": 0.08984401822090149,
+  "valid_loss": 0.05721660703420639,
+  "valid_accuracy": 1.0
+}

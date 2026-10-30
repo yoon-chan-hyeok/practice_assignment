@@ -1,0 +1,5 @@
+# PyTorch는 전날 검증된 CPU/CUDA 빌드를 유지합니다. 자동으로 덮어쓰지 않습니다.
+# PyTorch 설치는 README의 공식 설치 선택기를 따릅니다.
+numpy==2.3.5
+pandas==2.2.3
+matplotlib==3.10.8

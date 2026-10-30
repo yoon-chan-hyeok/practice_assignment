@@ -1,0 +1,9 @@
+{
+  "ids_equal": true,
+  "predictions_equal": true,
+  "valid_loss": 0.013376775197684765,
+  "expected_loss": 0.0133767751976847,
+  "loss_matches": true,
+  "valid_accuracy": 1.0,
+  "test_used": false
+}

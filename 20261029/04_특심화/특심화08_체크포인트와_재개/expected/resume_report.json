@@ -1,0 +1,18 @@
+{
+  "continued_epochs": 80,
+  "resumed_from": 40,
+  "checks": {
+    "schema_version": true,
+    "completed_epochs": true,
+    "model_state": true,
+    "optimizer_state": true,
+    "cpu_rng": true,
+    "loader_rng": true,
+    "cuda_rng": true,
+    "config": true,
+    "split_ids": true
+  },
+  "all_equal": true,
+  "scope": "same CPU environment; epoch boundary; num_workers=0",
+  "test_used": false
+}

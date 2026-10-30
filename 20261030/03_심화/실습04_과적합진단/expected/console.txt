@@ -1,0 +1,3 @@
+baseline best epoch: 79 best valid loss: 0.002519 iterations: 8 lr 감소 epoch: []
+dropout best epoch: 76 best valid loss: 0.007019 iterations: 8 lr 감소 epoch: []
+시간은 experiment_table.csv에 기록하며 CPU/GPU·실행 부하에 따라 달라집니다.

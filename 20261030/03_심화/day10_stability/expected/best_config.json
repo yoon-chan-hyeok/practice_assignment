@@ -1,0 +1,13 @@
+{
+  "width": 32,
+  "bn": false,
+  "dropout": 0.0,
+  "weight_decay": 0.01,
+  "lr": 0.01,
+  "batch_size": 32,
+  "epochs": 80,
+  "seed": 42,
+  "patience": 8,
+  "min_delta": 0.001,
+  "name": "weight_decay"
+}

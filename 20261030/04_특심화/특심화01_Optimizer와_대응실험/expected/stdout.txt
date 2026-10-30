@@ -1,0 +1,4 @@
+setting  n     mean      std
+  adamw  3 0.033414 0.005372
+    sgd  3 0.296168 0.015192
+조건: 같은 seed·초기화·shuffle·20 epochs / test 미사용 / 우열의 통계적 증명 아님

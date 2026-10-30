@@ -1,0 +1,22 @@
+{
+  "continued_epochs": 20,
+  "resumed_from": 10,
+  "checks": {
+    "schema": true,
+    "metadata": true,
+    "model": true,
+    "optimizer": true,
+    "scheduler": true,
+    "stopper": true,
+    "cpu_rng": true,
+    "cuda_rng": true,
+    "python_rng": true,
+    "loader_rng": true,
+    "history": true,
+    "traces": true
+  },
+  "all_equal": true,
+  "mismatch_paths": [],
+  "scope": "Same CPU/version; epoch boundary; num_workers=0; no AMP/distributed",
+  "test_used": false
+}
