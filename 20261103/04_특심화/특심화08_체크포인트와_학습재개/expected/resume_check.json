@@ -1,0 +1,14 @@
+{
+  "schema": true,
+  "model": true,
+  "optimizer": true,
+  "scheduler": true,
+  "epoch": true,
+  "history": true,
+  "config": true,
+  "data_sha256": true,
+  "torch_version": true,
+  "rng": true,
+  "loader_rng": true,
+  "modes": true
+}

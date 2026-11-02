@@ -1,0 +1,6 @@
+model,ids_equal,values_equal
+forecast,True,True
+reconstruction,True,True
+RNN,True,True
+LSTM,True,True
+Transformer,True,True

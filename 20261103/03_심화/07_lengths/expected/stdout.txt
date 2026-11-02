@@ -1,0 +1,11 @@
+      model  length  seconds    samples_s device peak_vram
+        RNN      16 0.008117 39421.518778    cpu      None
+       LSTM      16 0.013432 23824.263300    cpu      None
+Transformer      16 0.009487 33728.913763    cpu      None
+        RNN      32 0.014931 21431.546969    cpu      None
+       LSTM      32 0.019392 16501.439132    cpu      None
+Transformer      32 0.019277 16600.011568    cpu      None
+        RNN      64 0.017348 18445.548654    cpu      None
+       LSTM      64 0.037135  8617.164093    cpu      None
+Transformer      64 0.043921  7285.791857    cpu      None
+측정: CPU 순전파 / 워밍업 제외 / 배치16 / 반복20 / GPU VRAM 미측정

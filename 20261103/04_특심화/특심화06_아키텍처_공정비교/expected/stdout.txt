@@ -1,0 +1,5 @@
+      model  params  best_epoch  valid_loss  accuracy  padding_invariant
+        RNN     746          15    0.026962       1.0               True
+       LSTM     842          15    0.307909       1.0               True
+Transformer    1162          15    0.282521       1.0               True
+동일 train60/valid20·15epochs / 모델 크기는 기록하며 동일하다고 주장하지 않음 / test 미사용

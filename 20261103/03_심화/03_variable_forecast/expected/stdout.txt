@@ -1,0 +1,4 @@
+ packed  best_epoch  valid_mse
+  False          30   0.123487
+   True          30   0.003160
+dense는 마지막 Padding 상태를 쓰는 진단용 비교이며 권장 구현이 아니다.

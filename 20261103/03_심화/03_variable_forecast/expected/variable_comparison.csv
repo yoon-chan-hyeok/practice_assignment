@@ -1,0 +1,3 @@
+packed,best_epoch,valid_mse
+False,30,0.12348685413599014
+True,30,0.0031603211537003517

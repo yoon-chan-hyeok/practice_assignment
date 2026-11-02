@@ -1,0 +1,16 @@
+{
+  "output_shape": [
+    2,
+    5,
+    8
+  ],
+  "weights_shape": [
+    2,
+    2,
+    5,
+    5
+  ],
+  "reported_weights_bytes": 800,
+  "causal_upper_triangle_zero": true,
+  "padding_invariance": true
+}

@@ -1,0 +1,4 @@
+ head  queries  mean_entropy  max_row_sum_error
+    0        8      0.771907                0.0
+    1        8      0.755719                0.0
+{"causal_upper_triangle_zero": true, "output_shape": [2, 5, 8], "padding_invariance": true, "reported_weights_bytes": 800, "weights_shape": [2, 2, 5, 5]}

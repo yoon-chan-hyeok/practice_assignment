@@ -1,0 +1,1 @@
+{"input_gradient_max_error": 2.220446049250313e-16, "last_state_shape": [2, 4], "output_max_error": 2.220446049250313e-16, "output_shape": [2, 5, 4], "parameter_gradients_equal": true}

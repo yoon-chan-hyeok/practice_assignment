@@ -1,0 +1,4 @@
+model,params,best_epoch,valid_loss,accuracy
+RNN,746,25,0.0014684473862871528,1.0
+LSTM,842,25,0.0432506687939167,1.0
+Transformer,1162,25,0.02894291654229164,1.0

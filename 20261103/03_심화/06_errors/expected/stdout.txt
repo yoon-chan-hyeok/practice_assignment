@@ -1,0 +1,5 @@
+model
+LSTM           0
+RNN            0
+Transformer    0
+오류가 0이면 0건으로 기록한다. 오류 예시를 꾸며내지 않는다.

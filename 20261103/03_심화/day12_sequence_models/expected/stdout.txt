@@ -1,0 +1,7 @@
+          task  params  best_epoch  valid_loss  valid_accuracy
+      forecast     361          30    0.003160             NaN
+reconstruction      42          40    0.176410             NaN
+           RNN     746          25    0.001468             1.0
+          LSTM     842          25    0.043251             1.0
+   Transformer    1162          25    0.028943             1.0
+test 구간/ID: 모델에 전달하지 않음

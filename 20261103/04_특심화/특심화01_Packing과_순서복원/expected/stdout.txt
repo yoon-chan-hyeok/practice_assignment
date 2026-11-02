@@ -1,0 +1,1 @@
+{"gradient_equivalent": true, "independent_lesson": 1, "lengths": [4, 2, 5, 4], "packed_rows": 15, "shape": [4, 5, 3], "value_roundtrip": true}

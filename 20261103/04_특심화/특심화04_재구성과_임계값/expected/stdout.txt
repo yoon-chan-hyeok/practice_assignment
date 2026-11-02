@@ -1,0 +1,2 @@
+정상 train: 80 valid: 40 후보 수: 41
+선택 threshold/F1: 0.20009 1.0 test 미사용

@@ -1,0 +1,22 @@
+{
+  "threshold": 0.20009048236534,
+  "f1": 1.0,
+  "tp": 20,
+  "fp": 0,
+  "fn": 0,
+  "features": [
+    "x0",
+    "x1",
+    "x2",
+    "x3",
+    "x4",
+    "x5",
+    "x6",
+    "x7"
+  ],
+  "source": "normal_train / labeled_valid",
+  "test_used": false,
+  "train_sha256": "e36aefe8e94714cbf04d647db6eae85d15dde1e362dc674f766a83c008e59c26",
+  "valid_sha256": "bac1ae0bc43c3ee77e235c65b74a54557145e2c735e074a4e8507b06e0e64579",
+  "model_sha256": "25b98d82b136986d3f95ce8dfa7bb95f7166eed6bfbdcb51e1b7867f561d15bb"
+}

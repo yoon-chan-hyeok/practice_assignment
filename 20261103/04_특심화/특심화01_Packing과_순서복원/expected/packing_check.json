@@ -1,0 +1,17 @@
+{
+  "shape": [
+    4,
+    5,
+    3
+  ],
+  "packed_rows": 15,
+  "lengths": [
+    4,
+    2,
+    5,
+    4
+  ],
+  "value_roundtrip": true,
+  "gradient_equivalent": true,
+  "independent_lesson": 1
+}

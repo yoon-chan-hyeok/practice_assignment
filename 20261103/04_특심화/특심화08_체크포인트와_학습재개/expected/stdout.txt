@@ -1,0 +1,7 @@
+완료 epoch: 4 history: 4 valid loss: 0.135427
+CPU / train60·valid20 / test 미사용 / epoch 경계 재개
+완료 epoch: 2 history: 2 valid loss: 0.393919
+CPU / train60·valid20 / test 미사용 / epoch 경계 재개
+완료 epoch: 4 history: 4 valid loss: 0.135427
+CPU / train60·valid20 / test 미사용 / epoch 경계 재개
+저장 상태 12 범주 일치 / CPU·동일 버전·epoch 경계·num_workers=0

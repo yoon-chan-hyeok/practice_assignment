@@ -1,0 +1,4 @@
+      model  params  best_epoch  valid_loss  accuracy
+        RNN     746          25    0.001468       1.0
+       LSTM     842          25    0.043251       1.0
+Transformer    1162          25    0.028943       1.0

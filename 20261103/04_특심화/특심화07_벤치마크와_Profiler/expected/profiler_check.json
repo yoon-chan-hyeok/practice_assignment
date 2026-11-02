@@ -1,0 +1,10 @@
+{
+  "sections": [
+    "data.prepare",
+    "h2d",
+    "forward",
+    "backward"
+  ],
+  "loss_finite": true,
+  "device": "cpu"
+}
