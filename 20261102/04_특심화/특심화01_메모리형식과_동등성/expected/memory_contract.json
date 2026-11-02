@@ -1,0 +1,20 @@
+{
+  "output_max_abs": 3.725290298461914e-09,
+  "input_grad_max_abs": 3.979039320256561e-13,
+  "parameter_grad_max_abs": 4.656612873077393e-10,
+  "shape": [
+    4,
+    3,
+    32,
+    32
+  ],
+  "stride": [
+    3072,
+    1,
+    96,
+    3
+  ],
+  "same_values": true,
+  "distinct_storage": true,
+  "channels_last": true
+}

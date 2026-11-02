@@ -1,0 +1,2 @@
+model,trainable_params,best_epoch,valid_loss,valid_accuracy,epochs,image_size,augment,device,training_seconds
+small,5154,3,0.3722322642803192,0.95,3,32,False,cpu,0.22465752000005068

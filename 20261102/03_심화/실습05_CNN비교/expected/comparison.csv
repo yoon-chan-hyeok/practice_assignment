@@ -1,0 +1,3 @@
+model,trainable_params,image_size,epochs,best_epoch,valid_loss,valid_accuracy,training_seconds,source_weights
+small_w8,1426,32,3,3,0.6068151235580445,0.65,0.17228292100003273,none
+small_w16,5154,32,3,3,0.3722322642803192,0.95,0.20009893699989334,none

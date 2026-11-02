@@ -1,0 +1,8 @@
+{
+  "same_ids": true,
+  "same_classes": true,
+  "same_predictions": true,
+  "same_probability": true,
+  "valid_loss": 0.3722322642803192,
+  "valid_accuracy": 0.95
+}

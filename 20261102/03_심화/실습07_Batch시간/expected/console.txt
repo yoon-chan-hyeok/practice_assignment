@@ -1,0 +1,8 @@
+device  repeat  batch  samples  seconds  images_per_second peak_vram_mib                               scope
+   cpu       0      8       60    0.043           1386.832          None one_epoch_including_loading_and_H2D
+   cpu       1      8       60    0.042           1438.804          None one_epoch_including_loading_and_H2D
+   cpu       0     16       60    0.039           1557.583          None one_epoch_including_loading_and_H2D
+   cpu       1     16       60    0.044           1358.711          None one_epoch_including_loading_and_H2D
+   cpu       0     32       60    0.044           1350.940          None one_epoch_including_loading_and_H2D
+   cpu       1     32       60    0.034           1786.121          None one_epoch_including_loading_and_H2D
+CUDA 비교: N/A

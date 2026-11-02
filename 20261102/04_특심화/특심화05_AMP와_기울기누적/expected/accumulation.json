@@ -1,0 +1,46 @@
+{
+  "full": {
+    "loss": 0.7001234531402588,
+    "correct": 5,
+    "samples": 10,
+    "unclipped_grad_norm": 0.08555691689252853,
+    "amp_active": false
+  },
+  "micro": {
+    "loss": 0.700123405456543,
+    "correct": 5,
+    "samples": 10,
+    "unclipped_grad_norm": 0.08555691689252853,
+    "amp_active": false
+  },
+  "evaluation": {
+    "loss": 0.7000504493713379,
+    "accuracy": 0.5,
+    "samples": 10,
+    "labels": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "predictions": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "parameter_max_abs": 1.862645149230957e-09
+}

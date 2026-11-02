@@ -1,0 +1,4 @@
+train 출력 동일: False
+BN 통계 변화: True
+eval 출력 동일: True
+shape: (4, 2)

@@ -1,0 +1,2 @@
+workers: 0 이미지: 60 배치: [16, 16, 16, 12]
+새 loader의 첫 epoch 순서 일치: True host 로딩만 측정; GPU 대기시간 아님

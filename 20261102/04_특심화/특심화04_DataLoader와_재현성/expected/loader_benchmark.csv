@@ -1,0 +1,3 @@
+epoch,images,batch_sizes,seconds,images_per_second,scope,workers
+1,60,"[16, 16, 16, 12]",0.03362691300026199,1784.2851051933471,host_decode_transform_collate,0
+2,60,"[16, 16, 16, 12]",0.02405759599969315,2494.0147802284687,host_decode_transform_collate,0

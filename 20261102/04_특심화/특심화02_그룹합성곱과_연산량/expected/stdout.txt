@@ -1,0 +1,6 @@
+     name           shape  parameters   macs
+   normal (2, 16, 16, 16)        1168 589824
+depthwise  (2, 8, 16, 16)          80  36864
+pointwise (2, 16, 16, 16)         144  65536
+  dilated (2, 16, 16, 16)        1168 589824
+MAC은 계산량 추정치이며 처리시간이 아니다.

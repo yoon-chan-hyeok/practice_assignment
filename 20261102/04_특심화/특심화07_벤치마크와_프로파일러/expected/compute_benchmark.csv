@@ -1,0 +1,7 @@
+repeat,device,layout,samples,seconds,images_per_second,peak_vram_mib,scope
+0,cpu,contiguous,60,0.008172044999923855,7342.103476003749,,preloaded_CPU_batches_H2D_forward_backward_step
+1,cpu,contiguous,60,0.00732012899993606,8196.57686367605,,preloaded_CPU_batches_H2D_forward_backward_step
+2,cpu,contiguous,60,0.006894627000065157,8702.428717236331,,preloaded_CPU_batches_H2D_forward_backward_step
+0,cpu,channels_last,60,0.007331216000011409,8184.1811781165125,,preloaded_CPU_batches_H2D_forward_backward_step
+1,cpu,channels_last,60,0.006157855999958883,9743.65103704936,,preloaded_CPU_batches_H2D_forward_backward_step
+2,cpu,channels_last,60,0.005892998000035732,10181.574811265198,,preloaded_CPU_batches_H2D_forward_backward_step

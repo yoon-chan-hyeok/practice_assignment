@@ -1,0 +1,2 @@
+small_w8 best 3 valid loss 0.6068 accuracy 0.65
+small_w16 best 3 valid loss 0.3722 accuracy 0.95

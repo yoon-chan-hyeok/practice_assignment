@@ -1,0 +1,4 @@
+channels  kernel           shape  parameters
+        8       3  (4, 8, 32, 32)         224
+       16       3 (4, 16, 32, 32)         448
+        8       5  (4, 8, 32, 32)         608

@@ -1,0 +1,20 @@
+[
+  {
+    "device": "cpu",
+    "layout": false,
+    "n": 3,
+    "median_seconds": 0.00732012899993606,
+    "min_seconds": 0.006894627000065157,
+    "max_seconds": 0.008172044999923855,
+    "median_images_per_second": 8196.57686367605
+  },
+  {
+    "device": "cpu",
+    "layout": true,
+    "n": 3,
+    "median_seconds": 0.006157855999958883,
+    "min_seconds": 0.005892998000035732,
+    "max_seconds": 0.007331216000011409,
+    "median_images_per_second": 9743.65103704936
+  }
+]

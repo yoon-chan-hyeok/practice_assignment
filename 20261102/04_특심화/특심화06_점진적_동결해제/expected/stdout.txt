@@ -1,0 +1,4 @@
+  stage  actual_pretrained  trainable_params  groups  changed_parameters  bn_buffers_unchanged
+   head              False              1026       1                   2                  True
+partial              False           8389634       2                   7                  True
+STRUCTURE ONLY: weights=None. 전이 성능/정확도 결과가 아니다.

@@ -1,0 +1,4 @@
+마친 epoch: 4 train 이미지/epoch: 60 test 미사용
+마친 epoch: 2 train 이미지/epoch: 60 test 미사용
+마친 epoch: 4 train 이미지/epoch: 60 test 미사용
+4회 연속 vs 2+새 프로세스+2 전체 상태 일치: True

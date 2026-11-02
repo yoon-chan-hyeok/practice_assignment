@@ -1,0 +1,1 @@
+small best 3 valid loss 0.3722 accuracy 0.95

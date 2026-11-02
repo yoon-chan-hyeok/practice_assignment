@@ -1,0 +1,7 @@
+device,repeat,batch,samples,seconds,images_per_second,peak_vram_mib,scope
+cpu,0,8,60,0.04326405899996644,1386.8324282760095,,one_epoch_including_loading_and_H2D
+cpu,1,8,60,0.04170131000000765,1438.8037210339194,,one_epoch_including_loading_and_H2D
+cpu,0,16,60,0.038521225000067716,1557.5828650281637,,one_epoch_including_loading_and_H2D
+cpu,1,16,60,0.044159489999856305,1358.7113438174952,,one_epoch_including_loading_and_H2D
+cpu,0,32,60,0.044413526000198544,1350.939801530997,,one_epoch_including_loading_and_H2D
+cpu,1,32,60,0.033592345999977624,1786.1211598630225,,one_epoch_including_loading_and_H2D

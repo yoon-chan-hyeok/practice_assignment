@@ -1,0 +1,5 @@
+cpu channels_last= False measured
+cpu channels_last= True measured
+cuda channels_last= False SKIP_NO_CUDA
+cuda channels_last= True SKIP_NO_CUDA
+원본 모델/RNG 보존, CUDA 미가용은 SKIP; 시간은 실행마다 달라진다.

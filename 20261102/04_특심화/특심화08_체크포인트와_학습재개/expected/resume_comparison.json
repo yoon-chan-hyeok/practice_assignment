@@ -1,0 +1,26 @@
+{
+  "equal": true,
+  "checked_keys": [
+    "config",
+    "cuda_rng",
+    "data_hash",
+    "epoch",
+    "generator",
+    "gradients",
+    "history",
+    "model",
+    "modes",
+    "numpy_rng",
+    "optimizer",
+    "python_rng",
+    "requires_grad",
+    "scaler",
+    "scheduler",
+    "schema",
+    "torch_rng"
+  ],
+  "mismatches": [],
+  "epochs": 4,
+  "split_at": 2,
+  "scope": "same CPU/version/threads=1/workers=0/epoch boundary"
+}
