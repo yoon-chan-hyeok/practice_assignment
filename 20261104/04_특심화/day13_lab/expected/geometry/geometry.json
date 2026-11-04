@@ -1,0 +1,71 @@
+{
+  "memory": {
+    "shape": [
+      240,
+      160,
+      3
+    ],
+    "dtype": "uint8",
+    "input_strides": [
+      960,
+      6,
+      1
+    ],
+    "input_c_contiguous": false,
+    "output_c_contiguous": true,
+    "shares_memory": false
+  },
+  "resize": {
+    "source_hw": [
+      240,
+      320
+    ],
+    "target_wh": [
+      225,
+      223
+    ],
+    "resized_wh": [
+      225,
+      169
+    ],
+    "pad_ltrb": [
+      0,
+      27,
+      0,
+      27
+    ],
+    "scale_xy": [
+      0.703125,
+      0.7041666666666667
+    ]
+  },
+  "boxes_original": [
+    [
+      0.0,
+      0.0,
+      320.0,
+      240.0
+    ],
+    [
+      15.0,
+      15.0,
+      66.0,
+      56.0
+    ]
+  ],
+  "boxes_mapped": [
+    [
+      0.0,
+      27.0,
+      225.0,
+      196.0
+    ],
+    [
+      10.546875,
+      37.5625,
+      46.40625,
+      66.43333333333334
+    ]
+  ],
+  "roundtrip_max_error": 2.842170943040401e-14
+}

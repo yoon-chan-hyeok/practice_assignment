@@ -1,0 +1,30 @@
+{
+  "seed": 1304,
+  "image_hw": [
+    240,
+    320
+  ],
+  "color": "BGR on OpenCV decode",
+  "video_frames": 48,
+  "video_fps": 12.0,
+  "duration_seconds": 4.0,
+  "video_backend_verified": "FFMPEG",
+  "data_origin": "수업을 위해 직접 생성한 합성 도형·컬러패치·영상. 외부 이미지 또는 개인 데이터 없음.",
+  "files": {
+    "objects.png": "920ab9e2480e52362a4e1ff8288895277221b032a72b19e395510153e70fcc54",
+    "noisy.png": "52b6ec3fa452d76d7484369d673ac64e21a76f19411baaa9cc862c19bb9da835",
+    "mask_truth.png": "d933b14a0958cabc8e16100d68fdd591fcd556464c9172c5970e67f4232c3c47",
+    "scene.png": "315d00222a0a08101692cc4f6b70177b537539bd61a7f76785f60a21efad6a9e",
+    "clean_gray.png": "66979d12e38cdb42257f5db8244c88575d6865ab2e28700ae3b0dbb6fa33c3ee",
+    "sample.avi": "b2b28c19f72520475b0774d77cd691fe42c82f3117d9a123d7731de3016c5f61",
+    "rgba.png": "8d25f43f3a3e38d33b127841c48fec76f158effe9e228ec3d1185189baa61697",
+    "manifest.csv": "cc15d7869235c6539f09265a56438ff4ac82b58f844d798c4b1dd7a277314868",
+    "noisy_gray.png": "ccfdc39220e95988c1aa53f8fde3ebcb8f1c29f6dbbb0488cc1998d54f4318fd",
+    "images/train_04.png": "ade2301a7330e360f27320d2d98e0559a096c8606c879d25474b9447e4fb94e6",
+    "images/test_06.png": "b964a56283331982e8fb47879dfd845ff7723bb2ccb3dbc323e64c7addbbe12e",
+    "images/train_01.png": "a8d39b6296c3d369b12597f297b7c0dda59a10087ccdfabcf1e0393124b2352a",
+    "images/train_02.png": "806de2360a23d447bc6d6d9a251eab9112215c52bfd379210cfd8e0b0a4579d5",
+    "images/valid_05.png": "13c63f65e077fc6961a332f3d1b3dd7d43ea54e22087e7fb0d12be1608050e53",
+    "images/train_03.png": "1afe9b2362531abe22ccdff835e4035de691fb25eab09ec1860a532e4d90778f"
+  }
+}

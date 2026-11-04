@@ -1,0 +1,12 @@
+{
+  "n": 500,
+  "flip_count": 263,
+  "flip_rate": 0.526,
+  "beta_min": -25,
+  "beta_max": 25,
+  "angles": [
+    -5,
+    0,
+    5
+  ]
+}

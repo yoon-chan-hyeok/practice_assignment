@@ -1,0 +1,2 @@
+필터/Edge 픽셀: [('gaussian', 3234), ('sharpen', 14866), ('bilateral', 8237)]
+median_ms는 현재 CPU·OpenCV 환경의 7회 측정값입니다.

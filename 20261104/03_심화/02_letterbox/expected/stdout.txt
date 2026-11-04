@@ -1,0 +1,2 @@
+Letterbox: (224, 224, 3) {'resized_wh': [224, 168], 'left': 0, 'top': 28, 'ratio': 0.7}
+녹색 Mask 픽셀: 2091

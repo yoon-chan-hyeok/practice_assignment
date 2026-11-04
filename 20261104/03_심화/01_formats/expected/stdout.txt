@@ -1,0 +1,3 @@
+Gray/UNCHANGED shape: (240, 320) (240, 320, 4)
+Alpha range: 0 255
+[['lossless.png', 36312, 0.0, True], ['lossy.jpg', 9529, 2.8707, False]]

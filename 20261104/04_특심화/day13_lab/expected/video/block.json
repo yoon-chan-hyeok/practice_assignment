@@ -1,0 +1,21 @@
+{
+  "decoded": 48,
+  "processed": 48,
+  "written": 48,
+  "dropped": 0,
+  "queue_in_sampled_peak": 2,
+  "queue_out_sampled_peak": 2,
+  "policy": "block",
+  "codec": "MJPG",
+  "queue_capacity": 2,
+  "output_frames_verified": 48,
+  "fps": 12.0,
+  "input_duration_s": 4.0,
+  "output_duration_s": 4.0,
+  "wall_s": 0.016693391999979212,
+  "written_fps": 2875.3892558240873,
+  "latency_p50_ms": 1.01757150002868,
+  "latency_p95_ms": 1.6364092500111838,
+  "dropped_indices": [],
+  "simulated_processing_delay_s": 0.0
+}

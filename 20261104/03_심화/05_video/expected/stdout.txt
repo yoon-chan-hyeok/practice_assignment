@@ -1,0 +1,2 @@
+Frame/FPS/크기: 48 12.0 (160, 120)
+wall은 read·처리·write 포함, mean_process는 Frame 처리만 포함합니다.

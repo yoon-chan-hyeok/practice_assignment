@@ -1,0 +1,7 @@
+﻿sample_id,path,split,group_id,label,allow_flip
+img_01,images/train_01.png,train,g01,geometric_shapes,1
+img_02,images/train_02.png,train,g02,geometric_shapes,1
+img_03,images/train_03.png,train,g03,geometric_shapes,1
+img_04,images/train_04.png,train,g04,geometric_shapes,1
+img_05,images/valid_05.png,valid,g05,geometric_shapes,1
+img_06,images/test_06.png,test,g06,geometric_shapes,1

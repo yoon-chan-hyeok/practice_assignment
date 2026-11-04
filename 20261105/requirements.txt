@@ -1,0 +1,6 @@
+# torch/torchvision은 공식 선택기로 호환 조합 설치 후 기존 환경 유지
+numpy==2.3.5
+pandas==2.2.3
+scikit-learn==1.8.0
+opencv-python==4.13.0.92
+Pillow==12.3.0
