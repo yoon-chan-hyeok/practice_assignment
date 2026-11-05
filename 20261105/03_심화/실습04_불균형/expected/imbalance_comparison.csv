@@ -1,0 +1,4 @@
+accuracy,macro_f1,circle_recall,square_recall,triangle_recall,loss,strategy,balance,best_epoch,trainable,epochs,seconds,source
+1.0,1.0,1.0,1.0,1.0,0.01264130887058046,head,none,8,771,8,0.7471192100000508,synthetic_source
+1.0,1.0,1.0,1.0,1.0,0.006550064020686679,head,weight,8,771,8,0.709890769000026,synthetic_source
+1.0,1.0,1.0,1.0,1.0,0.0064747257365120785,head,sampler,8,771,8,0.8090896170000406,synthetic_source

@@ -1,0 +1,9 @@
+# 먼저 교실 GPU에 맞는 torch·torchvision을 공식 설치 선택기로 설치하세요.
+# 이 조합의 ultralytics/lap은 제작 환경에서 다운로드 실패로 실행 미검증입니다.
+ultralytics==8.4.21
+lap==0.5.12
+numpy>=2.0,<3
+pandas>=2.2,<3
+opencv-python>=4.10,<5
+PyYAML>=6,<7
+Pillow>=10

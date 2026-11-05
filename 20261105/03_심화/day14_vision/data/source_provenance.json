@@ -1,0 +1,21 @@
+{
+  "kind": "synthetic_source_pretraining",
+  "architecture": "TinyShapeCNN_3-8-16_GAP4",
+  "imagenet": false,
+  "seed": 14,
+  "epochs": 50,
+  "selected_epoch": 48,
+  "source_train": 240,
+  "source_valid": 60,
+  "target_used": false,
+  "input": "RGB float [0,1], Resize(32,32)",
+  "classes": [
+    "circle",
+    "square",
+    "triangle"
+  ],
+  "source_valid_loss": 0.002141118748113513,
+  "source_valid_acc": 1.0,
+  "sha256": "fdedd0b60c0a51b61e1f4790ac9c9dcbcc33c0f35c1b64914fbd31fdafdd29f4",
+  "note": "학습된 소형 Backbone 수치 배열입니다. 무작위 초기화도 ImageNet ResNet18도 아닙니다."
+}

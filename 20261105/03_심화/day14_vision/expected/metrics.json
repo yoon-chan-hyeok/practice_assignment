@@ -1,0 +1,51 @@
+{
+  "selected": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "circle_recall": 1.0,
+    "square_recall": 1.0,
+    "triangle_recall": 1.0,
+    "loss": 0.0064747257365120785,
+    "strategy": "head",
+    "balance": "sampler",
+    "best_epoch": 8,
+    "trainable": 771,
+    "epochs": 8,
+    "seconds": 0.6889345429999594,
+    "source": "synthetic_source"
+  },
+  "report": {
+    "circle": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "square": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "triangle": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 90.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 90.0
+    }
+  },
+  "test_used": false
+}
