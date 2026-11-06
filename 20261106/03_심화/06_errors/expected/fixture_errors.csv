@@ -1,0 +1,5 @@
+prediction_index,reason,best_iou
+0,TP,0.9025
+1,Duplicate,0.8162291169451074
+2,TP,1.0
+3,Background_FP,0.0

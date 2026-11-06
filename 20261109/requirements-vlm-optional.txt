@@ -1,0 +1,5 @@
+# 선택 실제 모델만 필요. 제작 환경에서 이 조합의 모델 추론은 미검증입니다.
+torch>=2.6
+transformers>=4.57
+accelerate>=1
+safetensors>=0.4

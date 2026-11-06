@@ -1,0 +1,6 @@
+educational_AP101 mAP50: 0.6667
+educational_AP101 mAP50-95: 0.6333
+class_id
+0    0.9
+1    1.0
+2    0.0
