@@ -1,0 +1,13 @@
+{
+  "total_files": 503,
+  "python_files": 205,
+  "student_python_files": 96,
+  "todo_blocks": {
+    "basic": 15,
+    "applied": 23,
+    "advanced": 30
+  },
+  "markdown_links": "passed",
+  "answer_transplant": "68 blocks; all 96 student Python ASTs match",
+  "zip_members": "all path-safe, UTF-8 names, no venv/cache/teacher-only/MVP files in Student archive"
+}

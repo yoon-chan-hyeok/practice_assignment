@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-11-07T10:15:42.425072+00:00",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "packages": {
+    "fastapi": "0.128.2",
+    "pydantic": "2.13.5",
+    "pydantic_core": "2.46.5",
+    "starlette": "0.50.0",
+    "uvicorn": "0.48.0",
+    "httpx": "0.28.1",
+    "httpcore": "1.0.9",
+    "pytest": "9.0.2",
+    "jinja2": "3.1.6",
+    "anyio": "4.13.0",
+    "h11": "0.16.0",
+    "click": "8.1.8",
+    "typing_extensions": "4.16.0"
+  },
+  "fresh_install": "NOT VERIFIED: repository DNS lookup failed; functional tests used preinstalled versions.",
+  "windows": "not executed",
+  "browser_ui": "not operated; /docs response and OpenAPI fetched over HTTP"
+}

@@ -1,0 +1,4 @@
+﻿case,candidate,cer,backend,inference_ms
+lowres,corrected,0.0189873417721519,recorded_tesseract,
+rotated,corrected,0.006329113924050633,recorded_tesseract,
+shadow,corrected,0.006329113924050633,recorded_tesseract,

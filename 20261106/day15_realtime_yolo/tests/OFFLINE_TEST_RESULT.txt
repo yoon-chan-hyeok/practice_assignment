@@ -1,0 +1,22 @@
+Offline logic tests only. YOLO calls use mocks; this is NOT a real model performance result.
+
+test_cross_split_duplicate_rejected (test_offline.DataTests.test_cross_split_duplicate_rejected) ... ok
+test_empty_background_allowed (test_offline.DataTests.test_empty_background_allowed) ... ok
+test_eval_rejects_class_mismatch (test_offline.DataTests.test_eval_rejects_class_mismatch) ... ok
+test_eval_wrapper_mock (test_offline.DataTests.test_eval_wrapper_mock) ... ok
+test_invalid_id_rejected (test_offline.DataTests.test_invalid_id_rejected) ... ok
+test_missing_label_rejected (test_offline.DataTests.test_missing_label_rejected) ... ok
+test_other_folder_layout (test_offline.DataTests.test_other_folder_layout) ... ok
+test_out_of_bounds_rejected (test_offline.DataTests.test_out_of_bounds_rejected) ... ok
+test_placeholder_rejected (test_offline.DataTests.test_placeholder_rejected) ... ok
+test_test_split_not_read (test_offline.DataTests.test_test_split_not_read) ... ok
+test_train_wrapper_mock (test_offline.DataTests.test_train_wrapper_mock) ... ok
+test_valid_data (test_offline.DataTests.test_valid_data) ... ok
+test_zero_width_rejected (test_offline.DataTests.test_zero_width_rejected) ... ok
+test_frame_loop_logs_and_snapshots_with_mock (test_offline.VideoTests.test_frame_loop_logs_and_snapshots_with_mock) ... ok
+test_original_demo_readable (test_offline.VideoTests.test_original_demo_readable) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.064s
+
+OK

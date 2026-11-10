@@ -1,0 +1,10 @@
+# 선택 과제: 새 데이터를 넣고 names를 실제 라벨 ID 순서대로 바꾸세요.
+# path는 이 YAML 파일이 있는 폴더를 기준으로 이 프로젝트가 해석합니다.
+# 스크립트가 절대경로 YAML을 새로 생성하므로 다운로드 폴더 설정은 불필요합니다.
+path: .
+train: images/train
+val: images/val
+# test: images/test  # 최종 평가 준비 후에만 주석을 해제하세요.
+names:
+  0: CHANGE_ME
+# 예: 0: bottle, 1: cup (사용자가 라벨링한 ID와 일치해야 함)

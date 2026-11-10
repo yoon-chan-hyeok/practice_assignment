@@ -1,0 +1,586 @@
+{
+  "status": "passed",
+  "variant": "mvp",
+  "level": "MVP",
+  "initial_N": 3,
+  "initial_next_id": 5,
+  "ids": {
+    "A": 5,
+    "B": 6,
+    "C": 7
+  },
+  "final_count": 5,
+  "final_next_id": 8,
+  "process_ids": [
+    2520,
+    2558,
+    2574
+  ],
+  "restart_count": 2,
+  "checks": [
+    "guided_create",
+    "guided_get",
+    "guided_update",
+    "guided_404",
+    "guided_422",
+    "guided_delete",
+    "guided_deleted_404",
+    "create_A",
+    "read_A",
+    "create_B",
+    "read_B",
+    "create_C",
+    "read_C",
+    "unique_ids",
+    "N_plus_3",
+    "update_B",
+    "restart1_no_reset",
+    "restart1_B",
+    "invalid_422_preserve",
+    "delete_C_204_empty",
+    "deleted_C_404",
+    "restart2_no_reset",
+    "restart2_C_404",
+    "restart2_A_preserve",
+    "restart2_B_updated",
+    "original_1",
+    "original_2",
+    "original_3",
+    "N_plus_2",
+    "next_id_unchanged_by_delete",
+    "three_different_processes",
+    "filter_help",
+    "filter_empty",
+    "source_file_untouched"
+  ],
+  "events": [
+    {
+      "label": "guided_create",
+      "method": "POST",
+      "path": "/api/knowledge",
+      "request": {
+        "title": "실습 환경 안내",
+        "content": "가상환경 Python을 선택합니다.",
+        "category": "setup"
+      },
+      "status": 201,
+      "body": {
+        "title": "실습 환경 안내",
+        "content": "가상환경 Python을 선택합니다.",
+        "category": "setup",
+        "id": 4
+      },
+      "body_bytes": 110
+    },
+    {
+      "label": "/api/knowledge/4",
+      "method": "GET",
+      "path": "/api/knowledge/4",
+      "request": null,
+      "status": 200,
+      "body": {
+        "title": "실습 환경 안내",
+        "content": "가상환경 Python을 선택합니다.",
+        "category": "setup",
+        "id": 4
+      },
+      "body_bytes": 110
+    },
+    {
+      "label": "guided_update",
+      "method": "PUT",
+      "path": "/api/knowledge/4",
+      "request": {
+        "title": "실습 환경 안내",
+        "content": "가상환경 Python을 다시 확인합니다.",
+        "category": "setup"
+      },
+      "status": 200,
+      "body": {
+        "title": "실습 환경 안내",
+        "content": "가상환경 Python을 다시 확인합니다.",
+        "category": "setup",
+        "id": 4
+      },
+      "body_bytes": 117
+    },
+    {
+      "label": "guided_missing",
+      "method": "PUT",
+      "path": "/api/knowledge/9999",
+      "request": {
+        "title": "없는 지식",
+        "content": "정상 Body",
+        "category": "setup"
+      },
+      "status": 404,
+      "body": {
+        "detail": "Knowledge not found"
+      },
+      "body_bytes": 32
+    },
+    {
+      "label": "guided_invalid",
+      "method": "POST",
+      "path": "/api/knowledge",
+      "request": {
+        "title": "빈 본문",
+        "content": "",
+        "category": "setup"
+      },
+      "status": 422,
+      "body": {
+        "detail": [
+          {
+            "type": "string_too_short",
+            "loc": [
+              "body",
+              "content"
+            ],
+            "msg": "String should have at least 1 character",
+            "input": "",
+            "ctx": {
+              "min_length": 1
+            }
+          }
+        ]
+      },
+      "body_bytes": 147
+    },
+    {
+      "label": "guided_delete",
+      "method": "DELETE",
+      "path": "/api/knowledge/4",
+      "request": null,
+      "status": 204,
+      "body": null,
+      "body_bytes": 0
+    },
+    {
+      "label": "/api/knowledge/4",
+      "method": "GET",
+      "path": "/api/knowledge/4",
+      "request": null,
+      "status": 404,
+      "body": {
+        "detail": "Knowledge not found"
+      },
+      "body_bytes": 32
+    },
+    {
+      "label": "daily_start",
+      "method": "GET",
+      "path": "/api/knowledge",
+      "request": null,
+      "status": 200,
+      "body": [
+        {
+          "title": "가상환경",
+          "content": "프로젝트별 패키지를 분리한다.",
+          "category": "setup",
+          "id": 1
+        },
+        {
+          "title": "서버 실행",
+          "content": "uvicorn으로 개발 서버를 켠다.",
+          "category": "api",
+          "id": 2
+        },
+        {
+          "title": "입력 오류",
+          "content": "422이면 입력값을 확인한다.",
+          "category": "api",
+          "id": 3
+        }
+      ],
+      "body_bytes": 307
+    },
+    {
+      "label": "daily_create_A",
+      "method": "POST",
+      "path": "/api/knowledge",
+      "request": {
+        "title": "파일 보관",
+        "content": "개인 폴더에 보관합니다.",
+        "category": "learning"
+      },
+      "status": 201,
+      "body": {
+        "title": "파일 보관",
+        "content": "개인 폴더에 보관합니다.",
+        "category": "learning",
+        "id": 5
+      },
+      "body_bytes": 100
+    },
+    {
+      "label": "/api/knowledge/5",
+      "method": "GET",
+      "path": "/api/knowledge/5",
+      "request": null,
+      "status": 200,
+      "body": {
+        "title": "파일 보관",
+        "content": "개인 폴더에 보관합니다.",
+        "category": "learning",
+        "id": 5
+      },
+      "body_bytes": 100
+    },
+    {
+      "label": "daily_create_B",
+      "method": "POST",
+      "path": "/api/knowledge",
+      "request": {
+        "title": "질문 방법",
+        "content": "질문을 메모합니다.",
+        "category": "help"
+      },
+      "status": 201,
+      "body": {
+        "title": "질문 방법",
+        "content": "질문을 메모합니다.",
+        "category": "help",
+        "id": 6
+      },
+      "body_bytes": 89
+    },
+    {
+      "label": "/api/knowledge/6",
+      "method": "GET",
+      "path": "/api/knowledge/6",
+      "request": null,
+      "status": 200,
+      "body": {
+        "title": "질문 방법",
+        "content": "질문을 메모합니다.",
+        "category": "help",
+        "id": 6
+      },
+      "body_bytes": 89
+    },
+    {
+      "label": "daily_create_C",
+      "method": "POST",
+      "path": "/api/knowledge",
+      "request": {
+        "title": "임시 공지",
+        "content": "이 항목은 삭제 확인용입니다.",
+        "category": "help"
+      },
+      "status": 201,
+      "body": {
+        "title": "임시 공지",
+        "content": "이 항목은 삭제 확인용입니다.",
+        "category": "help",
+        "id": 7
+      },
+      "body_bytes": 103
+    },
+    {
+      "label": "/api/knowledge/7",
+      "method": "GET",
+      "path": "/api/knowledge/7",
+      "request": null,
+      "status": 200,
+      "body": {
+        "title": "임시 공지",
+        "content": "이 항목은 삭제 확인용입니다.",
+        "category": "help",
+        "id": 7
+      },
+      "body_bytes": 103
+    },
+    {
+      "label": "/api/knowledge",
+      "method": "GET",
+      "path": "/api/knowledge",
+      "request": null,
+      "status": 200,
+      "body": [
+        {
+          "title": "가상환경",
+          "content": "프로젝트별 패키지를 분리한다.",
+          "category": "setup",
+          "id": 1
+        },
+        {
+          "title": "서버 실행",
+          "content": "uvicorn으로 개발 서버를 켠다.",
+          "category": "api",
+          "id": 2
+        },
+        {
+          "title": "입력 오류",
+          "content": "422이면 입력값을 확인한다.",
+          "category": "api",
+          "id": 3
+        },
+        {
+          "title": "파일 보관",
+          "content": "개인 폴더에 보관합니다.",
+          "category": "learning",
+          "id": 5
+        },
+        {
+          "title": "질문 방법",
+          "content": "질문을 메모합니다.",
+          "category": "help",
+          "id": 6
+        },
+        {
+          "title": "임시 공지",
+          "content": "이 항목은 삭제 확인용입니다.",
+          "category": "help",
+          "id": 7
+        }
+      ],
+      "body_bytes": 602
+    },
+    {
+      "label": "daily_update_B",
+      "method": "PUT",
+      "path": "/api/knowledge/6",
+      "request": {
+        "title": "질문 방법",
+        "content": "오류 메시지와 함께 질문합니다.",
+        "category": "help"
+      },
+      "status": 200,
+      "body": {
+        "title": "질문 방법",
+        "content": "오류 메시지와 함께 질문합니다.",
+        "category": "help",
+        "id": 6
+      },
+      "body_bytes": 106
+    },
+    {
+      "label": "restart1_B",
+      "method": "GET",
+      "path": "/api/knowledge/6",
+      "request": null,
+      "status": 200,
+      "body": {
+        "title": "질문 방법",
+        "content": "오류 메시지와 함께 질문합니다.",
+        "category": "help",
+        "id": 6
+      },
+      "body_bytes": 106
+    },
+    {
+      "label": "daily_invalid",
+      "method": "POST",
+      "path": "/api/knowledge",
+      "request": {
+        "title": "빈 본문",
+        "content": "",
+        "category": "help"
+      },
+      "status": 422,
+      "body": {
+        "detail": [
+          {
+            "type": "string_too_short",
+            "loc": [
+              "body",
+              "content"
+            ],
+            "msg": "String should have at least 1 character",
+            "input": "",
+            "ctx": {
+              "min_length": 1
+            }
+          }
+        ]
+      },
+      "body_bytes": 147
+    },
+    {
+      "label": "daily_delete_C",
+      "method": "DELETE",
+      "path": "/api/knowledge/7",
+      "request": null,
+      "status": 204,
+      "body": null,
+      "body_bytes": 0
+    },
+    {
+      "label": "/api/knowledge/7",
+      "method": "GET",
+      "path": "/api/knowledge/7",
+      "request": null,
+      "status": 404,
+      "body": {
+        "detail": "Knowledge not found"
+      },
+      "body_bytes": 32
+    },
+    {
+      "label": "restart2_C",
+      "method": "GET",
+      "path": "/api/knowledge/7",
+      "request": null,
+      "status": 404,
+      "body": {
+        "detail": "Knowledge not found"
+      },
+      "body_bytes": 32
+    },
+    {
+      "label": "restart2_A",
+      "method": "GET",
+      "path": "/api/knowledge/5",
+      "request": null,
+      "status": 200,
+      "body": {
+        "title": "파일 보관",
+        "content": "개인 폴더에 보관합니다.",
+        "category": "learning",
+        "id": 5
+      },
+      "body_bytes": 100
+    },
+    {
+      "label": "restart2_B",
+      "method": "GET",
+      "path": "/api/knowledge/6",
+      "request": null,
+      "status": 200,
+      "body": {
+        "title": "질문 방법",
+        "content": "오류 메시지와 함께 질문합니다.",
+        "category": "help",
+        "id": 6
+      },
+      "body_bytes": 106
+    },
+    {
+      "label": "/api/knowledge/1",
+      "method": "GET",
+      "path": "/api/knowledge/1",
+      "request": null,
+      "status": 200,
+      "body": {
+        "title": "가상환경",
+        "content": "프로젝트별 패키지를 분리한다.",
+        "category": "setup",
+        "id": 1
+      },
+      "body_bytes": 105
+    },
+    {
+      "label": "/api/knowledge/2",
+      "method": "GET",
+      "path": "/api/knowledge/2",
+      "request": null,
+      "status": 200,
+      "body": {
+        "title": "서버 실행",
+        "content": "uvicorn으로 개발 서버를 켠다.",
+        "category": "api",
+        "id": 2
+      },
+      "body_bytes": 100
+    },
+    {
+      "label": "/api/knowledge/3",
+      "method": "GET",
+      "path": "/api/knowledge/3",
+      "request": null,
+      "status": 200,
+      "body": {
+        "title": "입력 오류",
+        "content": "422이면 입력값을 확인한다.",
+        "category": "api",
+        "id": 3
+      },
+      "body_bytes": 98
+    },
+    {
+      "label": "filter_help",
+      "method": "GET",
+      "path": "/api/knowledge?category=help",
+      "request": null,
+      "status": 200,
+      "body": [
+        {
+          "title": "질문 방법",
+          "content": "오류 메시지와 함께 질문합니다.",
+          "category": "help",
+          "id": 6
+        }
+      ],
+      "body_bytes": 108
+    },
+    {
+      "label": "/api/knowledge?category=unknown",
+      "method": "GET",
+      "path": "/api/knowledge?category=unknown",
+      "request": null,
+      "status": 200,
+      "body": [],
+      "body_bytes": 2
+    }
+  ],
+  "guided_end": {
+    "next_id": 5,
+    "entries": [
+      {
+        "id": 1,
+        "title": "가상환경",
+        "category": "setup",
+        "content": "프로젝트별 패키지를 분리한다."
+      },
+      {
+        "id": 2,
+        "title": "서버 실행",
+        "category": "api",
+        "content": "uvicorn으로 개발 서버를 켠다."
+      },
+      {
+        "id": 3,
+        "title": "입력 오류",
+        "category": "api",
+        "content": "422이면 입력값을 확인한다."
+      }
+    ]
+  },
+  "final_data": {
+    "next_id": 8,
+    "entries": [
+      {
+        "id": 1,
+        "title": "가상환경",
+        "category": "setup",
+        "content": "프로젝트별 패키지를 분리한다."
+      },
+      {
+        "id": 2,
+        "title": "서버 실행",
+        "category": "api",
+        "content": "uvicorn으로 개발 서버를 켠다."
+      },
+      {
+        "id": 3,
+        "title": "입력 오류",
+        "category": "api",
+        "content": "422이면 입력값을 확인한다."
+      },
+      {
+        "title": "파일 보관",
+        "content": "개인 폴더에 보관합니다.",
+        "category": "learning",
+        "id": 5
+      },
+      {
+        "title": "질문 방법",
+        "content": "오류 메시지와 함께 질문합니다.",
+        "category": "help",
+        "id": 6
+      }
+    ]
+  },
+  "limitations": "Linux localhost HTTP; Windows/PowerShell/browser UI not tested."
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "invoice-v1",
+  "document_id": "doc03",
+  "fields": {
+    "issued_at": {
+      "raw": "2026-11-03",
+      "value": "2026-11-03",
+      "bbox": [
+        165,
+        111,
+        342,
+        133
+      ],
+      "confidence": 96.341423,
+      "warnings": []
+    },
+    "supplier": {
+      "raw": "ALPHA STUDIO",
+      "value": "ALPHA STUDIO",
+      "bbox": [
+        237,
+        176,
+        450,
+        198
+      ],
+      "confidence": 95.741814,
+      "warnings": []
+    },
+    "total_amount": {
+      "raw": "33000",
+      "value": 33000,
+      "bbox": [
+        183,
+        501,
+        270,
+        523
+      ],
+      "confidence": 96.324028,
+      "warnings": []
+    }
+  },
+  "items": [
+    {
+      "item": "PRINT",
+      "qty": 4,
+      "unit_price": 3000,
+      "amount": 12000
+    },
+    {
+      "item": "FRAME",
+      "qty": 1,
+      "unit_price": 9000,
+      "amount": 9000
+    },
+    {
+      "item": "PAPER",
+      "qty": 3,
+      "unit_price": 4000,
+      "amount": 12000
+    }
+  ],
+  "review_reasons": []
+}

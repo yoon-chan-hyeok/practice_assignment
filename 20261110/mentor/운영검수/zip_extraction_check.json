@@ -1,0 +1,17 @@
+[
+  {
+    "archive_sample": "basic",
+    "status": "passed",
+    "checks": 78
+  },
+  {
+    "archive_sample": "advanced",
+    "status": "passed",
+    "checks": 82
+  },
+  {
+    "archive_sample": "mvp",
+    "status": "passed",
+    "checks": 82
+  }
+]

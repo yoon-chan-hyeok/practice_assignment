@@ -1,0 +1,43 @@
+{
+  "status": "DESIGN_ONLY",
+  "pipeline": [
+    "decode",
+    "nvstreammux",
+    "nvinfer",
+    "optional nvtracker",
+    "nvdsosd",
+    "sink"
+  ],
+  "target_device": null,
+  "jetpack": null,
+  "tensorrt": null,
+  "deepstream": null,
+  "warmup_frames": 30,
+  "measure_frames": 300,
+  "runs": 3,
+  "include_decode": true,
+  "input_size": [
+    640,
+    480
+  ],
+  "fps_limit": null,
+  "measurements": [
+    "end_to_end_p50_ms",
+    "end_to_end_p95_ms",
+    "throughput_fps",
+    "device_memory_bytes",
+    "temperature_c",
+    "power_w",
+    "dropped_frames"
+  ],
+  "results": {
+    "end_to_end_p50_ms": null,
+    "end_to_end_p95_ms": null,
+    "throughput_fps": null,
+    "device_memory_bytes": null,
+    "temperature_c": null,
+    "power_w": null,
+    "dropped_frames": null
+  },
+  "note": "Jetson 공유 메모리를 dGPU 전용 VRAM과 같다고 해석하지 않는다. nvinfer만 연결해 임의 OCR/VLM을 자동 지원한다고 주장하지 않는다."
+}

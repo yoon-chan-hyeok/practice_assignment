@@ -1,0 +1,10 @@
+# 기본 필수 실습: 이 파일을 수정하지 않아도 실행됩니다.
+model: weights/yolo26n.pt  # 없으면 최초 1회 공식 사전학습 가중치 다운로드
+source: 0                # 노트북 카메라. 안 열리면 1로 변경
+conf: 0.25               # 표시할 탐지의 confidence 임계값. 정확도가 아님
+imgsz: 320               # 추론 입력 기준 크기. 내부에서 비율 유지/패딩 적용
+# 느리면 --imgsz 256, 작은 물체를 더 살피려면 --imgsz 640으로 비교
+device: auto             # CUDA 가능 시 0번 GPU, 아니면 CPU
+camera_width: 640        # 카메라 요청 해상도. 실제 해상도는 장치에 따라 다름
+camera_height: 480
+cpu_threads: 4

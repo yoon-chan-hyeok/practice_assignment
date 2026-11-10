@@ -1,0 +1,32 @@
+[
+  {
+    "id": "doc01",
+    "cer": 0.006578947368421052,
+    "review_fields": 0,
+    "vlm_backend": "mock"
+  },
+  {
+    "id": "doc02",
+    "cer": 0.006666666666666667,
+    "review_fields": 0,
+    "vlm_backend": "mock"
+  },
+  {
+    "id": "doc03",
+    "cer": 0.006329113924050633,
+    "review_fields": 0,
+    "vlm_backend": "mock"
+  },
+  {
+    "id": "doc04",
+    "cer": 0.0,
+    "review_fields": 1,
+    "vlm_backend": "mock"
+  },
+  {
+    "id": "doc05",
+    "cer": 0.006756756756756757,
+    "review_fields": 1,
+    "vlm_backend": "mock"
+  }
+]

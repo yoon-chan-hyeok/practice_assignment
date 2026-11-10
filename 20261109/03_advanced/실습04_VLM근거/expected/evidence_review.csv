@@ -1,0 +1,16 @@
+﻿document_id,field,backend,supported,review
+doc01,issued_at,mock,True,False
+doc01,supplier,mock,True,False
+doc01,total_amount,mock,True,False
+doc02,issued_at,mock,True,False
+doc02,supplier,mock,True,False
+doc02,total_amount,mock,True,False
+doc03,issued_at,mock,True,False
+doc03,supplier,mock,True,False
+doc03,total_amount,mock,True,False
+doc04,issued_at,mock,True,False
+doc04,supplier,mock,True,False
+doc04,total_amount,mock,False,True
+doc05,issued_at,mock,True,False
+doc05,supplier,mock,False,True
+doc05,total_amount,mock,True,False

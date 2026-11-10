@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><title>지식 목록 비교</title></head>
+<body><h1>같은 지식을 HTML로 표시</h1><p>JSON API는 /api/knowledge 입니다.</p>
+<ul>{% for entry in entries %}
+<li><strong>{{ entry.title }}</strong> ({{ entry.category }}) — {{ entry.content }}</li>
+{% endfor %}</ul></body></html>

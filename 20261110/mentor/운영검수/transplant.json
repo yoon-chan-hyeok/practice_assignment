@@ -1,0 +1,278 @@
+{
+  "count": 68,
+  "status": "passed",
+  "tasks": [
+    {
+      "id": "A03-01",
+      "file": "02_응용/03_create/main.py"
+    },
+    {
+      "id": "A03-02",
+      "file": "02_응용/03_create/main.py"
+    },
+    {
+      "id": "A03-03",
+      "file": "02_응용/03_create/main.py"
+    },
+    {
+      "id": "A03-04",
+      "file": "02_응용/03_create/main.py"
+    },
+    {
+      "id": "A05-03",
+      "file": "02_응용/05_delete/main.py"
+    },
+    {
+      "id": "A05-01",
+      "file": "02_응용/05_delete/main.py"
+    },
+    {
+      "id": "A05-02",
+      "file": "02_응용/05_delete/main.py"
+    },
+    {
+      "id": "A06-01",
+      "file": "02_응용/06_structure/queries.py"
+    },
+    {
+      "id": "A06-02",
+      "file": "02_응용/06_structure/queries.py"
+    },
+    {
+      "id": "A04-01",
+      "file": "02_응용/04_update/main.py"
+    },
+    {
+      "id": "A04-02",
+      "file": "02_응용/04_update/main.py"
+    },
+    {
+      "id": "A04-03",
+      "file": "02_응용/04_update/main.py"
+    },
+    {
+      "id": "A04-04",
+      "file": "02_응용/04_update/main.py"
+    },
+    {
+      "id": "A07-01",
+      "file": "02_응용/07_project/main.py"
+    },
+    {
+      "id": "A07-02",
+      "file": "02_응용/07_project/main.py"
+    },
+    {
+      "id": "A07-03",
+      "file": "02_응용/07_project/main.py"
+    },
+    {
+      "id": "A07-04",
+      "file": "02_응용/07_project/main.py"
+    },
+    {
+      "id": "A02-01",
+      "file": "02_응용/02_read/main.py"
+    },
+    {
+      "id": "A02-02",
+      "file": "02_응용/02_read/main.py"
+    },
+    {
+      "id": "A02-03",
+      "file": "02_응용/02_read/main.py"
+    },
+    {
+      "id": "A01-01",
+      "file": "02_응용/01_first_server/main.py"
+    },
+    {
+      "id": "A01-02",
+      "file": "02_응용/01_first_server/main.py"
+    },
+    {
+      "id": "A01-03",
+      "file": "02_응용/01_first_server/main.py"
+    },
+    {
+      "id": "B03-01",
+      "file": "01_기본필수/03_create/main.py"
+    },
+    {
+      "id": "B03-02",
+      "file": "01_기본필수/03_create/main.py"
+    },
+    {
+      "id": "B03-03",
+      "file": "01_기본필수/03_create/main.py"
+    },
+    {
+      "id": "B05-01",
+      "file": "01_기본필수/05_delete/main.py"
+    },
+    {
+      "id": "B05-02",
+      "file": "01_기본필수/05_delete/main.py"
+    },
+    {
+      "id": "B04-01",
+      "file": "01_기본필수/04_update/main.py"
+    },
+    {
+      "id": "B04-02",
+      "file": "01_기본필수/04_update/main.py"
+    },
+    {
+      "id": "B04-03",
+      "file": "01_기본필수/04_update/main.py"
+    },
+    {
+      "id": "B07-01",
+      "file": "01_기본필수/07_project/main.py"
+    },
+    {
+      "id": "B07-02",
+      "file": "01_기본필수/07_project/main.py"
+    },
+    {
+      "id": "B07-03",
+      "file": "01_기본필수/07_project/main.py"
+    },
+    {
+      "id": "B07-04",
+      "file": "01_기본필수/07_project/main.py"
+    },
+    {
+      "id": "B02-01",
+      "file": "01_기본필수/02_read/main.py"
+    },
+    {
+      "id": "B02-02",
+      "file": "01_기본필수/02_read/main.py"
+    },
+    {
+      "id": "B01-01",
+      "file": "01_기본필수/01_first_server/main.py"
+    },
+    {
+      "id": "H03-01",
+      "file": "03_심화/03_create/logic.py"
+    },
+    {
+      "id": "H03-02",
+      "file": "03_심화/03_create/logic.py"
+    },
+    {
+      "id": "H05-02",
+      "file": "03_심화/05_delete/main.py"
+    },
+    {
+      "id": "H05-01",
+      "file": "03_심화/05_delete/logic.py"
+    },
+    {
+      "id": "H04-03",
+      "file": "03_심화/04_update/main.py"
+    },
+    {
+      "id": "H04-01",
+      "file": "03_심화/04_update/logic.py"
+    },
+    {
+      "id": "H04-02",
+      "file": "03_심화/04_update/logic.py"
+    },
+    {
+      "id": "H02-03",
+      "file": "03_심화/02_read/main.py"
+    },
+    {
+      "id": "H02-01",
+      "file": "03_심화/02_read/logic.py"
+    },
+    {
+      "id": "H02-02",
+      "file": "03_심화/02_read/logic.py"
+    },
+    {
+      "id": "H01-01",
+      "file": "03_심화/01_first_server/main.py"
+    },
+    {
+      "id": "H01-02",
+      "file": "03_심화/01_first_server/tests/test_api.py"
+    },
+    {
+      "id": "H01-03",
+      "file": "03_심화/01_first_server/tests/test_api.py"
+    },
+    {
+      "id": "H02-04",
+      "file": "03_심화/02_read/tests/test_api.py"
+    },
+    {
+      "id": "H07-04",
+      "file": "03_심화/07_project/tests/test_api.py"
+    },
+    {
+      "id": "H07-03",
+      "file": "03_심화/07_project/tests/test_api.py"
+    },
+    {
+      "id": "H08-01",
+      "file": "03_심화/07_project/tests/test_daily_project.py"
+    },
+    {
+      "id": "H08-02",
+      "file": "03_심화/07_project/tests/test_daily_project.py"
+    },
+    {
+      "id": "H08-03",
+      "file": "03_심화/07_project/tests/test_daily_project.py"
+    },
+    {
+      "id": "H07-01",
+      "file": "03_심화/07_project/app/repositories/json_knowledge.py"
+    },
+    {
+      "id": "H07-02",
+      "file": "03_심화/07_project/app/routers/knowledge.py"
+    },
+    {
+      "id": "H04-04",
+      "file": "03_심화/04_update/tests/test_api.py"
+    },
+    {
+      "id": "H06-01",
+      "file": "03_심화/06_structure/app/main.py"
+    },
+    {
+      "id": "H06-04",
+      "file": "03_심화/06_structure/tests/test_api.py"
+    },
+    {
+      "id": "H06-02",
+      "file": "03_심화/06_structure/app/repositories/json_knowledge.py"
+    },
+    {
+      "id": "H06-03",
+      "file": "03_심화/06_structure/app/routers/knowledge.py"
+    },
+    {
+      "id": "H05-03",
+      "file": "03_심화/05_delete/tests/test_api.py"
+    },
+    {
+      "id": "H05-04",
+      "file": "03_심화/05_delete/tests/test_api.py"
+    },
+    {
+      "id": "H03-03",
+      "file": "03_심화/03_create/tests/test_api.py"
+    },
+    {
+      "id": "H03-04",
+      "file": "03_심화/03_create/tests/test_api.py"
+    }
+  ]
+}

@@ -1,0 +1,2380 @@
+{
+  "metadata": {
+    "schema_version": "day16-data-v1",
+    "documents": "synthetic; no real people, invoices, or transactions",
+    "language": "English only to avoid installing Korean language packs in basic",
+    "ocr_batch_count": 14,
+    "ocr_batch_elapsed_seconds": 1.2543603660000144,
+    "ocr_provenance": "real Tesseract 5.5.0 single batch call; per-page tokens preserved",
+    "mock_vlm_provenance": "authored pedagogical fixtures; never benchmark real model with this",
+    "coordinate_space": "input image pixels, xyxy, exclusive right/bottom"
+  },
+  "documents": {
+    "doc01": {
+      "id": "doc01",
+      "file": "doc01.png",
+      "slice": "clean",
+      "source_id": "doc01",
+      "reference_text": "INVOICE DOC01\nDATE: 2026-11-01\nSUPPLIER: BLUE CAFE\nITEM QTY PRICE AMOUNT\nTEA 2 3000 6000\nCOFFEE 3 5000 15000\nCAKE 1 6000 6000\nTOTAL: 27000\nCURRENCY: KRW",
+      "truth": {
+        "issued_at": "2026-11-01",
+        "supplier": "BLUE CAFE",
+        "total_amount": 27000
+      },
+      "items": [
+        {
+          "item": "TEA",
+          "qty": 2,
+          "unit_price": 3000,
+          "amount": 6000
+        },
+        {
+          "item": "COFFEE",
+          "qty": 3,
+          "unit_price": 5000,
+          "amount": 15000
+        },
+        {
+          "item": "CAKE",
+          "qty": 1,
+          "unit_price": 6000,
+          "amount": 6000
+        }
+      ],
+      "ocr": {
+        "backend": "tesseract_recorded",
+        "engine_version": "5.5.0",
+        "language": "eng",
+        "psm": 6,
+        "image_sha256": "d48754146a8cd556958e42175a377f0170dc40670fe3ccb1d914d5bad3bf6acb",
+        "text": "INVOICE DOCO1\nDATE: 2026-11-01\nSUPPLIER: BLUE CAFE\nITEM QTY PRICE AMOUNT\nTEA 2 3000 6000\nCOFFEE 3 5000 15000\nCAKE 1 6000 6000\nTOTAL: 27000\nCURRENCY: KRW",
+        "tokens": [
+          {
+            "text": "INVOICE",
+            "conf": 92.261162,
+            "bbox": [
+              58,
+              47,
+              196,
+              72
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 1,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "DOCO1",
+            "conf": 75.826836,
+            "bbox": [
+              221,
+              47,
+              319,
+              72
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 1,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "DATE:",
+            "conf": 96.6147,
+            "bbox": [
+              57,
+              111,
+              138,
+              133
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "2026-11-01",
+            "conf": 96.348068,
+            "bbox": [
+              165,
+              111,
+              342,
+              133
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "SUPPLIER:",
+            "conf": 96.267746,
+            "bbox": [
+              57,
+              176,
+              211,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 1
+          },
+          {
+            "text": "BLUE",
+            "conf": 96.710472,
+            "bbox": [
+              238,
+              176,
+              306,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 2
+          },
+          {
+            "text": "CAFE",
+            "conf": 96.710472,
+            "bbox": [
+              328,
+              176,
+              396,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 3
+          },
+          {
+            "text": "ITEM",
+            "conf": 95.424828,
+            "bbox": [
+              58,
+              241,
+              126,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 1
+          },
+          {
+            "text": "QTY",
+            "conf": 96.545494,
+            "bbox": [
+              147,
+              241,
+              198,
+              267
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 2
+          },
+          {
+            "text": "PRICE",
+            "conf": 96.592674,
+            "bbox": [
+              221,
+              241,
+              306,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 3
+          },
+          {
+            "text": "AMOUNT",
+            "conf": 96.517677,
+            "bbox": [
+              327,
+              241,
+              433,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 4
+          },
+          {
+            "text": "TEA",
+            "conf": 96.273766,
+            "bbox": [
+              56,
+              306,
+              108,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 1
+          },
+          {
+            "text": "2",
+            "conf": 96.413589,
+            "bbox": [
+              129,
+              306,
+              143,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 2
+          },
+          {
+            "text": "3000",
+            "conf": 96.413589,
+            "bbox": [
+              165,
+              306,
+              234,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 3
+          },
+          {
+            "text": "6000",
+            "conf": 96.318619,
+            "bbox": [
+              256,
+              306,
+              324,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 4
+          },
+          {
+            "text": "COFFEE",
+            "conf": 96.086197,
+            "bbox": [
+              57,
+              371,
+              161,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 5,
+            "word": 1
+          },
+          {
+            "text": "3",
+            "conf": 96.086197,
+            "bbox": [
+              183,
+              371,
+              197,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 5,
+            "word": 2
+          },
+          {
+            "text": "5000",
+            "conf": 96.119598,
+            "bbox": [
+              220,
+              371,
+              288,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 5,
+            "word": 3
+          },
+          {
+            "text": "15000",
+            "conf": 96.594154,
+            "bbox": [
+              312,
+              371,
+              396,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 5,
+            "word": 4
+          },
+          {
+            "text": "CAKE",
+            "conf": 96.778664,
+            "bbox": [
+              57,
+              436,
+              125,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 6,
+            "word": 1
+          },
+          {
+            "text": "1",
+            "conf": 96.571365,
+            "bbox": [
+              149,
+              436,
+              161,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 6,
+            "word": 2
+          },
+          {
+            "text": "6000",
+            "conf": 95.885155,
+            "bbox": [
+              183,
+              436,
+              252,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 6,
+            "word": 3
+          },
+          {
+            "text": "6000",
+            "conf": 96.390411,
+            "bbox": [
+              274,
+              436,
+              342,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 6,
+            "word": 4
+          },
+          {
+            "text": "TOTAL:",
+            "conf": 96.596245,
+            "bbox": [
+              56,
+              501,
+              156,
+              523
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 7,
+            "word": 1
+          },
+          {
+            "text": "27000",
+            "conf": 96.260834,
+            "bbox": [
+              183,
+              501,
+              270,
+              523
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 7,
+            "word": 2
+          },
+          {
+            "text": "CURRENCY:",
+            "conf": 95.41272,
+            "bbox": [
+              57,
+              566,
+              211,
+              588
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 8,
+            "word": 1
+          },
+          {
+            "text": "KRW",
+            "conf": 96.820053,
+            "bbox": [
+              238,
+              566,
+              290,
+              588
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 8,
+            "word": 2
+          }
+        ],
+        "inference_seconds": null,
+        "timing_note": "single batched OCR invocation; no per-document timing recorded"
+      },
+      "mock_vlm": {
+        "backend": "mock",
+        "model_id": null,
+        "latency_ms": null,
+        "notice": "강사가 작성한 모의 응답. 실제 VLM 출력/성능이 아님.",
+        "responses": [
+          {
+            "field": "issued_at",
+            "answer": "2026-11-01",
+            "evidence": "DATE: 2026-11-01"
+          },
+          {
+            "field": "supplier",
+            "answer": "BLUE CAFE",
+            "evidence": "SUPPLIER: BLUE CAFE"
+          },
+          {
+            "field": "total_amount",
+            "answer": 27000,
+            "evidence": "TOTAL: 27000"
+          }
+        ]
+      }
+    },
+    "doc02": {
+      "id": "doc02",
+      "file": "doc02.png",
+      "slice": "clean",
+      "source_id": "doc02",
+      "reference_text": "INVOICE DOC02\nDATE: 2026-11-02\nSUPPLIER: PINE BOOKS\nITEM QTY PRICE AMOUNT\nBOOK 2 6000 12000\nPEN 3 1000 3000\nPAD 1 3000 3000\nTOTAL: 18000\nCURRENCY: KRW",
+      "truth": {
+        "issued_at": "2026-11-02",
+        "supplier": "PINE BOOKS",
+        "total_amount": 18000
+      },
+      "items": [
+        {
+          "item": "BOOK",
+          "qty": 2,
+          "unit_price": 6000,
+          "amount": 12000
+        },
+        {
+          "item": "PEN",
+          "qty": 3,
+          "unit_price": 1000,
+          "amount": 3000
+        },
+        {
+          "item": "PAD",
+          "qty": 1,
+          "unit_price": 3000,
+          "amount": 3000
+        }
+      ],
+      "ocr": {
+        "backend": "tesseract_recorded",
+        "engine_version": "5.5.0",
+        "language": "eng",
+        "psm": 6,
+        "image_sha256": "0ba5d372e00c3f650509035e01a98c7889bfd572087dba6c27f7a6ec9b08d6a5",
+        "text": "INVOICE DOCO2\nDATE: 2026-11-02\nSUPPLIER: PINE BOOKS\nITEM QTY PRICE AMOUNT\nBOOK 2 6000 12000\nPEN 3 1000 3000\nPAD 1 3000 3000\nTOTAL: 18000\nCURRENCY: KRW",
+        "tokens": [
+          {
+            "text": "INVOICE",
+            "conf": 93.044487,
+            "bbox": [
+              58,
+              47,
+              196,
+              72
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 1,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "DOCO2",
+            "conf": 68.63501,
+            "bbox": [
+              221,
+              47,
+              319,
+              72
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 1,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "DATE:",
+            "conf": 96.482269,
+            "bbox": [
+              57,
+              111,
+              138,
+              133
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "2026-11-02",
+            "conf": 96.031212,
+            "bbox": [
+              165,
+              111,
+              342,
+              133
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "SUPPLIER:",
+            "conf": 96.356293,
+            "bbox": [
+              57,
+              176,
+              211,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 1
+          },
+          {
+            "text": "PINE",
+            "conf": 96.760101,
+            "bbox": [
+              239,
+              176,
+              306,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 2
+          },
+          {
+            "text": "BOOKS",
+            "conf": 96.543587,
+            "bbox": [
+              328,
+              176,
+              414,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 3
+          },
+          {
+            "text": "ITEM",
+            "conf": 95.424828,
+            "bbox": [
+              58,
+              241,
+              126,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 1
+          },
+          {
+            "text": "QTY",
+            "conf": 96.545494,
+            "bbox": [
+              147,
+              241,
+              198,
+              267
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 2
+          },
+          {
+            "text": "PRICE",
+            "conf": 96.592674,
+            "bbox": [
+              221,
+              241,
+              306,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 3
+          },
+          {
+            "text": "AMOUNT",
+            "conf": 96.517677,
+            "bbox": [
+              327,
+              241,
+              433,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 4
+          },
+          {
+            "text": "BOOK",
+            "conf": 95.890625,
+            "bbox": [
+              57,
+              306,
+              127,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 1
+          },
+          {
+            "text": "2",
+            "conf": 95.890625,
+            "bbox": [
+              147,
+              306,
+              161,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 2
+          },
+          {
+            "text": "6000",
+            "conf": 96.259621,
+            "bbox": [
+              183,
+              306,
+              252,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 3
+          },
+          {
+            "text": "12000",
+            "conf": 96.443848,
+            "bbox": [
+              276,
+              306,
+              360,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 4
+          },
+          {
+            "text": "PEN",
+            "conf": 96.276749,
+            "bbox": [
+              58,
+              371,
+              107,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 3,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "3",
+            "conf": 96.407028,
+            "bbox": [
+              129,
+              371,
+              143,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 3,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "1000",
+            "conf": 94.814278,
+            "bbox": [
+              167,
+              371,
+              234,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 3,
+            "line": 1,
+            "word": 3
+          },
+          {
+            "text": "3000",
+            "conf": 96.661362,
+            "bbox": [
+              256,
+              371,
+              324,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 3,
+            "line": 1,
+            "word": 4
+          },
+          {
+            "text": "PAD",
+            "conf": 96.830009,
+            "bbox": [
+              58,
+              436,
+              107,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "1",
+            "conf": 96.74469,
+            "bbox": [
+              131,
+              436,
+              143,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "3000",
+            "conf": 95.777847,
+            "bbox": [
+              165,
+              436,
+              234,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 1,
+            "word": 3
+          },
+          {
+            "text": "3000",
+            "conf": 96.480583,
+            "bbox": [
+              256,
+              436,
+              324,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 1,
+            "word": 4
+          },
+          {
+            "text": "TOTAL:",
+            "conf": 96.513962,
+            "bbox": [
+              56,
+              501,
+              156,
+              523
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 2,
+            "word": 1
+          },
+          {
+            "text": "18000",
+            "conf": 96.398247,
+            "bbox": [
+              185,
+              501,
+              270,
+              523
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 2,
+            "word": 2
+          },
+          {
+            "text": "CURRENCY:",
+            "conf": 95.41272,
+            "bbox": [
+              57,
+              566,
+              211,
+              588
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 3,
+            "word": 1
+          },
+          {
+            "text": "KRW",
+            "conf": 96.820053,
+            "bbox": [
+              238,
+              566,
+              290,
+              588
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 3,
+            "word": 2
+          }
+        ],
+        "inference_seconds": null,
+        "timing_note": "single batched OCR invocation; no per-document timing recorded"
+      },
+      "mock_vlm": {
+        "backend": "mock",
+        "model_id": null,
+        "latency_ms": null,
+        "notice": "강사가 작성한 모의 응답. 실제 VLM 출력/성능이 아님.",
+        "responses": [
+          {
+            "field": "issued_at",
+            "answer": "2026-11-02",
+            "evidence": "DATE: 2026-11-02"
+          },
+          {
+            "field": "supplier",
+            "answer": "PINE BOOKS",
+            "evidence": "SUPPLIER: PINE BOOKS"
+          },
+          {
+            "field": "total_amount",
+            "answer": 18000,
+            "evidence": "TOTAL: 18000"
+          }
+        ]
+      }
+    },
+    "doc03": {
+      "id": "doc03",
+      "file": "doc03.png",
+      "slice": "clean",
+      "source_id": "doc03",
+      "reference_text": "INVOICE DOC03\nDATE: 2026-11-03\nSUPPLIER: ALPHA STUDIO\nITEM QTY PRICE AMOUNT\nPRINT 4 3000 12000\nFRAME 1 9000 9000\nPAPER 3 4000 12000\nTOTAL: 33000\nCURRENCY: KRW",
+      "truth": {
+        "issued_at": "2026-11-03",
+        "supplier": "ALPHA STUDIO",
+        "total_amount": 33000
+      },
+      "items": [
+        {
+          "item": "PRINT",
+          "qty": 4,
+          "unit_price": 3000,
+          "amount": 12000
+        },
+        {
+          "item": "FRAME",
+          "qty": 1,
+          "unit_price": 9000,
+          "amount": 9000
+        },
+        {
+          "item": "PAPER",
+          "qty": 3,
+          "unit_price": 4000,
+          "amount": 12000
+        }
+      ],
+      "ocr": {
+        "backend": "tesseract_recorded",
+        "engine_version": "5.5.0",
+        "language": "eng",
+        "psm": 6,
+        "image_sha256": "668bca28873a812759a87539a5602bda50e4e480c901a02de75eef026cfb6a36",
+        "text": "INVOICE DOCO3\nDATE: 2026-11-03\nSUPPLIER: ALPHA STUDIO\nITEM QTY PRICE AMOUNT\nPRINT 4 3000 12000\nFRAME 1 9000 9000\nPAPER 3 4000 12000\nTOTAL: 33000\nCURRENCY: KRW",
+        "tokens": [
+          {
+            "text": "INVOICE",
+            "conf": 93.099083,
+            "bbox": [
+              58,
+              47,
+              196,
+              72
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 1,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "DOCO3",
+            "conf": 52.455387,
+            "bbox": [
+              221,
+              47,
+              319,
+              72
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 1,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "DATE:",
+            "conf": 96.013626,
+            "bbox": [
+              57,
+              111,
+              138,
+              133
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "2026-11-03",
+            "conf": 96.341423,
+            "bbox": [
+              165,
+              111,
+              342,
+              133
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "SUPPLIER:",
+            "conf": 96.184692,
+            "bbox": [
+              57,
+              176,
+              211,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 1
+          },
+          {
+            "text": "ALPHA",
+            "conf": 95.741814,
+            "bbox": [
+              237,
+              176,
+              325,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 2
+          },
+          {
+            "text": "STUDIO",
+            "conf": 95.741814,
+            "bbox": [
+              346,
+              176,
+              450,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 3
+          },
+          {
+            "text": "ITEM",
+            "conf": 95.424828,
+            "bbox": [
+              58,
+              241,
+              126,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 1
+          },
+          {
+            "text": "QTY",
+            "conf": 96.545494,
+            "bbox": [
+              147,
+              241,
+              198,
+              267
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 2
+          },
+          {
+            "text": "PRICE",
+            "conf": 96.592674,
+            "bbox": [
+              221,
+              241,
+              306,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 3
+          },
+          {
+            "text": "AMOUNT",
+            "conf": 96.517677,
+            "bbox": [
+              327,
+              241,
+              433,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 4
+          },
+          {
+            "text": "PRINT",
+            "conf": 96.349556,
+            "bbox": [
+              58,
+              306,
+              144,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 1
+          },
+          {
+            "text": "4",
+            "conf": 96.92054,
+            "bbox": [
+              164,
+              306,
+              180,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 2
+          },
+          {
+            "text": "3000",
+            "conf": 95.986404,
+            "bbox": [
+              202,
+              306,
+              270,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 3
+          },
+          {
+            "text": "12000",
+            "conf": 96.324593,
+            "bbox": [
+              294,
+              306,
+              378,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 4
+          },
+          {
+            "text": "FRAME",
+            "conf": 96.61879,
+            "bbox": [
+              58,
+              371,
+              143,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 5,
+            "word": 1
+          },
+          {
+            "text": "1",
+            "conf": 95.843521,
+            "bbox": [
+              167,
+              371,
+              179,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 5,
+            "word": 2
+          },
+          {
+            "text": "9000",
+            "conf": 95.843521,
+            "bbox": [
+              202,
+              371,
+              270,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 5,
+            "word": 3
+          },
+          {
+            "text": "9000",
+            "conf": 96.406654,
+            "bbox": [
+              292,
+              371,
+              360,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 5,
+            "word": 4
+          },
+          {
+            "text": "PAPER",
+            "conf": 96.814682,
+            "bbox": [
+              58,
+              436,
+              145,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 6,
+            "word": 1
+          },
+          {
+            "text": "3",
+            "conf": 96.681664,
+            "bbox": [
+              165,
+              436,
+              179,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 6,
+            "word": 2
+          },
+          {
+            "text": "4000",
+            "conf": 96.310188,
+            "bbox": [
+              201,
+              436,
+              270,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 6,
+            "word": 3
+          },
+          {
+            "text": "12000",
+            "conf": 96.729599,
+            "bbox": [
+              294,
+              436,
+              378,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 6,
+            "word": 4
+          },
+          {
+            "text": "TOTAL:",
+            "conf": 96.730057,
+            "bbox": [
+              56,
+              501,
+              156,
+              523
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 7,
+            "word": 1
+          },
+          {
+            "text": "33000",
+            "conf": 96.324028,
+            "bbox": [
+              183,
+              501,
+              270,
+              523
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 7,
+            "word": 2
+          },
+          {
+            "text": "CURRENCY:",
+            "conf": 95.41272,
+            "bbox": [
+              57,
+              566,
+              211,
+              588
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 3,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "KRW",
+            "conf": 96.820053,
+            "bbox": [
+              238,
+              566,
+              290,
+              588
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 3,
+            "line": 1,
+            "word": 2
+          }
+        ],
+        "inference_seconds": null,
+        "timing_note": "single batched OCR invocation; no per-document timing recorded"
+      },
+      "mock_vlm": {
+        "backend": "mock",
+        "model_id": null,
+        "latency_ms": null,
+        "notice": "강사가 작성한 모의 응답. 실제 VLM 출력/성능이 아님.",
+        "responses": [
+          {
+            "field": "issued_at",
+            "answer": "2026-11-03",
+            "evidence": "DATE: 2026-11-03"
+          },
+          {
+            "field": "supplier",
+            "answer": "ALPHA STUDIO",
+            "evidence": "SUPPLIER: ALPHA STUDIO"
+          },
+          {
+            "field": "total_amount",
+            "answer": 33000,
+            "evidence": "TOTAL: 33000"
+          }
+        ]
+      }
+    },
+    "doc04": {
+      "id": "doc04",
+      "file": "doc04.png",
+      "slice": "clean",
+      "source_id": "doc04",
+      "reference_text": "INVOICE DOC04\nDATE: 2026-11-04\nSUPPLIER: NOVA MARKET\nITEM QTY PRICE AMOUNT\nMILK 2 2500 5000\nBREAD 1 3500 3500\nFRUIT 2 2000 4000\nTOTAL: 12500\nCURRENCY: KRW",
+      "truth": {
+        "issued_at": "2026-11-04",
+        "supplier": "NOVA MARKET",
+        "total_amount": 12500
+      },
+      "items": [
+        {
+          "item": "MILK",
+          "qty": 2,
+          "unit_price": 2500,
+          "amount": 5000
+        },
+        {
+          "item": "BREAD",
+          "qty": 1,
+          "unit_price": 3500,
+          "amount": 3500
+        },
+        {
+          "item": "FRUIT",
+          "qty": 2,
+          "unit_price": 2000,
+          "amount": 4000
+        }
+      ],
+      "ocr": {
+        "backend": "tesseract_recorded",
+        "engine_version": "5.5.0",
+        "language": "eng",
+        "psm": 6,
+        "image_sha256": "5fa755ffb9252a2c8dc3879bee1d290f2d104b6702304bdacf53539ec7a96b0c",
+        "text": "INVOICE DOC04\nDATE: 2026-11-04\nSUPPLIER: NOVA MARKET\nITEM QTY PRICE AMOUNT\nMILK 2 2500 5000\nBREAD 1 3500 3500\nFRUIT 2 2000 4000\nTOTAL: 12500\nCURRENCY: KRW",
+        "tokens": [
+          {
+            "text": "INVOICE",
+            "conf": 92.907684,
+            "bbox": [
+              58,
+              47,
+              196,
+              72
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 1,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "DOC04",
+            "conf": 52.979031,
+            "bbox": [
+              221,
+              47,
+              320,
+              72
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 1,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "DATE:",
+            "conf": 96.08786,
+            "bbox": [
+              57,
+              111,
+              138,
+              133
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "2026-11-04",
+            "conf": 96.860115,
+            "bbox": [
+              165,
+              111,
+              343,
+              133
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "SUPPLIER:",
+            "conf": 96.521339,
+            "bbox": [
+              57,
+              176,
+              211,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 1
+          },
+          {
+            "text": "NOVA",
+            "conf": 96.415428,
+            "bbox": [
+              238,
+              176,
+              307,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 2
+          },
+          {
+            "text": "MARKET",
+            "conf": 96.235664,
+            "bbox": [
+              327,
+              176,
+              433,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 3
+          },
+          {
+            "text": "ITEM",
+            "conf": 95.424828,
+            "bbox": [
+              58,
+              241,
+              126,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 1
+          },
+          {
+            "text": "QTY",
+            "conf": 96.545494,
+            "bbox": [
+              147,
+              241,
+              198,
+              267
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 2
+          },
+          {
+            "text": "PRICE",
+            "conf": 96.592674,
+            "bbox": [
+              221,
+              241,
+              306,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 3
+          },
+          {
+            "text": "AMOUNT",
+            "conf": 96.517677,
+            "bbox": [
+              327,
+              241,
+              433,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 4
+          },
+          {
+            "text": "MILK",
+            "conf": 96.762939,
+            "bbox": [
+              56,
+              306,
+              127,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 1
+          },
+          {
+            "text": "2",
+            "conf": 96.316353,
+            "bbox": [
+              147,
+              306,
+              161,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 2
+          },
+          {
+            "text": "2500",
+            "conf": 95.932747,
+            "bbox": [
+              183,
+              306,
+              252,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 3
+          },
+          {
+            "text": "5000",
+            "conf": 96.646851,
+            "bbox": [
+              274,
+              306,
+              342,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 4
+          },
+          {
+            "text": "BREAD",
+            "conf": 96.818405,
+            "bbox": [
+              57,
+              371,
+              143,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 5,
+            "word": 1
+          },
+          {
+            "text": "1",
+            "conf": 96.444412,
+            "bbox": [
+              167,
+              371,
+              179,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 5,
+            "word": 2
+          },
+          {
+            "text": "3500",
+            "conf": 96.444412,
+            "bbox": [
+              202,
+              371,
+              270,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 5,
+            "word": 3
+          },
+          {
+            "text": "3500",
+            "conf": 96.884453,
+            "bbox": [
+              292,
+              371,
+              360,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 5,
+            "word": 4
+          },
+          {
+            "text": "FRUIT",
+            "conf": 96.849632,
+            "bbox": [
+              58,
+              436,
+              144,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 6,
+            "word": 1
+          },
+          {
+            "text": "2",
+            "conf": 96.585243,
+            "bbox": [
+              165,
+              436,
+              179,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 6,
+            "word": 2
+          },
+          {
+            "text": "2000",
+            "conf": 96.585243,
+            "bbox": [
+              202,
+              436,
+              270,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 6,
+            "word": 3
+          },
+          {
+            "text": "4000",
+            "conf": 96.589462,
+            "bbox": [
+              291,
+              436,
+              360,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 6,
+            "word": 4
+          },
+          {
+            "text": "TOTAL:",
+            "conf": 96.063095,
+            "bbox": [
+              56,
+              501,
+              156,
+              523
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 7,
+            "word": 1
+          },
+          {
+            "text": "12500",
+            "conf": 96.932785,
+            "bbox": [
+              185,
+              501,
+              270,
+              523
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 7,
+            "word": 2
+          },
+          {
+            "text": "CURRENCY:",
+            "conf": 95.41272,
+            "bbox": [
+              57,
+              566,
+              211,
+              588
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 8,
+            "word": 1
+          },
+          {
+            "text": "KRW",
+            "conf": 96.820053,
+            "bbox": [
+              238,
+              566,
+              290,
+              588
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 8,
+            "word": 2
+          }
+        ],
+        "inference_seconds": null,
+        "timing_note": "single batched OCR invocation; no per-document timing recorded"
+      },
+      "mock_vlm": {
+        "backend": "mock",
+        "model_id": null,
+        "latency_ms": null,
+        "notice": "강사가 작성한 모의 응답. 실제 VLM 출력/성능이 아님.",
+        "responses": [
+          {
+            "field": "issued_at",
+            "answer": "2026-11-04",
+            "evidence": "DATE: 2026-11-04"
+          },
+          {
+            "field": "supplier",
+            "answer": "NOVA MARKET",
+            "evidence": "SUPPLIER: NOVA MARKET"
+          },
+          {
+            "field": "total_amount",
+            "answer": 99999,
+            "evidence": "TOTAL: 99999"
+          }
+        ]
+      }
+    },
+    "doc05": {
+      "id": "doc05",
+      "file": "doc05.png",
+      "slice": "clean",
+      "source_id": "doc05",
+      "reference_text": "INVOICE DOC05\nDATE: 2026-11-05\nSUPPLIER: LIME LAB\nITEM QTY PRICE AMOUNT\nKIT 2 5000 10000\nTUBE 4 2000 8000\nBOX 2 3000 6000\nTOTAL: 24000\nCURRENCY: KRW",
+      "truth": {
+        "issued_at": "2026-11-05",
+        "supplier": "LIME LAB",
+        "total_amount": 24000
+      },
+      "items": [
+        {
+          "item": "KIT",
+          "qty": 2,
+          "unit_price": 5000,
+          "amount": 10000
+        },
+        {
+          "item": "TUBE",
+          "qty": 4,
+          "unit_price": 2000,
+          "amount": 8000
+        },
+        {
+          "item": "BOX",
+          "qty": 2,
+          "unit_price": 3000,
+          "amount": 6000
+        }
+      ],
+      "ocr": {
+        "backend": "tesseract_recorded",
+        "engine_version": "5.5.0",
+        "language": "eng",
+        "psm": 6,
+        "image_sha256": "19a7e3a55fbf2eda841a7c277686d6516dd0a5d246d91b65c870bc5d64fe3c88",
+        "text": "INVOICE DOCO5\nDATE: 2026-11-05\nSUPPLIER: LIME LAB\nITEM QTY PRICE AMOUNT\nKIT 2 5000 10000\nTUBE 4 2000 8000\nBOX 2 3000 6000\nTOTAL: 24000\nCURRENCY: KRW",
+        "tokens": [
+          {
+            "text": "INVOICE",
+            "conf": 93.161301,
+            "bbox": [
+              58,
+              47,
+              196,
+              72
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 1,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "DOCO5",
+            "conf": 71.356812,
+            "bbox": [
+              221,
+              47,
+              319,
+              72
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 1,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "DATE:",
+            "conf": 96.641624,
+            "bbox": [
+              57,
+              111,
+              138,
+              133
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "2026-11-05",
+            "conf": 94.938522,
+            "bbox": [
+              165,
+              111,
+              342,
+              133
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "SUPPLIER:",
+            "conf": 96.432083,
+            "bbox": [
+              57,
+              176,
+              211,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 1
+          },
+          {
+            "text": "LIME",
+            "conf": 96.764732,
+            "bbox": [
+              239,
+              176,
+              306,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 2
+          },
+          {
+            "text": "LAB",
+            "conf": 96.793221,
+            "bbox": [
+              329,
+              176,
+              379,
+              198
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 2,
+            "word": 3
+          },
+          {
+            "text": "ITEM",
+            "conf": 95.424828,
+            "bbox": [
+              58,
+              241,
+              126,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 1
+          },
+          {
+            "text": "QTY",
+            "conf": 96.545494,
+            "bbox": [
+              147,
+              241,
+              198,
+              267
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 2
+          },
+          {
+            "text": "PRICE",
+            "conf": 96.592674,
+            "bbox": [
+              221,
+              241,
+              306,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 3
+          },
+          {
+            "text": "AMOUNT",
+            "conf": 96.517677,
+            "bbox": [
+              327,
+              241,
+              433,
+              263
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 3,
+            "word": 4
+          },
+          {
+            "text": "KIT",
+            "conf": 96.467812,
+            "bbox": [
+              57,
+              306,
+              108,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 1
+          },
+          {
+            "text": "2",
+            "conf": 96.720963,
+            "bbox": [
+              129,
+              306,
+              143,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 2
+          },
+          {
+            "text": "5000",
+            "conf": 96.485962,
+            "bbox": [
+              165,
+              306,
+              234,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 3
+          },
+          {
+            "text": "10000",
+            "conf": 96.2845,
+            "bbox": [
+              258,
+              306,
+              342,
+              328
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 2,
+            "line": 4,
+            "word": 4
+          },
+          {
+            "text": "TUBE",
+            "conf": 96.121628,
+            "bbox": [
+              56,
+              371,
+              125,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 3,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "4",
+            "conf": 96.261719,
+            "bbox": [
+              146,
+              371,
+              162,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 3,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "2000",
+            "conf": 95.534492,
+            "bbox": [
+              183,
+              371,
+              252,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 3,
+            "line": 1,
+            "word": 3
+          },
+          {
+            "text": "8000",
+            "conf": 96.811691,
+            "bbox": [
+              274,
+              371,
+              342,
+              393
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 3,
+            "line": 1,
+            "word": 4
+          },
+          {
+            "text": "BOX",
+            "conf": 96.217545,
+            "bbox": [
+              57,
+              436,
+              109,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 1,
+            "word": 1
+          },
+          {
+            "text": "2",
+            "conf": 96.665138,
+            "bbox": [
+              129,
+              436,
+              143,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 1,
+            "word": 2
+          },
+          {
+            "text": "3000",
+            "conf": 96.502319,
+            "bbox": [
+              165,
+              436,
+              234,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 1,
+            "word": 3
+          },
+          {
+            "text": "6000",
+            "conf": 96.688629,
+            "bbox": [
+              256,
+              436,
+              324,
+              458
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 1,
+            "word": 4
+          },
+          {
+            "text": "TOTAL:",
+            "conf": 96.561127,
+            "bbox": [
+              56,
+              501,
+              156,
+              523
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 2,
+            "word": 1
+          },
+          {
+            "text": "24000",
+            "conf": 96.290558,
+            "bbox": [
+              183,
+              501,
+              270,
+              523
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 2,
+            "word": 2
+          },
+          {
+            "text": "CURRENCY:",
+            "conf": 95.41272,
+            "bbox": [
+              57,
+              566,
+              211,
+              588
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 3,
+            "word": 1
+          },
+          {
+            "text": "KRW",
+            "conf": 96.820053,
+            "bbox": [
+              238,
+              566,
+              290,
+              588
+            ],
+            "page": 1,
+            "block": 1,
+            "paragraph": 4,
+            "line": 3,
+            "word": 2
+          }
+        ],
+        "inference_seconds": null,
+        "timing_note": "single batched OCR invocation; no per-document timing recorded"
+      },
+      "mock_vlm": {
+        "backend": "mock",
+        "model_id": null,
+        "latency_ms": null,
+        "notice": "강사가 작성한 모의 응답. 실제 VLM 출력/성능이 아님.",
+        "responses": [
+          {
+            "field": "issued_at",
+            "answer": "2026-11-05",
+            "evidence": "DATE: 2026-11-05"
+          },
+          {
+            "field": "supplier",
+            "answer": "LIME LAB",
+            "evidence": "not visible in this crop"
+          },
+          {
+            "field": "total_amount",
+            "answer": 24000,
+            "evidence": "TOTAL: 24000"
+          }
+        ]
+      }
+    }
+  },
+  "variants": {},
+  "questions": {
+    "issued_at": "What is the issue date?",
+    "supplier": "Who is the supplier?",
+    "total_amount": "What is the total in KRW?"
+  }
+}

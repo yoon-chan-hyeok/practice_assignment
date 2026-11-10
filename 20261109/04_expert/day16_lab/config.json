@@ -1,0 +1,5 @@
+{
+  "backend": "mock",
+  "min_confidence": 80.0,
+  "schema_version": "invoice-v1"
+}

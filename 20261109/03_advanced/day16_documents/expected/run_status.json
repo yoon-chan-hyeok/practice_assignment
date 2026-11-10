@@ -1,0 +1,7 @@
+{
+  "ocr": "recorded",
+  "vlm": "mock",
+  "actual_vlm_inference": false,
+  "ocr_batch_seconds": null,
+  "per_document_inference_seconds": null
+}

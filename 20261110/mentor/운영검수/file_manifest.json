@@ -1,0 +1,2507 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 1570,
+    "sha256": "3754eb70079cf7961dff84d2276fd995368abfd5cf6fc610e3d1eca92e73c7f0"
+  },
+  {
+    "path": "강사용/.gitignore",
+    "bytes": 72,
+    "sha256": "effd36aa24d5dd787bf090a99537b29375addbdc28d5ca715fdf55ea457bc272"
+  },
+  {
+    "path": "강사용/00_시작안내.txt",
+    "bytes": 689,
+    "sha256": "9b461a4bcc8831dcbc902d6d27b4416b89303cac11caec79c6e4e9b46332ff1f"
+  },
+  {
+    "path": "강사용/01_기본필수/01_first_server/README.md",
+    "bytes": 2230,
+    "sha256": "9c1261cd6193a3d51d5bfb0d989dae32877bd67104daf89044407da98811e47c"
+  },
+  {
+    "path": "강사용/01_기본필수/01_first_server/main.py",
+    "bytes": 643,
+    "sha256": "3be6becdcf51cf4c99c17e2511f3586ab138852c4c66fe9c69341cdf83bee90f"
+  },
+  {
+    "path": "강사용/01_기본필수/01_first_server/예상결과.md",
+    "bytes": 184,
+    "sha256": "472b424cd2420ea15ac9ebb91f11caa37e92750aed4361c276da9ae1faa560c9"
+  },
+  {
+    "path": "강사용/01_기본필수/02_read/README.md",
+    "bytes": 2722,
+    "sha256": "b9f4fd2c0a191479171ec437e6a0f4deb01cb14c4831ffe5a0242662172776e2"
+  },
+  {
+    "path": "강사용/01_기본필수/02_read/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/01_기본필수/02_read/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/01_기본필수/02_read/main.py",
+    "bytes": 1368,
+    "sha256": "d7bccc230de91b8aa3fd141fb2ea8c5e1487e8332fd8f41e8f966067c2f02e8a"
+  },
+  {
+    "path": "강사용/01_기본필수/02_read/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/01_기본필수/02_read/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/01_기본필수/02_read/예상결과.md",
+    "bytes": 565,
+    "sha256": "6bc4b25f681269b73e798094c6886674ff23705aed6ce68db2ecfee765f36338"
+  },
+  {
+    "path": "강사용/01_기본필수/03_create/README.md",
+    "bytes": 3066,
+    "sha256": "abd2896cf9998d95d43575eed4ac8af800d8d987185963fc2fe3c2481d5f60e4"
+  },
+  {
+    "path": "강사용/01_기본필수/03_create/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/01_기본필수/03_create/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/01_기본필수/03_create/main.py",
+    "bytes": 2558,
+    "sha256": "8513936d12c4fcdee66a1390e350f6eb835bd6fa751e38a2026fe3fe40fafcf0"
+  },
+  {
+    "path": "강사용/01_기본필수/03_create/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/01_기본필수/03_create/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/01_기본필수/03_create/예상결과.md",
+    "bytes": 856,
+    "sha256": "4c29ba3844e3a471a4d76efee2c9f132920b9e3d8bd0d668971c859007da801f"
+  },
+  {
+    "path": "강사용/01_기본필수/04_update/README.md",
+    "bytes": 3242,
+    "sha256": "49bf095856eb658b56d0cf02b78d265ecbc498ce7214cb217f628893a813b381"
+  },
+  {
+    "path": "강사용/01_기본필수/04_update/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/01_기본필수/04_update/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/01_기본필수/04_update/main.py",
+    "bytes": 3298,
+    "sha256": "61155b180cfde38b62e6f99735ef397cb866853bcff5c0383a1474451c14ba0d"
+  },
+  {
+    "path": "강사용/01_기본필수/04_update/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/01_기본필수/04_update/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/01_기본필수/04_update/예상결과.md",
+    "bytes": 1026,
+    "sha256": "7b3059a337433047fdf7f33062a3092190f88f4b158224d6e38bf67858c36569"
+  },
+  {
+    "path": "강사용/01_기본필수/05_delete/README.md",
+    "bytes": 3299,
+    "sha256": "2c5511d7c6b772af7008b562ae3abc08cc461ec3debc80be5f3e563ef14054a5"
+  },
+  {
+    "path": "강사용/01_기본필수/05_delete/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/01_기본필수/05_delete/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/01_기본필수/05_delete/main.py",
+    "bytes": 3489,
+    "sha256": "a4b6b5e420367a43ef2a474e3a0043792e329c63aaac7090db1ee782e4411b6b"
+  },
+  {
+    "path": "강사용/01_기본필수/05_delete/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/01_기본필수/05_delete/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/01_기본필수/05_delete/예상결과.md",
+    "bytes": 1144,
+    "sha256": "281763f827cf0f47329c112ae516e9b037a953daa09452a6af7a100f7857a91c"
+  },
+  {
+    "path": "강사용/01_기본필수/06_structure/README.md",
+    "bytes": 3131,
+    "sha256": "120084189df6960d7c16a695f1d2c0db1cb350305b11a30e2781b3042f5b0a2a"
+  },
+  {
+    "path": "강사용/01_기본필수/06_structure/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/01_기본필수/06_structure/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/01_기본필수/06_structure/main.py",
+    "bytes": 3097,
+    "sha256": "412b35f667d259c9f030947a8d4bafd0eed04dfe790a836b2b6c87cf2e7c2ea3"
+  },
+  {
+    "path": "강사용/01_기본필수/06_structure/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/01_기본필수/06_structure/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/01_기본필수/06_structure/예상결과.md",
+    "bytes": 1144,
+    "sha256": "281763f827cf0f47329c112ae516e9b037a953daa09452a6af7a100f7857a91c"
+  },
+  {
+    "path": "강사용/01_기본필수/06_structure/파일역할_기록.md",
+    "bytes": 804,
+    "sha256": "92e8cffdc9458afaf4a456f854864d6c4ae87487d24513e651e850ddd65b06ac"
+  },
+  {
+    "path": "강사용/01_기본필수/07_project/README.md",
+    "bytes": 4047,
+    "sha256": "fabe82c5a1e201b632eec3dc9f83fb381623a507939c8f517f4f12ce35223759"
+  },
+  {
+    "path": "강사용/01_기본필수/07_project/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/01_기본필수/07_project/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/01_기본필수/07_project/main.py",
+    "bytes": 3808,
+    "sha256": "c2f18cc2338baeda168ce4a7a92df32e01f6def27b8ae0090000ec45325cae12"
+  },
+  {
+    "path": "강사용/01_기본필수/07_project/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/01_기본필수/07_project/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/01_기본필수/07_project/실습07_기록.md",
+    "bytes": 1032,
+    "sha256": "3cec9ed13fdab812583dc548c307af0c3416e2a9122875a51ae2039d3b1f5877"
+  },
+  {
+    "path": "강사용/01_기본필수/07_project/예상결과.md",
+    "bytes": 1144,
+    "sha256": "281763f827cf0f47329c112ae516e9b037a953daa09452a6af7a100f7857a91c"
+  },
+  {
+    "path": "강사용/01_기본필수/07_project/일일프로젝트_기록.md",
+    "bytes": 2967,
+    "sha256": "f4333728f364cb9fd2beb636735230bae6c872659e99fff9f082e8118a444d59"
+  },
+  {
+    "path": "강사용/01_기본필수/08_daily_project/README.md",
+    "bytes": 3891,
+    "sha256": "225b4772396b44fc141819671bb0f79679c421f7951f4fe4faab755fa9d3e21e"
+  },
+  {
+    "path": "강사용/01_기본필수/08_daily_project/운영메모.md",
+    "bytes": 1274,
+    "sha256": "17ae1896844d6725f35c842ba7ba429058fee126a5236e98aa16e65ffd438344"
+  },
+  {
+    "path": "강사용/01_기본필수/08_daily_project/지식초안.md",
+    "bytes": 657,
+    "sha256": "f76c41200c0f595cb15b2b6d0df6cbaa5667f572a3753d461d2ffddf161dd3a1"
+  },
+  {
+    "path": "강사용/01_기본필수/README.md",
+    "bytes": 1796,
+    "sha256": "360edb520ed7446614f2623717ccbad444c01927b389947870222db9f178ea0a"
+  },
+  {
+    "path": "강사용/01_기본필수/TODO_대응표.md",
+    "bytes": 2069,
+    "sha256": "f49129c917ca00bf57f197fc28b516dcf97266f8e37f8805bf85a97ab06b524c"
+  },
+  {
+    "path": "강사용/02_응용/01_first_server/README.md",
+    "bytes": 2501,
+    "sha256": "5352bc3f827b26ccdf59a773c6c47518485ed90799d4edfc7d215911fcd11fd5"
+  },
+  {
+    "path": "강사용/02_응용/01_first_server/main.py",
+    "bytes": 980,
+    "sha256": "5420042f0d065f781760ebcd107c2852fc55b6331b2a4927184329a673b86f25"
+  },
+  {
+    "path": "강사용/02_응용/01_first_server/예상결과.md",
+    "bytes": 257,
+    "sha256": "dad29d6cc0572869bda5da18e0a3212bd1f14b7d865cf2a74d61fdb2560e6567"
+  },
+  {
+    "path": "강사용/02_응용/02_read/README.md",
+    "bytes": 3080,
+    "sha256": "c8af24b44bffff1913f7165692c8ae95ef40e7aac31236e45ba7098ead6ccfc8"
+  },
+  {
+    "path": "강사용/02_응용/02_read/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/02_응용/02_read/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/02_응용/02_read/main.py",
+    "bytes": 1907,
+    "sha256": "ef491ead2b749b94ab1c215adfccb86171f42990434960ac5869b5434200fd74"
+  },
+  {
+    "path": "강사용/02_응용/02_read/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/02_응용/02_read/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/02_응용/02_read/예상결과.md",
+    "bytes": 765,
+    "sha256": "1d1a6f6e88069521a609e1388ca6ac2b67fc99a9ab6b50091362440358c9711b"
+  },
+  {
+    "path": "강사용/02_응용/03_create/README.md",
+    "bytes": 3287,
+    "sha256": "2ae3c31e5d886e0b5c896df341bd3fe60451cc1b1f25c8264698720c99c85a9d"
+  },
+  {
+    "path": "강사용/02_응용/03_create/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/02_응용/03_create/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/02_응용/03_create/main.py",
+    "bytes": 2938,
+    "sha256": "a0a6b6bccc5b2f64e4bb748c5276ac35f82fdd7def080f19a87217e8e0c13643"
+  },
+  {
+    "path": "강사용/02_응용/03_create/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/02_응용/03_create/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/02_응용/03_create/예상결과.md",
+    "bytes": 1056,
+    "sha256": "f2346daa2b0ba24e1cc31981c5f8f30016ed015ae0da3345337aa8fa8f38c7db"
+  },
+  {
+    "path": "강사용/02_응용/04_update/README.md",
+    "bytes": 3468,
+    "sha256": "4a52cf34abb885edc0e07f78d1c20aba343e64fc110282dc1fc5a83e2e5fccbb"
+  },
+  {
+    "path": "강사용/02_응용/04_update/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/02_응용/04_update/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/02_응용/04_update/main.py",
+    "bytes": 3679,
+    "sha256": "634e605c3fcc6756c3f1821501a40de56a8c18a5de3dc5b90538a736be2607e0"
+  },
+  {
+    "path": "강사용/02_응용/04_update/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/02_응용/04_update/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/02_응용/04_update/예상결과.md",
+    "bytes": 1227,
+    "sha256": "b317272e985c636606793cd92e0e2a968d75f9b3459f185b1e9ebc157c943059"
+  },
+  {
+    "path": "강사용/02_응용/05_delete/README.md",
+    "bytes": 3623,
+    "sha256": "9edf220bf68bab2b393ca806499b3a0e09a59dddc5bb251e99e82411317163a4"
+  },
+  {
+    "path": "강사용/02_응용/05_delete/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/02_응용/05_delete/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/02_응용/05_delete/main.py",
+    "bytes": 3950,
+    "sha256": "00e52b12d1bf4522a2159ad9691a390e83a99c947d7b2e53f99333f0f45b74c6"
+  },
+  {
+    "path": "강사용/02_응용/05_delete/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/02_응용/05_delete/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/02_응용/05_delete/예상결과.md",
+    "bytes": 1346,
+    "sha256": "3daf6d9495e0a2a4277e97d79a2b47624e23dc3b8812a6b18c2444e80e420fb9"
+  },
+  {
+    "path": "강사용/02_응용/06_structure/README.md",
+    "bytes": 3800,
+    "sha256": "5d676c0132896fb7a7ec9897d6ed2563995d8679e2965082b3c818a599efdeab"
+  },
+  {
+    "path": "강사용/02_응용/06_structure/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/02_응용/06_structure/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/02_응용/06_structure/main.py",
+    "bytes": 3074,
+    "sha256": "f675d1c21a981a3fb98e38b4d11cead7be764c0d2a0117499744aceabb4455ec"
+  },
+  {
+    "path": "강사용/02_응용/06_structure/queries.py",
+    "bytes": 802,
+    "sha256": "db82fa337357f44346b52bb810e2bda3d528d07069dc041d7f612ed6ebcecd3f"
+  },
+  {
+    "path": "강사용/02_응용/06_structure/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/02_응용/06_structure/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/02_응용/06_structure/예상결과.md",
+    "bytes": 1346,
+    "sha256": "3daf6d9495e0a2a4277e97d79a2b47624e23dc3b8812a6b18c2444e80e420fb9"
+  },
+  {
+    "path": "강사용/02_응용/07_project/README.md",
+    "bytes": 4197,
+    "sha256": "47f35ba4c6967959d176aa0b0dac3266a61dcb026a7d3c1feda0d8b03ee39181"
+  },
+  {
+    "path": "강사용/02_응용/07_project/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/02_응용/07_project/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/02_응용/07_project/main.py",
+    "bytes": 3737,
+    "sha256": "20b180db247048019804400944ef948b8b35b9d099f11fd095ffa1e8a80d8d7c"
+  },
+  {
+    "path": "강사용/02_응용/07_project/queries.py",
+    "bytes": 491,
+    "sha256": "7d1dcf61613438d8e5e98c45b6059b42d6e86aeb560b265e23bcaa4905e15bfe"
+  },
+  {
+    "path": "강사용/02_응용/07_project/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/02_응용/07_project/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/02_응용/07_project/실습07_기록.md",
+    "bytes": 1032,
+    "sha256": "181e92d29dad875a35f66723abd8d62239039912a1bd8fb3d7674665dec17268"
+  },
+  {
+    "path": "강사용/02_응용/07_project/예상결과.md",
+    "bytes": 1346,
+    "sha256": "3daf6d9495e0a2a4277e97d79a2b47624e23dc3b8812a6b18c2444e80e420fb9"
+  },
+  {
+    "path": "강사용/02_응용/07_project/일일프로젝트_기록.md",
+    "bytes": 2927,
+    "sha256": "4846648c91b933b4321e1afa04e80ac8f3d516c8223e005b9cbca74be55cb8ab"
+  },
+  {
+    "path": "강사용/02_응용/08_daily_project/README.md",
+    "bytes": 3891,
+    "sha256": "225b4772396b44fc141819671bb0f79679c421f7951f4fe4faab755fa9d3e21e"
+  },
+  {
+    "path": "강사용/02_응용/08_daily_project/운영메모.md",
+    "bytes": 1274,
+    "sha256": "17ae1896844d6725f35c842ba7ba429058fee126a5236e98aa16e65ffd438344"
+  },
+  {
+    "path": "강사용/02_응용/08_daily_project/지식초안.md",
+    "bytes": 657,
+    "sha256": "f76c41200c0f595cb15b2b6d0df6cbaa5667f572a3753d461d2ffddf161dd3a1"
+  },
+  {
+    "path": "강사용/02_응용/README.md",
+    "bytes": 1790,
+    "sha256": "2903e709d48f1e08bae99e262a68c73665bd7902e1e4c5a188aeada3583dfcfd"
+  },
+  {
+    "path": "강사용/02_응용/TODO_대응표.md",
+    "bytes": 3045,
+    "sha256": "1e2e9806ebe4a8adc32b655e0177f29c33f5719e8d0de2d6078896a2793f0413"
+  },
+  {
+    "path": "강사용/03_심화/01_first_server/README.md",
+    "bytes": 2880,
+    "sha256": "9050f49399d3dfc335f87a7f24af0866f2d6cf955c88d609e129a1588ffb1b20"
+  },
+  {
+    "path": "강사용/03_심화/01_first_server/main.py",
+    "bytes": 445,
+    "sha256": "8c12edad552c74e9f506b8f2ba7486486bd2b112b1cca90f78a2ece085b11b57"
+  },
+  {
+    "path": "강사용/03_심화/01_first_server/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "강사용/03_심화/01_first_server/tests/conftest.py",
+    "bytes": 647,
+    "sha256": "da828a8bfc250dbb7b313389e18e7f16c45bcb8d7850a8ac766cb7bfc8eec7d2"
+  },
+  {
+    "path": "강사용/03_심화/01_first_server/tests/test_api.py",
+    "bytes": 608,
+    "sha256": "dbee4ab56dbc6bd0f6220f91d0e62dfbdf0975850a42a49b8b6cf1fb225ccea9"
+  },
+  {
+    "path": "강사용/03_심화/01_first_server/예상결과.md",
+    "bytes": 184,
+    "sha256": "472b424cd2420ea15ac9ebb91f11caa37e92750aed4361c276da9ae1faa560c9"
+  },
+  {
+    "path": "강사용/03_심화/02_read/README.md",
+    "bytes": 3564,
+    "sha256": "65258fa66c79635fc8f8d8b1347e91c2adad507872e94c1548ef38eeaad88de7"
+  },
+  {
+    "path": "강사용/03_심화/02_read/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/03_심화/02_read/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/03_심화/02_read/logic.py",
+    "bytes": 962,
+    "sha256": "6396694faba531316cae21c1616dfd0ee5a0dc678e164300ac6ecb2253ee6c2f"
+  },
+  {
+    "path": "강사용/03_심화/02_read/main.py",
+    "bytes": 815,
+    "sha256": "a8f6b3fc75084d260c1986937202e99fec8520b55b5a0d7d3a6cf9244c11cb15"
+  },
+  {
+    "path": "강사용/03_심화/02_read/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "강사용/03_심화/02_read/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/03_심화/02_read/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/03_심화/02_read/tests/conftest.py",
+    "bytes": 986,
+    "sha256": "a33e053d3dceb6d241f93ae7a795fa66a59bc90b7b04b3c1bea41706d21e650e"
+  },
+  {
+    "path": "강사용/03_심화/02_read/tests/test_api.py",
+    "bytes": 1459,
+    "sha256": "96f407dc445ab68de508c58357931bd307095f39db7e8e8717f520c383b0987d"
+  },
+  {
+    "path": "강사용/03_심화/02_read/예상결과.md",
+    "bytes": 692,
+    "sha256": "54978bdfbfc73b6b15ea48d4d08d4567d55aac12396b707f7e161ce9b033ee28"
+  },
+  {
+    "path": "강사용/03_심화/03_create/README.md",
+    "bytes": 3871,
+    "sha256": "763082c73f42ab913d27f9d57744779496c6d101ef2169386d7bf6e837b7f49f"
+  },
+  {
+    "path": "강사용/03_심화/03_create/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/03_심화/03_create/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/03_심화/03_create/logic.py",
+    "bytes": 1254,
+    "sha256": "3be12ecab84fcc101825e0e0869ea2043da2f0d551374fb27721025eb5cbac40"
+  },
+  {
+    "path": "강사용/03_심화/03_create/main.py",
+    "bytes": 898,
+    "sha256": "be6e6ca60c926e750e3cf0fb4280df1f715d01b7190ce3dae8d3bf8ba0d278c1"
+  },
+  {
+    "path": "강사용/03_심화/03_create/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "강사용/03_심화/03_create/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/03_심화/03_create/schemas.py",
+    "bytes": 381,
+    "sha256": "b57556dbfa47c16833bbd1c343998257ea93f56d973bc46b1442df0a496265e6"
+  },
+  {
+    "path": "강사용/03_심화/03_create/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/03_심화/03_create/tests/conftest.py",
+    "bytes": 986,
+    "sha256": "a33e053d3dceb6d241f93ae7a795fa66a59bc90b7b04b3c1bea41706d21e650e"
+  },
+  {
+    "path": "강사용/03_심화/03_create/tests/test_api.py",
+    "bytes": 3292,
+    "sha256": "6dfea9db39339459c2b1e25104788568a63083cdfff80672ae3b7737d0679d04"
+  },
+  {
+    "path": "강사용/03_심화/03_create/예상결과.md",
+    "bytes": 983,
+    "sha256": "4ca14cb1b7cb66f69661567825c43822a59b17407f6e6cd85439948ec52d54f6"
+  },
+  {
+    "path": "강사용/03_심화/04_update/README.md",
+    "bytes": 4009,
+    "sha256": "d9144ccd7d60a7faa00ed722faff828666b09c3d781b20e41603ab6888417984"
+  },
+  {
+    "path": "강사용/03_심화/04_update/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/03_심화/04_update/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/03_심화/04_update/logic.py",
+    "bytes": 1702,
+    "sha256": "4a88d0c7f0bdbf5f2f5186c598ab2cbd675fedf839e8dbd7f55cf18aedde3d89"
+  },
+  {
+    "path": "강사용/03_심화/04_update/main.py",
+    "bytes": 1327,
+    "sha256": "6fb4fd39fe904fec90c2e5c214960eca1e29c2fb0ecc144cb248af6b085169e5"
+  },
+  {
+    "path": "강사용/03_심화/04_update/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "강사용/03_심화/04_update/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/03_심화/04_update/schemas.py",
+    "bytes": 381,
+    "sha256": "b57556dbfa47c16833bbd1c343998257ea93f56d973bc46b1442df0a496265e6"
+  },
+  {
+    "path": "강사용/03_심화/04_update/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/03_심화/04_update/tests/conftest.py",
+    "bytes": 986,
+    "sha256": "a33e053d3dceb6d241f93ae7a795fa66a59bc90b7b04b3c1bea41706d21e650e"
+  },
+  {
+    "path": "강사용/03_심화/04_update/tests/test_api.py",
+    "bytes": 4307,
+    "sha256": "a99ca4126f9b4c4e94c20e13e4c64b065399feef73c6012b01937bde5140cd3c"
+  },
+  {
+    "path": "강사용/03_심화/04_update/예상결과.md",
+    "bytes": 1153,
+    "sha256": "92c71f68a661dfd0af5a7ce0fb44112e0b303bf061df8d62c8ab72fdd07da947"
+  },
+  {
+    "path": "강사용/03_심화/05_delete/README.md",
+    "bytes": 4140,
+    "sha256": "89e889ef16a17fa684c3a73df20eae08f0ddbeb820a012828d132ef3fa979469"
+  },
+  {
+    "path": "강사용/03_심화/05_delete/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/03_심화/05_delete/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/03_심화/05_delete/logic.py",
+    "bytes": 1766,
+    "sha256": "53a3ba66f30b03cc7ea500299989069592e98a84ef8e00ede53c2bbfbf4f9efa"
+  },
+  {
+    "path": "강사용/03_심화/05_delete/main.py",
+    "bytes": 1561,
+    "sha256": "674a7c50d554b321d8b8eb36cf866161ee1ae8a70a3891713659c06821496f62"
+  },
+  {
+    "path": "강사용/03_심화/05_delete/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "강사용/03_심화/05_delete/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/03_심화/05_delete/schemas.py",
+    "bytes": 381,
+    "sha256": "b57556dbfa47c16833bbd1c343998257ea93f56d973bc46b1442df0a496265e6"
+  },
+  {
+    "path": "강사용/03_심화/05_delete/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/03_심화/05_delete/tests/conftest.py",
+    "bytes": 986,
+    "sha256": "a33e053d3dceb6d241f93ae7a795fa66a59bc90b7b04b3c1bea41706d21e650e"
+  },
+  {
+    "path": "강사용/03_심화/05_delete/tests/test_api.py",
+    "bytes": 5648,
+    "sha256": "07fee0fd64dcd971cfee59a53b9afecf34e07eacd6cb40159f483de2d96a1eeb"
+  },
+  {
+    "path": "강사용/03_심화/05_delete/예상결과.md",
+    "bytes": 1272,
+    "sha256": "3d44a0a58b4b72261cdc7ca42767b7da028add92bc778def8834fcbcc40a8c1f"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/README.md",
+    "bytes": 4211,
+    "sha256": "be63a09f7a0634e4117b4c18e20520053f1cb273b373bccd37bc010d93e26806"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/app/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/app/main.py",
+    "bytes": 527,
+    "sha256": "9ebab6f740d19a44cd0884c3f192b5d869a63dc370161e1d3debafdc0ab97174"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/app/repositories/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/app/repositories/json_knowledge.py",
+    "bytes": 2570,
+    "sha256": "d45ee2b4d57527f3e38478db06548265c15589b66fd4bdb6f3b92e6bf6ec9552"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/app/routers/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/app/routers/knowledge.py",
+    "bytes": 1496,
+    "sha256": "cd1d153c03923ea5910ad27a91d202b587859c16414350561e52cb40492b790d"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/app/schemas.py",
+    "bytes": 381,
+    "sha256": "b57556dbfa47c16833bbd1c343998257ea93f56d973bc46b1442df0a496265e6"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/tests/conftest.py",
+    "bytes": 1019,
+    "sha256": "a2b2099cfdc6659de0bae1363c08fca2b85a2fae8c3bab4478ee57c8b58e33d8"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/tests/test_api.py",
+    "bytes": 6040,
+    "sha256": "3da45b6d8f00318065b544a2beba075dac8c2e7e899acc3b84a9df7bbdad3ef6"
+  },
+  {
+    "path": "강사용/03_심화/06_structure/예상결과.md",
+    "bytes": 1272,
+    "sha256": "3d44a0a58b4b72261cdc7ca42767b7da028add92bc778def8834fcbcc40a8c1f"
+  },
+  {
+    "path": "강사용/03_심화/07_project/README.md",
+    "bytes": 4967,
+    "sha256": "bd5ecabf922cdc10ef631c062188c1dc577fdb4c748fd4754fad0caf6e291b48"
+  },
+  {
+    "path": "강사용/03_심화/07_project/app/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "강사용/03_심화/07_project/app/main.py",
+    "bytes": 379,
+    "sha256": "d8e4b921c8cd10e327c54955e9af6cd103b177f297e0b8784438f35bfce55ab9"
+  },
+  {
+    "path": "강사용/03_심화/07_project/app/repositories/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "강사용/03_심화/07_project/app/repositories/json_knowledge.py",
+    "bytes": 2539,
+    "sha256": "b7d2157f4f0d0f00fc2dd96de0a9d077c9b1aad3854730a8c9c0a99b66b3ad62"
+  },
+  {
+    "path": "강사용/03_심화/07_project/app/routers/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "강사용/03_심화/07_project/app/routers/knowledge.py",
+    "bytes": 1507,
+    "sha256": "d4846012fe3ad57a740e44f35a30bce595f6c9873cb8c574c81713673fd4b170"
+  },
+  {
+    "path": "강사용/03_심화/07_project/app/schemas.py",
+    "bytes": 381,
+    "sha256": "b57556dbfa47c16833bbd1c343998257ea93f56d973bc46b1442df0a496265e6"
+  },
+  {
+    "path": "강사용/03_심화/07_project/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/03_심화/07_project/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/03_심화/07_project/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "강사용/03_심화/07_project/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "강사용/03_심화/07_project/tests/conftest.py",
+    "bytes": 1019,
+    "sha256": "a2b2099cfdc6659de0bae1363c08fca2b85a2fae8c3bab4478ee57c8b58e33d8"
+  },
+  {
+    "path": "강사용/03_심화/07_project/tests/test_api.py",
+    "bytes": 6143,
+    "sha256": "bcbe3f6f09f85e60a3e15ec6363bcd2be624d72f1520a8cec321f8f1c2db0dc2"
+  },
+  {
+    "path": "강사용/03_심화/07_project/tests/test_daily_project.py",
+    "bytes": 2469,
+    "sha256": "f0e28edafd620a092723b6cfc175885b1bc86d27351deaaffcec759823138dce"
+  },
+  {
+    "path": "강사용/03_심화/07_project/실습07_기록.md",
+    "bytes": 1032,
+    "sha256": "00d0e238fab94a20fe597960c71f38b2ee660a72b75914d866630927759881f0"
+  },
+  {
+    "path": "강사용/03_심화/07_project/예상결과.md",
+    "bytes": 1272,
+    "sha256": "3d44a0a58b4b72261cdc7ca42767b7da028add92bc778def8834fcbcc40a8c1f"
+  },
+  {
+    "path": "강사용/03_심화/07_project/일일프로젝트_기록.md",
+    "bytes": 2931,
+    "sha256": "45a31bd1fcad34621d90610e7e0d1319b0874e2615dfa45fece3f85ccd0f4757"
+  },
+  {
+    "path": "강사용/03_심화/08_daily_project/README.md",
+    "bytes": 3891,
+    "sha256": "225b4772396b44fc141819671bb0f79679c421f7951f4fe4faab755fa9d3e21e"
+  },
+  {
+    "path": "강사용/03_심화/08_daily_project/운영메모.md",
+    "bytes": 1274,
+    "sha256": "17ae1896844d6725f35c842ba7ba429058fee126a5236e98aa16e65ffd438344"
+  },
+  {
+    "path": "강사용/03_심화/08_daily_project/지식초안.md",
+    "bytes": 657,
+    "sha256": "f76c41200c0f595cb15b2b6d0df6cbaa5667f572a3753d461d2ffddf161dd3a1"
+  },
+  {
+    "path": "강사용/03_심화/README.md",
+    "bytes": 1790,
+    "sha256": "f0a329b8f8020a9e9e3f6b1e84aa4635f7e6232c439607dde5d8c654c314f6bb"
+  },
+  {
+    "path": "강사용/03_심화/TODO_대응표.md",
+    "bytes": 4091,
+    "sha256": "d151dd9427f085dc7e51f2160c72ee26bcc6661ea709dde6fa2ab90039aca14f"
+  },
+  {
+    "path": "강사용/PPT_대응표.md",
+    "bytes": 2182,
+    "sha256": "f6bfcd61025d0aef3dc980d79efad6cf0a1d404e2cc10788826e68371a3c7d72"
+  },
+  {
+    "path": "강사용/README.md",
+    "bytes": 4770,
+    "sha256": "8ee63715b031ec548c0ecc7d8a1aa0eb4078eefcd2e7b93ba246d6dd7f38314f"
+  },
+  {
+    "path": "강사용/requirements-template.txt",
+    "bytes": 34,
+    "sha256": "05907b76edc9cc45350df41dbe02a7b3462cef8e327f63acd78b94d1692d9618"
+  },
+  {
+    "path": "강사용/requirements-test.txt",
+    "bytes": 48,
+    "sha256": "41da2fb2041cff8c59ccdf17e51131deb2b4cc83186587201f271eda0752028f"
+  },
+  {
+    "path": "강사용/requirements.txt",
+    "bytes": 50,
+    "sha256": "2e52e4866a69b36476827a6bc7d170799e67c15e25f2cc7ed2d259305681531e"
+  },
+  {
+    "path": "강사용/tools/check_todos.py",
+    "bytes": 1198,
+    "sha256": "13dc0de0642bd647bb0fef6ba9c037d23532cccdc628b5b1040df8d31986777f"
+  },
+  {
+    "path": "강사용/tools/send_request.py",
+    "bytes": 2193,
+    "sha256": "6f8442eddb054ce6b261cb81d4bddb58039d22ee2502caff79a750c2c407b93d"
+  },
+  {
+    "path": "강사용/tools/show_versions.py",
+    "bytes": 658,
+    "sha256": "4ebcb2bbc3bfe45391c5822cc84c2d702023b2fca465e0f0ca9508f5cec3900f"
+  },
+  {
+    "path": "강사용/강사운영안.md",
+    "bytes": 4447,
+    "sha256": "fabc2e5d9bc01e91a8c6e150649a31bbd4d03fafc0250f8386f1fb751692c977"
+  },
+  {
+    "path": "강사용/검수결과.md",
+    "bytes": 3517,
+    "sha256": "e6781fa7781398153b3de095c2d090ca239e7facfe7f6b1fe497a488cec2ab8a"
+  },
+  {
+    "path": "강사용/공통안내/API_계약.md",
+    "bytes": 2953,
+    "sha256": "125e890e3816246ce68bbf00493099774718971b8cab021d632977b7aa701a7e"
+  },
+  {
+    "path": "강사용/공통안내/오류해결.md",
+    "bytes": 2264,
+    "sha256": "66407b92c38bebd4f2b411c445a33acc00ca3ae849981a4fdf055d623df19b94"
+  },
+  {
+    "path": "강사용/공통안내/요청예시/create.json",
+    "bytes": 120,
+    "sha256": "d3a52e6cec8478e9157dc6f7de4a6bfc6ed7ff8764356de254e42c81a23b06a4"
+  },
+  {
+    "path": "강사용/공통안내/요청예시/invalid.json",
+    "bytes": 78,
+    "sha256": "1cef64c7690f1e0f0a9f8ee71672b17574ed595129795f7d414f5245fbf37bc5"
+  },
+  {
+    "path": "강사용/공통안내/요청예시/update.json",
+    "bytes": 138,
+    "sha256": "6d142c8ff2eb93bebe4f927c6895372d1ff46d9a7d0bcfb6d54bf3c8c05275d4"
+  },
+  {
+    "path": "강사용/공통안내/자료기준.md",
+    "bytes": 1833,
+    "sha256": "17dfdb0b3e1f5019ddc62816efc0c3ae66273e01f2548f628cc344c7d6af039c"
+  },
+  {
+    "path": "강사용/운영검수/README.md",
+    "bytes": 729,
+    "sha256": "2bba5323b506a104b49e6c1d308e5da7140ead1a53f85abe989c915d233edcd8"
+  },
+  {
+    "path": "강사용/운영검수/apps.json",
+    "bytes": 3329,
+    "sha256": "22a61d502200f66186ec3f620c9db9dd82172f414dac312b58f64f3f6154da04"
+  },
+  {
+    "path": "강사용/운영검수/contract_summary.json",
+    "bytes": 94722,
+    "sha256": "32752860b94a697d37852b9a9bd4fc8f321d8bdb53f265199ff8dc05ec14d4f8"
+  },
+  {
+    "path": "강사용/운영검수/contract_worker.py",
+    "bytes": 11410,
+    "sha256": "47a874eddf14083a12d7ca52dcb458df9131ad65d35cabc967bc9ccfedb93b36"
+  },
+  {
+    "path": "강사용/운영검수/environment.json",
+    "bytes": 702,
+    "sha256": "981de80911076e4bd49bdf56c071d8945db81da787c12dba2ce07462b72b38a8"
+  },
+  {
+    "path": "강사용/운영검수/fresh_install_attempt.txt",
+    "bytes": 2002,
+    "sha256": "3312d6e5a53ea5cb856962ae69a1983f34b14a9897bcd178a2c96429e9095431"
+  },
+  {
+    "path": "강사용/운영검수/live_mvp_MVP.json",
+    "bytes": 13762,
+    "sha256": "50e36288275b2de1de20da6492811d45df3ca9c51546f1ff51fbc93b6fcb55ae"
+  },
+  {
+    "path": "강사용/운영검수/live_mvp_MVP.log",
+    "bytes": 3222,
+    "sha256": "2202f535118373571b669c4f5649e6fb647a37db6fd210a0de62fd6df9d31c40"
+  },
+  {
+    "path": "강사용/운영검수/live_student_completed_A.json",
+    "bytes": 13774,
+    "sha256": "9a03a06e9d897879b3ba5a85beab27f0aad4488365e7636b49c60c95e9290deb"
+  },
+  {
+    "path": "강사용/운영검수/live_student_completed_A.log",
+    "bytes": 3222,
+    "sha256": "bb404739380df60e026c483aecb856de2a2f0a2121b9c23e93e514b1e0f28fc0"
+  },
+  {
+    "path": "강사용/운영검수/live_student_completed_B.json",
+    "bytes": 13139,
+    "sha256": "0b53632f3fb5185bb488fc4072a64c2794ade2aab77720650cdbc6fd439cb780"
+  },
+  {
+    "path": "강사용/운영검수/live_student_completed_B.log",
+    "bytes": 3061,
+    "sha256": "51a23a09d5be51950196fec0fa68bd46681228f8918cb8cdd83cabd5c0fd9286"
+  },
+  {
+    "path": "강사용/운영검수/live_student_completed_H.json",
+    "bytes": 13774,
+    "sha256": "420e5f79cd474f5a5fda32342f639d5decf3e6b51ba35c14247f01dff2918b77"
+  },
+  {
+    "path": "강사용/운영검수/live_student_completed_H.log",
+    "bytes": 3222,
+    "sha256": "2b895622bbc2c8bcb60491ab29a14926e2608c1a2b37b25b8805f5ceb8999983"
+  },
+  {
+    "path": "강사용/운영검수/live_summary.json",
+    "bytes": 103218,
+    "sha256": "c437432008f030f4ecd569cc91cdc95e7b6e66e51daadc1ae032d0c40a7aa0a1"
+  },
+  {
+    "path": "강사용/운영검수/live_teacher_A.json",
+    "bytes": 13764,
+    "sha256": "1597cbb50decc54bda6dd14c1324d7b88d363532dd34b6f92a7391d53f35ea0a"
+  },
+  {
+    "path": "강사용/운영검수/live_teacher_A.log",
+    "bytes": 3222,
+    "sha256": "db7aedd2c95fd0a2cf53db74743e91cf4f0a240de171fced5d81d7caba41dde2"
+  },
+  {
+    "path": "강사용/운영검수/live_teacher_B.json",
+    "bytes": 13129,
+    "sha256": "4fe8448a7a0394c2b042e65b2ce5f662f91b486ce4ee8f6ac04f06d2c8168ca2"
+  },
+  {
+    "path": "강사용/운영검수/live_teacher_B.log",
+    "bytes": 3061,
+    "sha256": "bbcdd55f54e512770077aa409b8066da41cd45af65993732ea71afcc0d41229f"
+  },
+  {
+    "path": "강사용/운영검수/live_teacher_H.json",
+    "bytes": 13764,
+    "sha256": "69b6744d467380ba84bed7bfca0a82a522722f15b435a54797d4f33ba9b0c43d"
+  },
+  {
+    "path": "강사용/운영검수/live_teacher_H.log",
+    "bytes": 3222,
+    "sha256": "89c2d75a9d7893dd7846992cf91063362a81297d01964b347e41b0b620c263ed"
+  },
+  {
+    "path": "강사용/운영검수/ppt_source.json",
+    "bytes": 185,
+    "sha256": "2b8fcfb971e90e25f4e887dc9a6e2aa6f7d9a2e42776f010cfab2aa75e2ea909"
+  },
+  {
+    "path": "강사용/운영검수/pytest_mvp.txt",
+    "bytes": 99,
+    "sha256": "fc80b18f3c991a20feddd4e28089336605a3a4f212d75724d9925d68124c8444"
+  },
+  {
+    "path": "강사용/운영검수/pytest_student_completed_H01.txt",
+    "bytes": 98,
+    "sha256": "f4c77b58e2280613a49ba18da1c4a02d440e862c49a6c8fe5daaf277333ff99d"
+  },
+  {
+    "path": "강사용/운영검수/pytest_student_completed_H02.txt",
+    "bytes": 98,
+    "sha256": "05f7f7d7e74af6e23fe4984046332ed347e22cf50f99a33856b9d2f589167249"
+  },
+  {
+    "path": "강사용/운영검수/pytest_student_completed_H03.txt",
+    "bytes": 99,
+    "sha256": "30c7e70fea595ad4c42bac94a50b79c28c5b6c451ba0a645680eacf0cd83aafc"
+  },
+  {
+    "path": "강사용/운영검수/pytest_student_completed_H04.txt",
+    "bytes": 99,
+    "sha256": "16bc2e949f7c3f2f976d3a1b95f86c19efb7c9c0a32427924846d95c807d1806"
+  },
+  {
+    "path": "강사용/운영검수/pytest_student_completed_H05.txt",
+    "bytes": 99,
+    "sha256": "3568f0508cf800472d62c5b42420fedd09850a6e047b61d4a61e70c83766cc62"
+  },
+  {
+    "path": "강사용/운영검수/pytest_student_completed_H06.txt",
+    "bytes": 99,
+    "sha256": "69641c993313ce2ba07b76ec74753dfb56dd5c9c445e13219b5bc03139c22332"
+  },
+  {
+    "path": "강사용/운영검수/pytest_student_completed_H07.txt",
+    "bytes": 99,
+    "sha256": "63c2baad081bdf6e153f19a4be75063c712ed74b431c0e54c221e100cd29b921"
+  },
+  {
+    "path": "강사용/운영검수/pytest_summary.json",
+    "bytes": 3589,
+    "sha256": "20d9cd6d63c4367255cdd5dc404badaed7509cc7d7bd5c20988e8ec1d9bb0c59"
+  },
+  {
+    "path": "강사용/운영검수/pytest_teacher_H01.txt",
+    "bytes": 98,
+    "sha256": "f4c77b58e2280613a49ba18da1c4a02d440e862c49a6c8fe5daaf277333ff99d"
+  },
+  {
+    "path": "강사용/운영검수/pytest_teacher_H02.txt",
+    "bytes": 98,
+    "sha256": "db7f09414dbfd608dbdbc9dc30246e56e6598dc0e7fbf509c46c3bdd43c83e32"
+  },
+  {
+    "path": "강사용/운영검수/pytest_teacher_H03.txt",
+    "bytes": 99,
+    "sha256": "dcc038a247e132a5b20c58e4c095d4429c5deb23a841d4b4bb011a364a6b7dfe"
+  },
+  {
+    "path": "강사용/운영검수/pytest_teacher_H04.txt",
+    "bytes": 99,
+    "sha256": "dba147114f275ae0f2e9c99e2ca6e034b73a99d3a3f72cbac85fef6cb2d486e1"
+  },
+  {
+    "path": "강사용/운영검수/pytest_teacher_H05.txt",
+    "bytes": 99,
+    "sha256": "942efb5009e6557e36483fc7a42134d0c4f5d3952cd674e5415387e7e474582c"
+  },
+  {
+    "path": "강사용/운영검수/pytest_teacher_H06.txt",
+    "bytes": 99,
+    "sha256": "e291f0720a59f3a3884ec5809556afc3aa400249dbe49ae8efb6d4226c40318a"
+  },
+  {
+    "path": "강사용/운영검수/pytest_teacher_H07.txt",
+    "bytes": 99,
+    "sha256": "bdea51565d9356e22eb3ca38d329eef64b8b15db85f746a6ab6594456f14a415"
+  },
+  {
+    "path": "강사용/운영검수/support_summary.json",
+    "bytes": 3157,
+    "sha256": "5eddd8cc46f3ae949e3b5c8a963809fafcfd641e8012e1a01cfb5710049e43ce"
+  },
+  {
+    "path": "강사용/운영검수/todo_manifest.json",
+    "bytes": 23009,
+    "sha256": "6a32e689e674b5bd8a5e5ca9abbddecdfc622ca238b822197591242bfa12d1b1"
+  },
+  {
+    "path": "강사용/운영검수/transplant.json",
+    "bytes": 5850,
+    "sha256": "43831e5ad0a257f5b9fd3029643c61e5d2dd5e453b9448ba6038df7255f6aa8b"
+  },
+  {
+    "path": "강사용/운영검수/verify_materials.py",
+    "bytes": 3752,
+    "sha256": "d0f903173046e673c2283c8e89e31d557029e507341dfd4f12c78e7672e93215"
+  },
+  {
+    "path": "강사용/운영검수/zip_extraction_check.json",
+    "bytes": 246,
+    "sha256": "4f5d90b35e52803654722d707312c303ed9dc6ecba333b778b73dcec1e8a5f00"
+  },
+  {
+    "path": "강사용/운영검수/검수결과.md",
+    "bytes": 3517,
+    "sha256": "e6781fa7781398153b3de095c2d090ca239e7facfe7f6b1fe497a488cec2ab8a"
+  },
+  {
+    "path": "강사용/참고예제/Template_비교/README.md",
+    "bytes": 753,
+    "sha256": "0e00bcba5447795257124d3097a9b026f639e5f5ed3a33629b7b60b1194574d7"
+  },
+  {
+    "path": "강사용/참고예제/Template_비교/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "강사용/참고예제/Template_비교/main.py",
+    "bytes": 792,
+    "sha256": "cefae81e1e258be9cc9972baa37eeec34aed2e1da19289eb505cb96008e68900"
+  },
+  {
+    "path": "강사용/참고예제/Template_비교/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "강사용/참고예제/Template_비교/templates/knowledge.html",
+    "bytes": 348,
+    "sha256": "42237a565c4ad38d28fb09b4620610b84e8342e830230bde4d7dca20bd84e737"
+  },
+  {
+    "path": "수강생용/.gitignore",
+    "bytes": 72,
+    "sha256": "effd36aa24d5dd787bf090a99537b29375addbdc28d5ca715fdf55ea457bc272"
+  },
+  {
+    "path": "수강생용/00_시작안내.txt",
+    "bytes": 692,
+    "sha256": "dfb3e87e1eccf6e8b9ca1f7700a39858e2c1f7635ebf2c2479458783f2ae5263"
+  },
+  {
+    "path": "수강생용/01_기본필수/01_first_server/README.md",
+    "bytes": 2282,
+    "sha256": "0131dbb39136cc28cb4dc089e7566e12f32e9c57e87c885076806339e335ffe0"
+  },
+  {
+    "path": "수강생용/01_기본필수/01_first_server/main.py",
+    "bytes": 736,
+    "sha256": "f7ca70b67e1e9a4568a947763b575d2d386d08f78acd06b12e73c889c6e3e8f1"
+  },
+  {
+    "path": "수강생용/01_기본필수/01_first_server/예상결과.md",
+    "bytes": 184,
+    "sha256": "472b424cd2420ea15ac9ebb91f11caa37e92750aed4361c276da9ae1faa560c9"
+  },
+  {
+    "path": "수강생용/01_기본필수/02_read/README.md",
+    "bytes": 2774,
+    "sha256": "52c8b56669c44f72c7d2774da00766dc6d7032f561ed725985ddc569851a1dc0"
+  },
+  {
+    "path": "수강생용/01_기본필수/02_read/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/01_기본필수/02_read/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/01_기본필수/02_read/main.py",
+    "bytes": 1699,
+    "sha256": "15d58c8da7c343b74ec3f37e28179fcc98d1b7f23ae3557f41605120cab35d10"
+  },
+  {
+    "path": "수강생용/01_기본필수/02_read/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/01_기본필수/02_read/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/01_기본필수/02_read/예상결과.md",
+    "bytes": 565,
+    "sha256": "6bc4b25f681269b73e798094c6886674ff23705aed6ce68db2ecfee765f36338"
+  },
+  {
+    "path": "수강생용/01_기본필수/03_create/README.md",
+    "bytes": 3118,
+    "sha256": "894f44f986ab2e74965e220f6b8e794ed56ac350e53331ba143ea8bea2bc367b"
+  },
+  {
+    "path": "수강생용/01_기본필수/03_create/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/01_기본필수/03_create/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/01_기본필수/03_create/main.py",
+    "bytes": 2829,
+    "sha256": "561da2fcaccc479c69ec1e9c5e04fd99044a56146590ca6f576f47f1e710ff75"
+  },
+  {
+    "path": "수강생용/01_기본필수/03_create/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/01_기본필수/03_create/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/01_기본필수/03_create/예상결과.md",
+    "bytes": 856,
+    "sha256": "4c29ba3844e3a471a4d76efee2c9f132920b9e3d8bd0d668971c859007da801f"
+  },
+  {
+    "path": "수강생용/01_기본필수/04_update/README.md",
+    "bytes": 3294,
+    "sha256": "04113bc731010da370d918cf0ab134a618d8868e04bc1fb09922fa23c8c4d37e"
+  },
+  {
+    "path": "수강생용/01_기본필수/04_update/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/01_기본필수/04_update/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/01_기본필수/04_update/main.py",
+    "bytes": 3566,
+    "sha256": "7681789c38b1629b2601d80583eeae25d31d6d4a5780e39f701540a3f0d585a6"
+  },
+  {
+    "path": "수강생용/01_기본필수/04_update/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/01_기본필수/04_update/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/01_기본필수/04_update/예상결과.md",
+    "bytes": 1026,
+    "sha256": "7b3059a337433047fdf7f33062a3092190f88f4b158224d6e38bf67858c36569"
+  },
+  {
+    "path": "수강생용/01_기본필수/05_delete/README.md",
+    "bytes": 3351,
+    "sha256": "b4383926c94e03ffb3933d3734e0339a5a450b32198abd6783729295a25c6923"
+  },
+  {
+    "path": "수강생용/01_기본필수/05_delete/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/01_기본필수/05_delete/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/01_기본필수/05_delete/main.py",
+    "bytes": 3759,
+    "sha256": "2cac0f0998965e1faca6cc7baac6b10782374ed9904e4541c6f7ba975b60f135"
+  },
+  {
+    "path": "수강생용/01_기본필수/05_delete/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/01_기본필수/05_delete/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/01_기본필수/05_delete/예상결과.md",
+    "bytes": 1144,
+    "sha256": "281763f827cf0f47329c112ae516e9b037a953daa09452a6af7a100f7857a91c"
+  },
+  {
+    "path": "수강생용/01_기본필수/06_structure/README.md",
+    "bytes": 3183,
+    "sha256": "f572ea86d72da12bc37631124cf1ac8d112c4a2d37a319af771b9d9a037eb9d3"
+  },
+  {
+    "path": "수강생용/01_기본필수/06_structure/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/01_기본필수/06_structure/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/01_기본필수/06_structure/main.py",
+    "bytes": 3097,
+    "sha256": "412b35f667d259c9f030947a8d4bafd0eed04dfe790a836b2b6c87cf2e7c2ea3"
+  },
+  {
+    "path": "수강생용/01_기본필수/06_structure/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/01_기본필수/06_structure/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/01_기본필수/06_structure/예상결과.md",
+    "bytes": 1144,
+    "sha256": "281763f827cf0f47329c112ae516e9b037a953daa09452a6af7a100f7857a91c"
+  },
+  {
+    "path": "수강생용/01_기본필수/06_structure/파일역할_기록.md",
+    "bytes": 851,
+    "sha256": "615ec73b9076a86963035965b1ca9e530953db2ce4df5187c0aadedf6e6cfd0a"
+  },
+  {
+    "path": "수강생용/01_기본필수/07_project/README.md",
+    "bytes": 4099,
+    "sha256": "1ebef9cfedc3320ae32b19cd7c44412c2d67931d239376510b6af499f977ab74"
+  },
+  {
+    "path": "수강생용/01_기본필수/07_project/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/01_기본필수/07_project/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/01_기본필수/07_project/main.py",
+    "bytes": 4219,
+    "sha256": "24bada20a3675dfe9cb83ccf9dfc00131920bb984c8a7b7abade43b646ab8323"
+  },
+  {
+    "path": "수강생용/01_기본필수/07_project/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/01_기본필수/07_project/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/01_기본필수/07_project/실습07_기록.md",
+    "bytes": 701,
+    "sha256": "6101167467ddb2bdc41761849710d225cd68b0729c7670e91584e2338372ccc2"
+  },
+  {
+    "path": "수강생용/01_기본필수/07_project/예상결과.md",
+    "bytes": 1144,
+    "sha256": "281763f827cf0f47329c112ae516e9b037a953daa09452a6af7a100f7857a91c"
+  },
+  {
+    "path": "수강생용/01_기본필수/07_project/일일프로젝트_기록.md",
+    "bytes": 2351,
+    "sha256": "275b9b42713afb61c73845273dbb513a75c90cb34060f56e9746b367f207487e"
+  },
+  {
+    "path": "수강생용/01_기본필수/08_daily_project/README.md",
+    "bytes": 3891,
+    "sha256": "225b4772396b44fc141819671bb0f79679c421f7951f4fe4faab755fa9d3e21e"
+  },
+  {
+    "path": "수강생용/01_기본필수/08_daily_project/지식초안.md",
+    "bytes": 496,
+    "sha256": "be32393d376b752c0b185192f2c18e2a6b5d121d3c9ba973df317b95bb724372"
+  },
+  {
+    "path": "수강생용/01_기본필수/README.md",
+    "bytes": 1796,
+    "sha256": "360edb520ed7446614f2623717ccbad444c01927b389947870222db9f178ea0a"
+  },
+  {
+    "path": "수강생용/01_기본필수/TODO_대응표.md",
+    "bytes": 2069,
+    "sha256": "f49129c917ca00bf57f197fc28b516dcf97266f8e37f8805bf85a97ab06b524c"
+  },
+  {
+    "path": "수강생용/02_응용/01_first_server/README.md",
+    "bytes": 2553,
+    "sha256": "ab150afaba507b88027ef50d86577c31d0900c62d23490f77285ee321084b80b"
+  },
+  {
+    "path": "수강생용/02_응용/01_first_server/main.py",
+    "bytes": 1176,
+    "sha256": "4f5b1edef8d3a791e5ba8758b7822b351165e77e63955f5de28eb68c358882e1"
+  },
+  {
+    "path": "수강생용/02_응용/01_first_server/예상결과.md",
+    "bytes": 257,
+    "sha256": "dad29d6cc0572869bda5da18e0a3212bd1f14b7d865cf2a74d61fdb2560e6567"
+  },
+  {
+    "path": "수강생용/02_응용/02_read/README.md",
+    "bytes": 3132,
+    "sha256": "31dc0bb89fb105c4b88e0b0a63e4f2bc2f2d2ac62511dec521d1083b73ebc960"
+  },
+  {
+    "path": "수강생용/02_응용/02_read/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/02_응용/02_read/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/02_응용/02_read/main.py",
+    "bytes": 2138,
+    "sha256": "1df1e926430d7f013ecbd76c52fe398d6eed9cb9a35823215ad0b262f4faf4ab"
+  },
+  {
+    "path": "수강생용/02_응용/02_read/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/02_응용/02_read/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/02_응용/02_read/예상결과.md",
+    "bytes": 765,
+    "sha256": "1d1a6f6e88069521a609e1388ca6ac2b67fc99a9ab6b50091362440358c9711b"
+  },
+  {
+    "path": "수강생용/02_응용/03_create/README.md",
+    "bytes": 3339,
+    "sha256": "8d5147798df085162349678caac66c4806dd5c4c54d035527d10bf546f121eeb"
+  },
+  {
+    "path": "수강생용/02_응용/03_create/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/02_응용/03_create/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/02_응용/03_create/main.py",
+    "bytes": 3245,
+    "sha256": "60805930e31d6729d010f445a9f0d7b6ca97988bc2b31878a73509ee9c5f2ed1"
+  },
+  {
+    "path": "수강생용/02_응용/03_create/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/02_응용/03_create/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/02_응용/03_create/예상결과.md",
+    "bytes": 1056,
+    "sha256": "f2346daa2b0ba24e1cc31981c5f8f30016ed015ae0da3345337aa8fa8f38c7db"
+  },
+  {
+    "path": "수강생용/02_응용/04_update/README.md",
+    "bytes": 3520,
+    "sha256": "0b275ed1b7fcc0a686499fe4920479faaa88806d3797afef0b379a58e34fe493"
+  },
+  {
+    "path": "수강생용/02_응용/04_update/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/02_응용/04_update/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/02_응용/04_update/main.py",
+    "bytes": 4009,
+    "sha256": "f3e4de2e926f25948bb902513e7a0e66c5e2fef4f7d9e98fbedcc62ef101ff26"
+  },
+  {
+    "path": "수강생용/02_응용/04_update/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/02_응용/04_update/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/02_응용/04_update/예상결과.md",
+    "bytes": 1227,
+    "sha256": "b317272e985c636606793cd92e0e2a968d75f9b3459f185b1e9ebc157c943059"
+  },
+  {
+    "path": "수강생용/02_응용/05_delete/README.md",
+    "bytes": 3675,
+    "sha256": "02a810528419d8a417f0974727798e4c81d52009e708c5539e9e80eab9a15b97"
+  },
+  {
+    "path": "수강생용/02_응용/05_delete/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/02_응용/05_delete/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/02_응용/05_delete/main.py",
+    "bytes": 4088,
+    "sha256": "d91ff0cfd1b419f64e0e515cdc5a47eadcf95d7c9ec404ff3501b32076a891a0"
+  },
+  {
+    "path": "수강생용/02_응용/05_delete/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/02_응용/05_delete/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/02_응용/05_delete/예상결과.md",
+    "bytes": 1346,
+    "sha256": "3daf6d9495e0a2a4277e97d79a2b47624e23dc3b8812a6b18c2444e80e420fb9"
+  },
+  {
+    "path": "수강생용/02_응용/06_structure/README.md",
+    "bytes": 3852,
+    "sha256": "01fbb6c9a774b7a101e01e9de32c5db68917b481c796e993e64e5d469ea04e25"
+  },
+  {
+    "path": "수강생용/02_응용/06_structure/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/02_응용/06_structure/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/02_응용/06_structure/main.py",
+    "bytes": 3074,
+    "sha256": "f675d1c21a981a3fb98e38b4d11cead7be764c0d2a0117499744aceabb4455ec"
+  },
+  {
+    "path": "수강생용/02_응용/06_structure/queries.py",
+    "bytes": 1011,
+    "sha256": "ce4b8281991c61f40a611e8296aebcedccdae8cfe4cc00aa07668089cb497ca2"
+  },
+  {
+    "path": "수강생용/02_응용/06_structure/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/02_응용/06_structure/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/02_응용/06_structure/예상결과.md",
+    "bytes": 1346,
+    "sha256": "3daf6d9495e0a2a4277e97d79a2b47624e23dc3b8812a6b18c2444e80e420fb9"
+  },
+  {
+    "path": "수강생용/02_응용/07_project/README.md",
+    "bytes": 4249,
+    "sha256": "e4186ee00853b29c9872941045b9ee998f96368bfec85759f1f07ac16f490f6d"
+  },
+  {
+    "path": "수강생용/02_응용/07_project/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/02_응용/07_project/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/02_응용/07_project/main.py",
+    "bytes": 4087,
+    "sha256": "da9ac1d169702616be9a022166ab5a754dd76d98e1fe71f2cba2a641a045132c"
+  },
+  {
+    "path": "수강생용/02_응용/07_project/queries.py",
+    "bytes": 491,
+    "sha256": "7d1dcf61613438d8e5e98c45b6059b42d6e86aeb560b265e23bcaa4905e15bfe"
+  },
+  {
+    "path": "수강생용/02_응용/07_project/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/02_응용/07_project/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/02_응용/07_project/실습07_기록.md",
+    "bytes": 701,
+    "sha256": "6101167467ddb2bdc41761849710d225cd68b0729c7670e91584e2338372ccc2"
+  },
+  {
+    "path": "수강생용/02_응용/07_project/예상결과.md",
+    "bytes": 1346,
+    "sha256": "3daf6d9495e0a2a4277e97d79a2b47624e23dc3b8812a6b18c2444e80e420fb9"
+  },
+  {
+    "path": "수강생용/02_응용/07_project/일일프로젝트_기록.md",
+    "bytes": 2351,
+    "sha256": "275b9b42713afb61c73845273dbb513a75c90cb34060f56e9746b367f207487e"
+  },
+  {
+    "path": "수강생용/02_응용/08_daily_project/README.md",
+    "bytes": 3891,
+    "sha256": "225b4772396b44fc141819671bb0f79679c421f7951f4fe4faab755fa9d3e21e"
+  },
+  {
+    "path": "수강생용/02_응용/08_daily_project/지식초안.md",
+    "bytes": 496,
+    "sha256": "be32393d376b752c0b185192f2c18e2a6b5d121d3c9ba973df317b95bb724372"
+  },
+  {
+    "path": "수강생용/02_응용/README.md",
+    "bytes": 1790,
+    "sha256": "2903e709d48f1e08bae99e262a68c73665bd7902e1e4c5a188aeada3583dfcfd"
+  },
+  {
+    "path": "수강생용/02_응용/TODO_대응표.md",
+    "bytes": 3045,
+    "sha256": "1e2e9806ebe4a8adc32b655e0177f29c33f5719e8d0de2d6078896a2793f0413"
+  },
+  {
+    "path": "수강생용/03_심화/01_first_server/README.md",
+    "bytes": 2932,
+    "sha256": "2cd5e683df07d1e81ef5e21f2b758ee333c5b632fc1db421702c128bf32a1568"
+  },
+  {
+    "path": "수강생용/03_심화/01_first_server/main.py",
+    "bytes": 568,
+    "sha256": "088569d714475be4ab360ca81d9fa160c2014b3637d831979971ca7d919d7923"
+  },
+  {
+    "path": "수강생용/03_심화/01_first_server/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "수강생용/03_심화/01_first_server/tests/conftest.py",
+    "bytes": 647,
+    "sha256": "da828a8bfc250dbb7b313389e18e7f16c45bcb8d7850a8ac766cb7bfc8eec7d2"
+  },
+  {
+    "path": "수강생용/03_심화/01_first_server/tests/test_api.py",
+    "bytes": 734,
+    "sha256": "70cfbe894d31956a48c06967debef435cb2708cd560546b71ee03adea14d7e30"
+  },
+  {
+    "path": "수강생용/03_심화/01_first_server/예상결과.md",
+    "bytes": 184,
+    "sha256": "472b424cd2420ea15ac9ebb91f11caa37e92750aed4361c276da9ae1faa560c9"
+  },
+  {
+    "path": "수강생용/03_심화/02_read/README.md",
+    "bytes": 3616,
+    "sha256": "3d78ee5d89466542e95f25c57b138b4e13c1e4f842210d9621b0c5fb56778141"
+  },
+  {
+    "path": "수강생용/03_심화/02_read/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/03_심화/02_read/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/03_심화/02_read/logic.py",
+    "bytes": 1122,
+    "sha256": "90cede9d02a5a78dd9477223ba3814684176cee2fca5a7d70d832a56a316e4f8"
+  },
+  {
+    "path": "수강생용/03_심화/02_read/main.py",
+    "bytes": 872,
+    "sha256": "54fe8ad3c9b322b27a20c6623b792966caaec86f0ad7e5004fbdf152710bf102"
+  },
+  {
+    "path": "수강생용/03_심화/02_read/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "수강생용/03_심화/02_read/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/03_심화/02_read/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/03_심화/02_read/tests/conftest.py",
+    "bytes": 986,
+    "sha256": "a33e053d3dceb6d241f93ae7a795fa66a59bc90b7b04b3c1bea41706d21e650e"
+  },
+  {
+    "path": "수강생용/03_심화/02_read/tests/test_api.py",
+    "bytes": 1516,
+    "sha256": "b36270ef50fa05948e4a88b543920e042ed6cae81382253b2e3761f928762ad5"
+  },
+  {
+    "path": "수강생용/03_심화/02_read/예상결과.md",
+    "bytes": 692,
+    "sha256": "54978bdfbfc73b6b15ea48d4d08d4567d55aac12396b707f7e161ce9b033ee28"
+  },
+  {
+    "path": "수강생용/03_심화/03_create/README.md",
+    "bytes": 3923,
+    "sha256": "744fd5955e66c608d226bfc6766850691f971541f7cbdb6c9bbaa98c67c872bb"
+  },
+  {
+    "path": "수강생용/03_심화/03_create/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/03_심화/03_create/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/03_심화/03_create/logic.py",
+    "bytes": 1319,
+    "sha256": "43b2e78421025608135eeab1b293d72a563546b6e4f993ddbefd147b48c396ec"
+  },
+  {
+    "path": "수강생용/03_심화/03_create/main.py",
+    "bytes": 898,
+    "sha256": "be6e6ca60c926e750e3cf0fb4280df1f715d01b7190ce3dae8d3bf8ba0d278c1"
+  },
+  {
+    "path": "수강생용/03_심화/03_create/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "수강생용/03_심화/03_create/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/03_심화/03_create/schemas.py",
+    "bytes": 381,
+    "sha256": "b57556dbfa47c16833bbd1c343998257ea93f56d973bc46b1442df0a496265e6"
+  },
+  {
+    "path": "수강생용/03_심화/03_create/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/03_심화/03_create/tests/conftest.py",
+    "bytes": 986,
+    "sha256": "a33e053d3dceb6d241f93ae7a795fa66a59bc90b7b04b3c1bea41706d21e650e"
+  },
+  {
+    "path": "수강생용/03_심화/03_create/tests/test_api.py",
+    "bytes": 3453,
+    "sha256": "5eec4edbc0746cca0cfc34f4f951cdcdaef984bb792ad263ea62dd5de02e707a"
+  },
+  {
+    "path": "수강생용/03_심화/03_create/예상결과.md",
+    "bytes": 983,
+    "sha256": "4ca14cb1b7cb66f69661567825c43822a59b17407f6e6cd85439948ec52d54f6"
+  },
+  {
+    "path": "수강생용/03_심화/04_update/README.md",
+    "bytes": 4061,
+    "sha256": "733d9ed2e2cb262c00d305fcaebd24ce20f52cbf76fda30a11c77d3d5de63d13"
+  },
+  {
+    "path": "수강생용/03_심화/04_update/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/03_심화/04_update/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/03_심화/04_update/logic.py",
+    "bytes": 1820,
+    "sha256": "d669fcca599cfbe79e0f9304d3952450cd805b8e25da29cc639692f309b8d8a1"
+  },
+  {
+    "path": "수강생용/03_심화/04_update/main.py",
+    "bytes": 1391,
+    "sha256": "c458efb28be4e6ee6aa859070d6ca9c1b68d586c66c62a43a41e7b2bb65fd4f4"
+  },
+  {
+    "path": "수강생용/03_심화/04_update/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "수강생용/03_심화/04_update/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/03_심화/04_update/schemas.py",
+    "bytes": 381,
+    "sha256": "b57556dbfa47c16833bbd1c343998257ea93f56d973bc46b1442df0a496265e6"
+  },
+  {
+    "path": "수강생용/03_심화/04_update/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/03_심화/04_update/tests/conftest.py",
+    "bytes": 986,
+    "sha256": "a33e053d3dceb6d241f93ae7a795fa66a59bc90b7b04b3c1bea41706d21e650e"
+  },
+  {
+    "path": "수강생용/03_심화/04_update/tests/test_api.py",
+    "bytes": 4340,
+    "sha256": "8e08224279244a1d649f30592268d6142b46bb37d752326e73b106ba7a6959e6"
+  },
+  {
+    "path": "수강생용/03_심화/04_update/예상결과.md",
+    "bytes": 1153,
+    "sha256": "92c71f68a661dfd0af5a7ce0fb44112e0b303bf061df8d62c8ab72fdd07da947"
+  },
+  {
+    "path": "수강생용/03_심화/05_delete/README.md",
+    "bytes": 4192,
+    "sha256": "a21d557588de56cabbb4ccd412acbd2e9efef809db5aa7aa49091ab146777591"
+  },
+  {
+    "path": "수강생용/03_심화/05_delete/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/03_심화/05_delete/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/03_심화/05_delete/logic.py",
+    "bytes": 1843,
+    "sha256": "a9998a77f83110fdc9430ad3d3a6ccdaa86759c59cfa759a740f8d4cc9f7ef1f"
+  },
+  {
+    "path": "수강생용/03_심화/05_delete/main.py",
+    "bytes": 1672,
+    "sha256": "6759c7bca337a14bfd73ba1bacd834f83a4b0121d5d97bc145194cec4224bd28"
+  },
+  {
+    "path": "수강생용/03_심화/05_delete/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "수강생용/03_심화/05_delete/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/03_심화/05_delete/schemas.py",
+    "bytes": 381,
+    "sha256": "b57556dbfa47c16833bbd1c343998257ea93f56d973bc46b1442df0a496265e6"
+  },
+  {
+    "path": "수강생용/03_심화/05_delete/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/03_심화/05_delete/tests/conftest.py",
+    "bytes": 986,
+    "sha256": "a33e053d3dceb6d241f93ae7a795fa66a59bc90b7b04b3c1bea41706d21e650e"
+  },
+  {
+    "path": "수강생용/03_심화/05_delete/tests/test_api.py",
+    "bytes": 5852,
+    "sha256": "07dd3dfb992e3e2b071984427d7a4ed69efba4bec0b0e2d13016632b2c682035"
+  },
+  {
+    "path": "수강생용/03_심화/05_delete/예상결과.md",
+    "bytes": 1272,
+    "sha256": "3d44a0a58b4b72261cdc7ca42767b7da028add92bc778def8834fcbcc40a8c1f"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/README.md",
+    "bytes": 4263,
+    "sha256": "b898c75bc42218ffccdf6349dcf71667d987e5e56d8860aebff740c418b1c4dc"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/app/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/app/main.py",
+    "bytes": 638,
+    "sha256": "f84ecf91a9638ea2afcbce38b9970749fa939420293d0a148f69cc396d39f047"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/app/repositories/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/app/repositories/json_knowledge.py",
+    "bytes": 2679,
+    "sha256": "66fe84b8d5b2e65148796083e1e2fc246d6ebd396d1fa9e3905318732dd0fede"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/app/routers/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/app/routers/knowledge.py",
+    "bytes": 1611,
+    "sha256": "0677d09356e31e72caf92e0deed6e21c5a246d4be359ab187d95f1bc57693734"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/app/schemas.py",
+    "bytes": 381,
+    "sha256": "b57556dbfa47c16833bbd1c343998257ea93f56d973bc46b1442df0a496265e6"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/tests/conftest.py",
+    "bytes": 1019,
+    "sha256": "a2b2099cfdc6659de0bae1363c08fca2b85a2fae8c3bab4478ee57c8b58e33d8"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/tests/test_api.py",
+    "bytes": 6072,
+    "sha256": "767adb887032eaa8ca92ee62cdf6e106a68042524b4b45e6f4a30f0b49b67958"
+  },
+  {
+    "path": "수강생용/03_심화/06_structure/예상결과.md",
+    "bytes": 1272,
+    "sha256": "3d44a0a58b4b72261cdc7ca42767b7da028add92bc778def8834fcbcc40a8c1f"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/README.md",
+    "bytes": 5019,
+    "sha256": "8245077646e92097a6459859aaaeed1298d0cdb3144883b26544e9bf72296198"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/app/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/app/main.py",
+    "bytes": 379,
+    "sha256": "d8e4b921c8cd10e327c54955e9af6cd103b177f297e0b8784438f35bfce55ab9"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/app/repositories/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/app/repositories/json_knowledge.py",
+    "bytes": 2681,
+    "sha256": "02e834f675887a17d9f181cbd63ed6c8ea092d2120371a0e26363a4922ec24b8"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/app/routers/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/app/routers/knowledge.py",
+    "bytes": 1598,
+    "sha256": "be87496fa1b5360b2547b5d0c8d1f75879c57c3873a0b68d0b26ed6331ff3d3d"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/app/schemas.py",
+    "bytes": 381,
+    "sha256": "b57556dbfa47c16833bbd1c343998257ea93f56d973bc46b1442df0a496265e6"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/tests/conftest.py",
+    "bytes": 1019,
+    "sha256": "a2b2099cfdc6659de0bae1363c08fca2b85a2fae8c3bab4478ee57c8b58e33d8"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/tests/test_api.py",
+    "bytes": 6281,
+    "sha256": "f7f15a46fd3bcfbe89ab870774e18ca6235fdde2dc1ca9c38bbf56b9e5b5a7ff"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/tests/test_daily_project.py",
+    "bytes": 2489,
+    "sha256": "fae1cbb5f5272b2edf0b45091aeb72037c5e8bf12a34376ef4d7cf6e741f8c3c"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/실습07_기록.md",
+    "bytes": 701,
+    "sha256": "6101167467ddb2bdc41761849710d225cd68b0729c7670e91584e2338372ccc2"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/예상결과.md",
+    "bytes": 1272,
+    "sha256": "3d44a0a58b4b72261cdc7ca42767b7da028add92bc778def8834fcbcc40a8c1f"
+  },
+  {
+    "path": "수강생용/03_심화/07_project/일일프로젝트_기록.md",
+    "bytes": 2351,
+    "sha256": "275b9b42713afb61c73845273dbb513a75c90cb34060f56e9746b367f207487e"
+  },
+  {
+    "path": "수강생용/03_심화/08_daily_project/README.md",
+    "bytes": 3891,
+    "sha256": "225b4772396b44fc141819671bb0f79679c421f7951f4fe4faab755fa9d3e21e"
+  },
+  {
+    "path": "수강생용/03_심화/08_daily_project/지식초안.md",
+    "bytes": 496,
+    "sha256": "be32393d376b752c0b185192f2c18e2a6b5d121d3c9ba973df317b95bb724372"
+  },
+  {
+    "path": "수강생용/03_심화/README.md",
+    "bytes": 1790,
+    "sha256": "f0a329b8f8020a9e9e3f6b1e84aa4635f7e6232c439607dde5d8c654c314f6bb"
+  },
+  {
+    "path": "수강생용/03_심화/TODO_대응표.md",
+    "bytes": 4091,
+    "sha256": "d151dd9427f085dc7e51f2160c72ee26bcc6661ea709dde6fa2ab90039aca14f"
+  },
+  {
+    "path": "수강생용/README.md",
+    "bytes": 4779,
+    "sha256": "448f870cd001484520fe7ddd7676863cd025745f0b81c8c61bd1a51c5ba37969"
+  },
+  {
+    "path": "수강생용/requirements-template.txt",
+    "bytes": 34,
+    "sha256": "05907b76edc9cc45350df41dbe02a7b3462cef8e327f63acd78b94d1692d9618"
+  },
+  {
+    "path": "수강생용/requirements-test.txt",
+    "bytes": 48,
+    "sha256": "41da2fb2041cff8c59ccdf17e51131deb2b4cc83186587201f271eda0752028f"
+  },
+  {
+    "path": "수강생용/requirements.txt",
+    "bytes": 50,
+    "sha256": "2e52e4866a69b36476827a6bc7d170799e67c15e25f2cc7ed2d259305681531e"
+  },
+  {
+    "path": "수강생용/tools/check_todos.py",
+    "bytes": 1198,
+    "sha256": "13dc0de0642bd647bb0fef6ba9c037d23532cccdc628b5b1040df8d31986777f"
+  },
+  {
+    "path": "수강생용/tools/send_request.py",
+    "bytes": 2193,
+    "sha256": "6f8442eddb054ce6b261cb81d4bddb58039d22ee2502caff79a750c2c407b93d"
+  },
+  {
+    "path": "수강생용/tools/show_versions.py",
+    "bytes": 658,
+    "sha256": "4ebcb2bbc3bfe45391c5822cc84c2d702023b2fca465e0f0ca9508f5cec3900f"
+  },
+  {
+    "path": "수강생용/검수결과.md",
+    "bytes": 1004,
+    "sha256": "bfd4c2bad33085b6072c29b8bfff3d1ee684102d99a8bd25db8656d10978ba70"
+  },
+  {
+    "path": "수강생용/공통안내/API_계약.md",
+    "bytes": 2953,
+    "sha256": "125e890e3816246ce68bbf00493099774718971b8cab021d632977b7aa701a7e"
+  },
+  {
+    "path": "수강생용/공통안내/오류해결.md",
+    "bytes": 2264,
+    "sha256": "66407b92c38bebd4f2b411c445a33acc00ca3ae849981a4fdf055d623df19b94"
+  },
+  {
+    "path": "수강생용/공통안내/요청예시/create.json",
+    "bytes": 120,
+    "sha256": "d3a52e6cec8478e9157dc6f7de4a6bfc6ed7ff8764356de254e42c81a23b06a4"
+  },
+  {
+    "path": "수강생용/공통안내/요청예시/invalid.json",
+    "bytes": 78,
+    "sha256": "1cef64c7690f1e0f0a9f8ee71672b17574ed595129795f7d414f5245fbf37bc5"
+  },
+  {
+    "path": "수강생용/공통안내/요청예시/update.json",
+    "bytes": 138,
+    "sha256": "6d142c8ff2eb93bebe4f927c6895372d1ff46d9a7d0bcfb6d54bf3c8c05275d4"
+  },
+  {
+    "path": "수강생용/공통안내/자료기준.md",
+    "bytes": 1833,
+    "sha256": "17dfdb0b3e1f5019ddc62816efc0c3ae66273e01f2548f628cc344c7d6af039c"
+  },
+  {
+    "path": "수강생용/참고예제/Template_비교/README.md",
+    "bytes": 753,
+    "sha256": "0e00bcba5447795257124d3097a9b026f639e5f5ed3a33629b7b60b1194574d7"
+  },
+  {
+    "path": "수강생용/참고예제/Template_비교/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "수강생용/참고예제/Template_비교/main.py",
+    "bytes": 792,
+    "sha256": "cefae81e1e258be9cc9972baa37eeec34aed2e1da19289eb505cb96008e68900"
+  },
+  {
+    "path": "수강생용/참고예제/Template_비교/storage.py",
+    "bytes": 972,
+    "sha256": "30c2b02e8a2d1927a448328cf3596167d2a6a591540a37a93e5ee0f5f5f76da8"
+  },
+  {
+    "path": "수강생용/참고예제/Template_비교/templates/knowledge.html",
+    "bytes": 348,
+    "sha256": "42237a565c4ad38d28fb09b4620610b84e8342e830230bde4d7dca20bd84e737"
+  },
+  {
+    "path": "참고MVP/.gitignore",
+    "bytes": 57,
+    "sha256": "9cb826d5cf8ef6ea1aece7e3ccaf62373f3c5dc94f61a970fbbd667149f21216"
+  },
+  {
+    "path": "참고MVP/README.md",
+    "bytes": 2652,
+    "sha256": "3bc2073d292ccabe7c101cf531fd240708c821215108a334568cf78ed62487ac"
+  },
+  {
+    "path": "참고MVP/app/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "참고MVP/app/main.py",
+    "bytes": 379,
+    "sha256": "d8e4b921c8cd10e327c54955e9af6cd103b177f297e0b8784438f35bfce55ab9"
+  },
+  {
+    "path": "참고MVP/app/repositories/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "참고MVP/app/repositories/json_knowledge.py",
+    "bytes": 2480,
+    "sha256": "1297edec522dd8a9452315731a4db060f589add47adb6a274b550a0b2684c13e"
+  },
+  {
+    "path": "참고MVP/app/routers/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "참고MVP/app/routers/knowledge.py",
+    "bytes": 1456,
+    "sha256": "b783a4c8a232df40042c9b431437eeb28d3aab09223ed21f8acdb28b8196d212"
+  },
+  {
+    "path": "참고MVP/app/schemas.py",
+    "bytes": 381,
+    "sha256": "b57556dbfa47c16833bbd1c343998257ea93f56d973bc46b1442df0a496265e6"
+  },
+  {
+    "path": "참고MVP/data/knowledge.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "참고MVP/data/knowledge.seed.json",
+    "bytes": 470,
+    "sha256": "5f46a246f50d59b4ba56a2a4828240af9b5b30db6e4172af3d9d885e64ef716b"
+  },
+  {
+    "path": "참고MVP/pytest.ini",
+    "bytes": 41,
+    "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+  },
+  {
+    "path": "참고MVP/requirements-test.txt",
+    "bytes": 48,
+    "sha256": "41da2fb2041cff8c59ccdf17e51131deb2b4cc83186587201f271eda0752028f"
+  },
+  {
+    "path": "참고MVP/requirements.txt",
+    "bytes": 50,
+    "sha256": "2e52e4866a69b36476827a6bc7d170799e67c15e25f2cc7ed2d259305681531e"
+  },
+  {
+    "path": "참고MVP/reset_data.py",
+    "bytes": 1692,
+    "sha256": "cdbac5ad7e10852095ffbb9c93fab15d2ccad7759e943226d9bac64ae866756f"
+  },
+  {
+    "path": "참고MVP/tests/conftest.py",
+    "bytes": 1019,
+    "sha256": "a2b2099cfdc6659de0bae1363c08fca2b85a2fae8c3bab4478ee57c8b58e33d8"
+  },
+  {
+    "path": "참고MVP/tests/test_api.py",
+    "bytes": 6041,
+    "sha256": "d67466bbb1d1bb03c3c71a3b7685cc3bfed1399011d2fe8690c89f368613550d"
+  },
+  {
+    "path": "참고MVP/tests/test_daily_project.py",
+    "bytes": 2321,
+    "sha256": "8d0d1ec23c97d145f1bd3fb2e8e401293139d923f8efc728561adf1a395b0925"
+  },
+  {
+    "path": "참고MVP/검수결과.md",
+    "bytes": 3517,
+    "sha256": "e6781fa7781398153b3de095c2d090ca239e7facfe7f6b1fe497a488cec2ab8a"
+  }
+]

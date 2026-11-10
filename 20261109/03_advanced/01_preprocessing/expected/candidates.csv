@@ -1,0 +1,10 @@
+﻿case,candidate,cer,backend,inference_ms
+rotated,raw,0.02531645569620253,recorded_tesseract,
+rotated,otsu,0.03164556962025317,recorded_tesseract,
+rotated,corrected,0.006329113924050633,recorded_tesseract,
+shadow,raw,1.0,recorded_tesseract,
+shadow,otsu,1.0,recorded_tesseract,
+shadow,corrected,0.006329113924050633,recorded_tesseract,
+lowres,raw,0.06329113924050633,recorded_tesseract,
+lowres,otsu,0.15822784810126583,recorded_tesseract,
+lowres,corrected,0.0189873417721519,recorded_tesseract,

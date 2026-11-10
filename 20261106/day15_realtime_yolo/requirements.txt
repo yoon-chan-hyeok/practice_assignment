@@ -1,0 +1,4 @@
+# 기존 Day15 가상환경에 설치합니다. GPU용 torch를 임의로 재설치하지 않습니다.
+ultralytics>=8.4.0,<9.0
+opencv-python>=4.8,<5.0
+PyYAML>=6.0,<7.0

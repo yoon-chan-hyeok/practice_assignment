@@ -1,0 +1,16 @@
+﻿document_id,field,predicted,reference,exact
+doc01,issued_at,2026-11-01,2026-11-01,True
+doc01,supplier,BLUE CAFE,BLUE CAFE,True
+doc01,total_amount,27000,27000,True
+doc02,issued_at,2026-11-02,2026-11-02,True
+doc02,supplier,PINE BOOKS,PINE BOOKS,True
+doc02,total_amount,18000,18000,True
+doc03,issued_at,2026-11-03,2026-11-03,True
+doc03,supplier,ALPHA STUDIO,ALPHA STUDIO,True
+doc03,total_amount,33000,33000,True
+doc04,issued_at,2026-11-04,2026-11-04,True
+doc04,supplier,NOVA MARKET,NOVA MARKET,True
+doc04,total_amount,12500,12500,True
+doc05,issued_at,2026-11-05,2026-11-05,True
+doc05,supplier,LIME LAB,LIME LAB,True
+doc05,total_amount,24000,24000,True
