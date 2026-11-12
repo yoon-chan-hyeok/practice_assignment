@@ -1,0 +1,25 @@
+{
+  "state": "S0",
+  "columns": [
+    "id",
+    "title",
+    "category"
+  ],
+  "rows": [
+    [
+      1,
+      "실습 파일 보관",
+      "learning"
+    ],
+    [
+      2,
+      "서버 실행",
+      "environment"
+    ],
+    [
+      3,
+      "질문 작성",
+      "learning"
+    ]
+  ]
+}

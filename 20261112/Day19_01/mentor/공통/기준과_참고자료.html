@@ -1,0 +1,26 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>기준 자료와 참고문서</title><style>body{font-family:"Malgun Gothic","Apple SD Gothic Neo",Arial,sans-serif;color:#1f2937;background:#eef2f6;margin:0;line-height:1.7}main{max-width:1040px;margin:24px auto;padding:36px;background:white;border-radius:12px}h1{font-size:28px;line-height:1.35;color:#153454;border-bottom:4px solid #237785;padding-bottom:16px}h2{font-size:22px;color:#153454;margin-top:32px}h3{font-size:18px;margin-top:24px}p,li{font-size:15px}a{color:#09607c}table{border-collapse:collapse;width:100%;margin:20px 0;font-size:14px}th,td{border:1px solid #ccd6df;padding:9px;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#eaf1f6}pre{background:#102336;color:#edf5fa;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.55}code{font-family:Consolas,"Malgun Gothic",monospace;font-size:13px}blockquote{border-left:5px solid #237785;padding:6px 18px;background:#f1f7f8;margin:18px 0}img{max-width:100%}.badge{font-size:13px;color:#476376}nav{font-size:14px}section.card{border:1px solid #ccd6df;border-radius:8px;padding:12px 20px;margin:12px 0}.erd{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.entity{border:2px solid #237785;border-radius:8px;flex:1;min-width:250px;padding:14px}.entity h3{margin-top:0}.link{text-align:center;font-weight:700;color:#237785}footer{border-top:1px solid #d5dee7;padding-top:16px;margin-top:36px;font-size:12px;color:#5c6b77}@media print{body{background:white}main{padding:0;margin:0;max-width:none}h2,h3{break-after:avoid}pre,table{break-inside:avoid}nav{display:none}}</style><main><div class="badge">DAY 19 · 2026.11.12 오전 · 명세 기반 실습 v2</div><h1>기준 자료와 참고문서</h1>
+<h2>이 패키지의 기준</h2>
+<p>사용자와 확정한 <strong>오전 두 실습 구성</strong>을 우선합니다. 기존 50분별 프로젝트 v1을 대체합니다.
+이전에 제작한 지식 관리 교안의 용어·계약을 재사용합니다.</p>
+<ul>
+<li>Day17_Knowledge_API_Daily_Project_84slides_Recovery.pptx: 48장 지식 CRUD 계약. /api/knowledge, PUT, title·content·category.</li>
+<li>Day18_PostgreSQL_Knowledge_DB_20261111.pptx: 69~72장 두 테이블의 DDL·초기 데이터. categories·knowledge, 1~30/80/2000 길이, ON DELETE RESTRICT.</li>
+<li>이번 추가 설계: 서로 독립적인 구축용/CRUD용 개인 DB, 단계별 구현 골격, 고정 입력·예상 결과, 기능별 완료 체크.</li>
+</ul>
+<p>오래된 상품·주문·4단계 교안은 이 패키지의 구현 기준이 아닙니다. 오후 연동·ORM·Migration 과제는 만들지 않았습니다.
+아래 공식 문서는 이미 정한 계약의 기술 검토에 사용했습니다. 새 교육 범위를 추가하기 위한 자료가 아닙니다.</p>
+<h2>공식 참고문서 (확인일 2026-11-08)</h2>
+<ul>
+<li>FastAPI 입력: https://fastapi.tiangolo.com/tutorial/body/</li>
+<li>FastAPI 상태코드: https://fastapi.tiangolo.com/tutorial/response-status-code/</li>
+<li>FastAPI 오류: https://fastapi.tiangolo.com/tutorial/handling-errors/</li>
+<li>FastAPI 테스트: https://fastapi.tiangolo.com/tutorial/testing/</li>
+<li>PostgreSQL 18 제약조건: https://www.postgresql.org/docs/18/ddl-constraints.html</li>
+<li>PostgreSQL 18 IDENTITY: https://www.postgresql.org/docs/18/ddl-identity-columns.html</li>
+<li>PostgreSQL 18 RETURNING: https://www.postgresql.org/docs/18/dml-returning.html</li>
+<li>PostgreSQL 18 정렬: https://www.postgresql.org/docs/18/queries-order.html</li>
+<li>PostgreSQL 18 트랜잭션: https://www.postgresql.org/docs/18/tutorial-transactions.html</li>
+<li>PostgreSQL 18 시퀀스: https://www.postgresql.org/docs/18/functions-sequence.html</li>
+</ul>
+<p>실제 검수 여부·도구 버전·미검증 범위는 강사용 운영/검수결과.md를 확인합니다. 예상결과 파일은 실행 사실을 주장하는 로그가 아닙니다.</p>
+<footer>수업용 가상 데이터 · 로컬 환경 전용 · API와 PostgreSQL은 아직 연결하지 않습니다.</footer></main></html>

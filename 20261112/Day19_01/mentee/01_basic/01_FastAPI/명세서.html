@@ -1,0 +1,131 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>실습 1 · 기본필수 API 명세서</title><style>body{font-family:"Malgun Gothic","Apple SD Gothic Neo",Arial,sans-serif;color:#1f2937;background:#eef2f6;margin:0;line-height:1.7}main{max-width:1040px;margin:24px auto;padding:36px;background:white;border-radius:12px}h1{font-size:28px;line-height:1.35;color:#153454;border-bottom:4px solid #237785;padding-bottom:16px}h2{font-size:22px;color:#153454;margin-top:32px}h3{font-size:18px;margin-top:24px}p,li{font-size:15px}a{color:#09607c}table{border-collapse:collapse;width:100%;margin:20px 0;font-size:14px}th,td{border:1px solid #ccd6df;padding:9px;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#eaf1f6}pre{background:#102336;color:#edf5fa;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.55}code{font-family:Consolas,"Malgun Gothic",monospace;font-size:13px}blockquote{border-left:5px solid #237785;padding:6px 18px;background:#f1f7f8;margin:18px 0}img{max-width:100%}.badge{font-size:13px;color:#476376}nav{font-size:14px}section.card{border:1px solid #ccd6df;border-radius:8px;padding:12px 20px;margin:12px 0}.erd{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.entity{border:2px solid #237785;border-radius:8px;flex:1;min-width:250px;padding:14px}.entity h3{margin-top:0}.link{text-align:center;font-weight:700;color:#237785}footer{border-top:1px solid #d5dee7;padding-top:16px;margin-top:36px;font-size:12px;color:#5c6b77}@media print{body{background:white}main{padding:0;margin:0;max-width:none}h2,h3{break-after:avoid}pre,table{break-inside:avoid}nav{display:none}}</style><main><div class="badge">DAY 19 · 2026.11.12 오전 · 명세 기반 실습 v2</div><h1>실습 1 · 기본필수 API 명세서</h1>
+<h2>목표와 범위</h2>
+<p>명세의 요청에 대해 <strong>예상 응답과 실제 JSON 저장 결과</strong>가 나오도록 구현합니다.
+저장소는 이 프로젝트의 <code>data/knowledge.json</code>입니다. <strong>PostgreSQL·ORM·Migration은 사용하지 않습니다.</strong>
+새 주제를 정하지 않고 제공된 지식 데이터로 결과를 대조합니다. 오후 자료는 포함하지 않습니다.</p>
+<h2>1. 실행 위치와 구현 파일</h2>
+<p>VS Code에서 이 <code>01_FastAPI</code> 폴더를 엽니다. 기존에 정상 실행되는 Python 가상환경을 선택합니다.</p>
+<pre><code class="language-powershell">python -m pip install -r requirements.txt
+python -m uvicorn main:app --host 127.0.0.1 --port 8000 --reload
+</code></pre>
+<p>브라우저에서 <code>http://127.0.0.1:8000/docs</code>를 엽니다. 다른 실습 서버는 Ctrl+C로 종료합니다.
+이 폴더에 필요한 환경이 이미 있으면 불필요하게 재설치하지 않습니다. <code>.venv</code> 활성화가 막히면 <a href="../../%EA%B3%B5%ED%86%B5/%ED%99%98%EA%B2%BD_%EC%8B%A4%ED%96%89%EC%95%88%EB%82%B4.html">공통 안내</a>를 참고합니다.</p>
+<p><code>main.py</code>의 6개 TODO만 완성합니다. 입력 모델·파일 보조 함수는 제공됩니다.</p>
+<p>수강생용 TODO의 <code>NotImplementedError</code>는 의도적인 미완성 표시입니다. 서버와 <code>/docs</code>가 열려도 모든 기능이 완성된 것은 아닙니다.
+<strong>정답 JSON을 상수로 반환하지 마세요.</strong> 저장 파일을 읽고 실제 대상만 변경해야 합니다.</p>
+<h2>2. 입력·응답 계약</h2>
+<table>
+<thead>
+<tr>
+  <th>필드</th>
+  <th>요청 자료형</th>
+  <th>필수</th>
+  <th>규칙</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>title</td>
+  <td>문자열</td>
+  <td>예</td>
+  <td>1~80자</td>
+</tr>
+<tr>
+  <td>content</td>
+  <td>문자열</td>
+  <td>예</td>
+  <td>1~2000자</td>
+</tr>
+<tr>
+  <td>category</td>
+  <td>문자열</td>
+  <td>예</td>
+  <td>1~30자, 특정 목록으로 제한하지 않음</td>
+</tr>
+<tr>
+  <td>id</td>
+  <td>서버 응답의 정수</td>
+  <td>요청에서 작성하지 않음</td>
+  <td>서버가 next_id로 생성</td>
+</tr>
+</tbody>
+</table>
+<p>POST와 PUT은 같은 입력 모델을 씁니다. <strong>PUT도 세 필드를 모두 보내며 ID는 유지</strong>합니다. 없는 ID에 PUT하면 새 항목을 만들지 않습니다.
+제목은 중복될 수 있습니다. 공백 자동 제거·공백만 입력 거부·추가 필드 금지는 이번 공통 계약에 넣지 않습니다.
+현재 제공 모델은 Pydantic 기본 동작을 사용하므로 추가 입력 필드는 무시합니다. 일반 요청에는 위 세 필드만 보내세요.
+응답 항목은 <code>id</code>, <code>title</code>, <code>content</code>, <code>category</code> 네 필드입니다. JSON 객체 키의 표시 순서는 비교하지 않습니다.</p>
+<table>
+<thead>
+<tr>
+  <th>Method</th>
+  <th>Path</th>
+  <th>입력</th>
+  <th>성공</th>
+  <th>실패</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>GET</td>
+  <td>/health</td>
+  <td>없음</td>
+  <td>200 · {&quot;status&quot;:&quot;ok&quot;}</td>
+  <td>파일·DB·모델 전체 준비 상태를 뜻하지 않음</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td>/api/knowledge</td>
+  <td>없음</td>
+  <td>200 · id 오름차순 배열</td>
+  <td>빈 목록도 200·[]</td>
+</tr>
+<tr>
+  <td>GET</td>
+  <td>/api/knowledge/{knowledge_id}</td>
+  <td>정수 Path</td>
+  <td>200 · 지식 하나</td>
+  <td>없는 정수 404 / 정수 아님 422</td>
+</tr>
+<tr>
+  <td>POST</td>
+  <td>/api/knowledge</td>
+  <td>JSON Body 세 필드</td>
+  <td>201 · 생성된 지식</td>
+  <td>잘못된 Body 422</td>
+</tr>
+<tr>
+  <td>PUT</td>
+  <td>/api/knowledge/{knowledge_id}</td>
+  <td>정수 Path + Body 세 필드</td>
+  <td>200 · 수정된 지식</td>
+  <td>정상 Body+없는 ID 404 / 잘못된 입력 422</td>
+</tr>
+<tr>
+  <td>DELETE</td>
+  <td>/api/knowledge/{knowledge_id}</td>
+  <td>정수 Path</td>
+  <td>204 · 본문 없음</td>
+  <td>없는 정수 404</td>
+</tr>
+</tbody>
+</table>
+<p>없는 지식의 오류 본문은 <strong><code>{&quot;detail&quot;:&quot;Knowledge not found&quot;}</code></strong>로 통일합니다.
+422는 FastAPI 기본 오류 형식을 유지합니다. 상태와 <code>detail</code>의 오류 위치(<code>loc</code>)·규칙을 확인하며 영어 문구 전체 일치는 요구하지 않습니다.</p>
+<h2>3. 데이터 변경 규칙</h2>
+<p>생성은 새 ID를 발급하고 항목 수와 next_id를 각각 1 늘립니다. 수정은 ID·항목 수·next_id를 바꾸지 않습니다.
+삭제는 해당 항목 하나만 제거하며 next_id를 줄이지 않습니다. 읽기·404·422는 저장 내용을 바꾸지 않습니다.
+서버 시작 때 seed를 자동 복사하지 않습니다. 수정·삭제 결과는 서버 재시작 후에도 유지되어야 합니다.
+기본 저장 파일 형식은 <code>{&quot;next_id&quot;: 4, &quot;entries&quot;: [...]}</code>입니다. API 응답에는 next_id를 노출하지 않습니다.</p>
+<h2>4. 수준별 추가 계약</h2>
+<p>기본필수에는 분류 Query 구현을 요구하지 않습니다. 다섯 CRUD와 저장·오류 처리를 먼저 완성합니다. 자동 테스트 작성도 요구하지 않습니다.</p>
+<h2>5. 완료 기준</h2>
+<p><a href="%EC%98%88%EC%83%81%EA%B2%B0%EA%B3%BC.html">예상 결과</a>의 순서대로 응답·실제 저장·재시작을 확인합니다.
+[ ] 목록·상세  [ ] 생성  [ ] PUT  [ ] 삭제  [ ] 404·422  [ ] 변경 내용 저장 유지</p>
+<p>자동 확인을 실행하려면 다음 명령을 사용합니다. <strong>원본 작업 파일은 건드리지 않고 임시 복사본을 검사</strong>합니다.
+검사 도구를 작성하는 것은 기본필수·응용의 과제가 아닙니다.</p>
+<pre><code class="language-powershell">python -m pip install -r requirements-check.txt
+python check_api.py
+</code></pre>
+<p>화면에서 수동으로 확인해도 공통 완료입니다. 자동 확인은 API 응답과 파일 상태를 검사하지만 실제 서버 종료·재시작은 명세의 수동 단계로도 확인하세요.
+단일 PC·단일 서버 프로세스용이며 외부 공개·인증·운영 배포는 범위에 없습니다.</p>
+<footer>수업용 가상 데이터 · 로컬 환경 전용 · API와 PostgreSQL은 아직 연결하지 않습니다.</footer></main></html>

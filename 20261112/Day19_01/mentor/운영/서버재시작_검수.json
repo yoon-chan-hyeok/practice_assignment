@@ -1,0 +1,74 @@
+[
+  {
+    "mode": "instructor",
+    "level": "B",
+    "server_starts": 3,
+    "real_restarts": 2,
+    "create_update_file": true,
+    "updated_after_restart": true,
+    "invalid_keeps_file": true,
+    "delete_204_empty": true,
+    "deleted_after_restart": true,
+    "original_records_preserved": true
+  },
+  {
+    "mode": "instructor",
+    "level": "A",
+    "server_starts": 3,
+    "real_restarts": 2,
+    "create_update_file": true,
+    "updated_after_restart": true,
+    "invalid_keeps_file": true,
+    "delete_204_empty": true,
+    "deleted_after_restart": true,
+    "original_records_preserved": true
+  },
+  {
+    "mode": "instructor",
+    "level": "H",
+    "server_starts": 3,
+    "real_restarts": 2,
+    "create_update_file": true,
+    "updated_after_restart": true,
+    "invalid_keeps_file": true,
+    "delete_204_empty": true,
+    "deleted_after_restart": true,
+    "original_records_preserved": true
+  },
+  {
+    "mode": "solved_student",
+    "level": "B",
+    "server_starts": 3,
+    "real_restarts": 2,
+    "create_update_file": true,
+    "updated_after_restart": true,
+    "invalid_keeps_file": true,
+    "delete_204_empty": true,
+    "deleted_after_restart": true,
+    "original_records_preserved": true
+  },
+  {
+    "mode": "solved_student",
+    "level": "A",
+    "server_starts": 3,
+    "real_restarts": 2,
+    "create_update_file": true,
+    "updated_after_restart": true,
+    "invalid_keeps_file": true,
+    "delete_204_empty": true,
+    "deleted_after_restart": true,
+    "original_records_preserved": true
+  },
+  {
+    "mode": "solved_student",
+    "level": "H",
+    "server_starts": 3,
+    "real_restarts": 2,
+    "create_update_file": true,
+    "updated_after_restart": true,
+    "invalid_keeps_file": true,
+    "delete_204_empty": true,
+    "deleted_after_restart": true,
+    "original_records_preserved": true
+  }
+]

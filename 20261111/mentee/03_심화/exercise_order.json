@@ -1,0 +1,29 @@
+{
+  "1": [
+    "queries/01_connect.sql"
+  ],
+  "2": [
+    "queries/02_select.sql"
+  ],
+  "3": [
+    "schema/03_try_ddl.sql",
+    "seed/03_try_seed.sql",
+    "checks/03_try_verify.sql"
+  ],
+  "4": [
+    "changes/04_crud.sql"
+  ],
+  "5": [
+    "queries/05_reports.sql"
+  ],
+  "6": [
+    "checks/06_constraints.sql"
+  ],
+  "7": [
+    "transactions/07_transactions.sql",
+    "indexes/07_explain.sql"
+  ],
+  "8": [
+    "project/08_daily_project.sql"
+  ]
+}

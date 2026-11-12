@@ -1,0 +1,23 @@
+{
+  "next_id": 5,
+  "entries": [
+    {
+      "id": 1,
+      "title": "실습 파일 보관",
+      "content": "실습 파일은 개인 폴더에 보관합니다.",
+      "category": "learning"
+    },
+    {
+      "id": 2,
+      "title": "서버 실행",
+      "content": "프로젝트 폴더에서 서버를 실행합니다.",
+      "category": "environment"
+    },
+    {
+      "id": 3,
+      "title": "질문 작성",
+      "content": "오류 메시지와 시도한 작업을 함께 적습니다.",
+      "category": "learning"
+    }
+  ]
+}

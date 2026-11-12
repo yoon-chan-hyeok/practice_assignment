@@ -1,0 +1,25 @@
+{
+  "mode": "emit_only",
+  "date": "2026-11-07T14:15:53+0000",
+  "cases": [
+    {
+      "level": "B",
+      "database": "knowledge_lab_verify_fed635ec7353",
+      "expected_steps": 92,
+      "status": "not_executed"
+    },
+    {
+      "level": "A",
+      "database": "knowledge_lab_verify_a07db3af571c",
+      "expected_steps": 105,
+      "status": "not_executed"
+    },
+    {
+      "level": "H",
+      "database": "knowledge_lab_verify_21d47be352ba",
+      "expected_steps": 118,
+      "status": "not_executed"
+    }
+  ],
+  "status": "not_executed"
+}

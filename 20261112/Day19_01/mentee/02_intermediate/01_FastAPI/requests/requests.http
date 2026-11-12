@@ -1,0 +1,17 @@
+### 보조 자료: .http 확장이 없다면 /docs에서 같은 요청을 실행하세요.
+GET http://127.0.0.1:8000/api/knowledge
+
+### 생성
+POST http://127.0.0.1:8000/api/knowledge
+Content-Type: application/json
+
+{"title":"보충 학습","content":"복습 자료는 개인 폴더에서 확인합니다.","category":"learning"}
+
+### 아래 4는 예시입니다. 실제 생성 응답 ID로 바꾸세요.
+PUT http://127.0.0.1:8000/api/knowledge/4
+Content-Type: application/json
+
+{"title":"보충 학습","content":"복습 자료와 예제 코드를 함께 확인합니다.","category":"learning"}
+
+### 삭제
+DELETE http://127.0.0.1:8000/api/knowledge/4

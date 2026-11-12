@@ -1,0 +1,12 @@
+[
+  {
+    "slide": 69,
+    "table": "categories",
+    "equal_after_qualification_normalization": true
+  },
+  {
+    "slide": 70,
+    "table": "knowledge",
+    "equal_after_qualification_normalization": true
+  }
+]

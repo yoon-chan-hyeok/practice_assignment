@@ -1,0 +1,12 @@
+// 설계 참고 파일. SQL이 아닙니다. IDENTITY ALWAYS/CHECK/RESTRICT는 스키마명세서를 따릅니다.
+Table categories {
+  id bigint [pk, increment]
+  name varchar(30) [not null, unique]
+}
+Table knowledge {
+  id bigint [pk, increment]
+  title varchar(80) [not null]
+  content text [not null]
+  category_id bigint [not null]
+}
+Ref: knowledge.category_id > categories.id [delete: restrict]

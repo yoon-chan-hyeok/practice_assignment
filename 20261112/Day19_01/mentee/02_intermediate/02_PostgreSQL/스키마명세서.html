@@ -1,0 +1,98 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>실습 2A · 응용 ERD·스키마 명세서</title><style>body{font-family:"Malgun Gothic","Apple SD Gothic Neo",Arial,sans-serif;color:#1f2937;background:#eef2f6;margin:0;line-height:1.7}main{max-width:1040px;margin:24px auto;padding:36px;background:white;border-radius:12px}h1{font-size:28px;line-height:1.35;color:#153454;border-bottom:4px solid #237785;padding-bottom:16px}h2{font-size:22px;color:#153454;margin-top:32px}h3{font-size:18px;margin-top:24px}p,li{font-size:15px}a{color:#09607c}table{border-collapse:collapse;width:100%;margin:20px 0;font-size:14px}th,td{border:1px solid #ccd6df;padding:9px;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#eaf1f6}pre{background:#102336;color:#edf5fa;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.55}code{font-family:Consolas,"Malgun Gothic",monospace;font-size:13px}blockquote{border-left:5px solid #237785;padding:6px 18px;background:#f1f7f8;margin:18px 0}img{max-width:100%}.badge{font-size:13px;color:#476376}nav{font-size:14px}section.card{border:1px solid #ccd6df;border-radius:8px;padding:12px 20px;margin:12px 0}.erd{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.entity{border:2px solid #237785;border-radius:8px;flex:1;min-width:250px;padding:14px}.entity h3{margin-top:0}.link{text-align:center;font-weight:700;color:#237785}footer{border-top:1px solid #d5dee7;padding-top:16px;margin-top:36px;font-size:12px;color:#5c6b77}@media print{body{background:white}main{padding:0;margin:0;max-width:none}h2,h3{break-after:avoid}pre,table{break-inside:avoid}nav{display:none}}</style><main><div class="badge">DAY 19 · 2026.11.12 오전 · 명세 기반 실습 v2</div><h1>실습 2A · 응용 ERD·스키마 명세서</h1>
+<p><strong>구축할 DB: <code>day19_build_a</code></strong> · Schema: <code>public</code>
+관계는 모든 수준에서 동일합니다. 테이블 수가 아니라 DDL 작성 범위와 파일 책임을 단계별로 늘립니다.</p>
+<h2>ERD</h2>
+<div class="erd"><div class="entity"><h3>categories · 분류</h3><p><b>PK</b> id : BIGINT / ALWAYS IDENTITY<br>name : VARCHAR(30) / NOT NULL / UNIQUE</p><p>이름 길이 1~30</p></div><div class="link">1 ───── 0..N<br><small>id ← category_id<br>부모 삭제 RESTRICT</small></div><div class="entity"><h3>knowledge · 지식</h3><p><b>PK</b> id : BIGINT / ALWAYS IDENTITY<br>title : VARCHAR(80) / NOT NULL<br>content : TEXT / NOT NULL<br><b>FK</b> category_id : BIGINT / NOT NULL</p><p>제목 1~80 · 본문 1~2000</p></div></div>
+
+<p>분류 하나는 지식이 0개 이상일 수 있습니다. 지식 하나는 <strong>정확히 하나의 기존 분류</strong>를 참조합니다.
+자식이 참조 중인 부모 분류는 삭제할 수 없으며, 지식 삭제가 부모 분류를 자동으로 삭제하지 않습니다.</p>
+<pre><code class="language-text">categories.id [1] &lt;──────── [0..N] knowledge.category_id
+                     FK + NOT NULL, ON DELETE RESTRICT
+</code></pre>
+<h2>categories 명세</h2>
+<table>
+<thead>
+<tr>
+  <th>열</th>
+  <th>자료형</th>
+  <th>NULL</th>
+  <th>키·생성 규칙</th>
+  <th>추가 규칙</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>id</td>
+  <td>BIGINT</td>
+  <td>불가</td>
+  <td>PRIMARY KEY · GENERATED ALWAYS AS IDENTITY</td>
+  <td>직접 지정하지 않고 DB가 발급</td>
+</tr>
+<tr>
+  <td>name</td>
+  <td>VARCHAR(30)</td>
+  <td>불가</td>
+  <td>UNIQUE</td>
+  <td>categories_name_length: char_length(name) 1~30</td>
+</tr>
+</tbody>
+</table>
+<h2>knowledge 명세</h2>
+<table>
+<thead>
+<tr>
+  <th>열</th>
+  <th>자료형</th>
+  <th>NULL</th>
+  <th>키·생성 규칙</th>
+  <th>추가 규칙</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>id</td>
+  <td>BIGINT</td>
+  <td>불가</td>
+  <td>PRIMARY KEY · GENERATED ALWAYS AS IDENTITY</td>
+  <td>제목과 별개인 식별자</td>
+</tr>
+<tr>
+  <td>title</td>
+  <td>VARCHAR(80)</td>
+  <td>불가</td>
+  <td>중복 허용</td>
+  <td>knowledge_title_length: 길이 1~80</td>
+</tr>
+<tr>
+  <td>content</td>
+  <td>TEXT</td>
+  <td>불가</td>
+  <td>없음</td>
+  <td>knowledge_content_length: 길이 1~2000</td>
+</tr>
+<tr>
+  <td>category_id</td>
+  <td>BIGINT</td>
+  <td>불가</td>
+  <td>FK → public.categories(id)</td>
+  <td>knowledge_category_fk · ON DELETE RESTRICT</td>
+</tr>
+</tbody>
+</table>
+<p>NOT NULL은 NULL을 막고, 길이 CHECK는 빈 문자열을 막습니다. 공백만 있는 문자열 거부·trim·제목 UNIQUE는 추가하지 않습니다.
+API 문자열 category를 자동으로 DB에 동기화하지 않습니다. 이 실습에서는 위 두 DB 테이블만 구축합니다.</p>
+<h2>응용의 구현 범위</h2>
+<p><code>A_구축/schema/</code>의 부모·자식 파일에서 6개 TODO를 완성합니다. 부모부터 실행합니다.</p>
+<h2>구축 완료 확인</h2>
+<p><code>A_구축/check_structure.sql</code>은 제공된 읽기 전용 점검입니다. 다음을 실제 catalog 결과로 대조합니다.</p>
+<ul>
+<li>categories: id·name 2열, knowledge: id·title·content·category_id 4열</li>
+<li>id 두 개: BIGINT(정보 스키마 표기 bigint), is_identity=YES, identity_generation=ALWAYS</li>
+<li>모든 열 is_nullable=NO, name 최대30·title 최대80·content text</li>
+<li>각 PK, name UNIQUE, 지정 CHECK 3개, FK와 RESTRICT</li>
+</ul>
+<p><code>A_구축/check_insert.sql</code>은 정상 입력이 연결되는지 확인한 뒤 ROLLBACK하는 제공 점검입니다.
+비어 있는 구축 DB 기준 정상 JOIN 1행, 취소 뒤 knowledge_count=0입니다. ID 발급 번호가 증가해도 실패로 보지 않습니다.
+<strong>오류가 난 상태에서는 ROLLBACK을 따로 실행하고 원인을 고칩니다.</strong> 이미 성공한 부모 CREATE를 다시 실행하지 않습니다.
+DBML은 보조 설계 파일이며 PostgreSQL에서 실행하는 SQL이 아닙니다. 외부 도구 가입은 필요 없습니다.</p>
+<footer>수업용 가상 데이터 · 로컬 환경 전용 · API와 PostgreSQL은 아직 연결하지 않습니다.</footer></main></html>

@@ -1,0 +1,13 @@
+{
+  "state": "S0",
+  "columns": [
+    "id",
+    "name"
+  ],
+  "rows": [
+    [
+      3,
+      "reference"
+    ]
+  ]
+}

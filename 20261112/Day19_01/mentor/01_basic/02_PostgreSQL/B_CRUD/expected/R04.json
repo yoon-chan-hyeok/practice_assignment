@@ -1,0 +1,21 @@
+{
+  "state": "S0",
+  "columns": [
+    "category",
+    "knowledge_count"
+  ],
+  "rows": [
+    [
+      "learning",
+      2
+    ],
+    [
+      "environment",
+      1
+    ],
+    [
+      "reference",
+      0
+    ]
+  ]
+}

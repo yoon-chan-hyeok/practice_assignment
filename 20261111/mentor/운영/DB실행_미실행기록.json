@@ -1,0 +1,7 @@
+{
+  "mode": "actual_postgresql",
+  "date": "2026-11-07T14:11:18+0000",
+  "cases": [],
+  "status": "not_run",
+  "reason": "psql 실행 파일이 없습니다."
+}

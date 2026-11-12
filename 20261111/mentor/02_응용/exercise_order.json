@@ -1,0 +1,26 @@
+{
+  "1": [
+    "sql/01_connect.sql"
+  ],
+  "2": [
+    "sql/02_select.sql"
+  ],
+  "3": [
+    "sql/03_keys_erd.sql"
+  ],
+  "4": [
+    "sql/04_crud.sql"
+  ],
+  "5": [
+    "sql/05_join.sql"
+  ],
+  "6": [
+    "sql/06_constraints.sql"
+  ],
+  "7": [
+    "sql/07_transaction_index.sql"
+  ],
+  "8": [
+    "project/08_daily_project.sql"
+  ]
+}

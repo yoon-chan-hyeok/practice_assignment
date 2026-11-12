@@ -1,0 +1,158 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>실습 1 · 응용 예상 결과</title><style>body{font-family:"Malgun Gothic","Apple SD Gothic Neo",Arial,sans-serif;color:#1f2937;background:#eef2f6;margin:0;line-height:1.7}main{max-width:1040px;margin:24px auto;padding:36px;background:white;border-radius:12px}h1{font-size:28px;line-height:1.35;color:#153454;border-bottom:4px solid #237785;padding-bottom:16px}h2{font-size:22px;color:#153454;margin-top:32px}h3{font-size:18px;margin-top:24px}p,li{font-size:15px}a{color:#09607c}table{border-collapse:collapse;width:100%;margin:20px 0;font-size:14px}th,td{border:1px solid #ccd6df;padding:9px;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#eaf1f6}pre{background:#102336;color:#edf5fa;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.55}code{font-family:Consolas,"Malgun Gothic",monospace;font-size:13px}blockquote{border-left:5px solid #237785;padding:6px 18px;background:#f1f7f8;margin:18px 0}img{max-width:100%}.badge{font-size:13px;color:#476376}nav{font-size:14px}section.card{border:1px solid #ccd6df;border-radius:8px;padding:12px 20px;margin:12px 0}.erd{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.entity{border:2px solid #237785;border-radius:8px;flex:1;min-width:250px;padding:14px}.entity h3{margin-top:0}.link{text-align:center;font-weight:700;color:#237785}footer{border-top:1px solid #d5dee7;padding-top:16px;margin-top:36px;font-size:12px;color:#5c6b77}@media print{body{background:white}main{padding:0;margin:0;max-width:none}h2,h3{break-after:avoid}pre,table{break-inside:avoid}nav{display:none}}</style><main><div class="badge">DAY 19 · 2026.11.12 오전 · 명세 기반 실습 v2</div><h1>실습 1 · 응용 예상 결과</h1>
+<h2>S0: 시작 상태</h2>
+<p>배포된 <code>knowledge.json</code>은 <strong>지식 3개·next_id=4</strong>입니다. 이미 실습했다면 서버를 종료하고 <code>python reset_data.py --confirm</code>으로 <strong>이 폴더의 JSON만</strong> 초기화할 수 있습니다.
+초기화는 명시적 복습 작업이며 서버 재시작과 다릅니다. 기존 작업 파일은 자동 백업됩니다.</p>
+<h3>K01. GET /api/knowledge → 200</h3>
+<pre><code class="language-json">[
+  {
+    &quot;id&quot;: 1,
+    &quot;title&quot;: &quot;실습 파일 보관&quot;,
+    &quot;content&quot;: &quot;실습 파일은 개인 폴더에 보관합니다.&quot;,
+    &quot;category&quot;: &quot;learning&quot;
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;title&quot;: &quot;서버 실행&quot;,
+    &quot;content&quot;: &quot;프로젝트 폴더에서 서버를 실행합니다.&quot;,
+    &quot;category&quot;: &quot;environment&quot;
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;title&quot;: &quot;질문 작성&quot;,
+    &quot;content&quot;: &quot;오류 메시지와 시도한 작업을 함께 적습니다.&quot;,
+    &quot;category&quot;: &quot;learning&quot;
+  }
+]
+</code></pre>
+<h3>K02. GET /api/knowledge/2 → 200</h3>
+<pre><code class="language-json">{
+  &quot;id&quot;: 2,
+  &quot;title&quot;: &quot;서버 실행&quot;,
+  &quot;content&quot;: &quot;프로젝트 폴더에서 서버를 실행합니다.&quot;,
+  &quot;category&quot;: &quot;environment&quot;
+}
+</code></pre>
+<h3>K03. 없는 ID와 잘못된 입력</h3>
+<p>초기 ID 999999는 없습니다. PUT은 <code>requests/PUT_valid.json</code>의 정상 Body로 검사합니다.</p>
+<table>
+<thead>
+<tr>
+  <th>요청</th>
+  <th>상태</th>
+  <th>비교 기준</th>
+  <th>저장 변화</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>GET /api/knowledge/999999</td>
+  <td>404</td>
+  <td>{&quot;detail&quot;:&quot;Knowledge not found&quot;}</td>
+  <td>없음</td>
+</tr>
+<tr>
+  <td>PUT /api/knowledge/999999 + 정상 Body</td>
+  <td>404</td>
+  <td>동일한 detail</td>
+  <td>없음</td>
+</tr>
+<tr>
+  <td>DELETE /api/knowledge/999999</td>
+  <td>404</td>
+  <td>동일한 detail</td>
+  <td>없음</td>
+</tr>
+<tr>
+  <td>GET /api/knowledge/foo</td>
+  <td>422</td>
+  <td>loc에 path·knowledge_id</td>
+  <td>없음</td>
+</tr>
+<tr>
+  <td>POST + requests/POST_empty_content.json</td>
+  <td>422</td>
+  <td>loc에 body·content, 최소 길이 위반</td>
+  <td>없음</td>
+</tr>
+<tr>
+  <td>PUT /api/knowledge/2 + requests/PUT_missing_fields.json</td>
+  <td>422</td>
+  <td>title·category 필수 값 누락</td>
+  <td>없음</td>
+</tr>
+</tbody>
+</table>
+<p>[ ] 정상 읽기 결과  [ ] 404  [ ] 422  [ ] 파일 불변</p>
+<h3>K04. 분류 필터 · 모두 S0에서 확인</h3>
+<ul>
+<li><code>?category=learning</code> → 200, 아래 두 항목</li>
+<li><code>?category=reference</code> → 200, <code>[]</code></li>
+<li><code>?category=unknown</code> → 200, <code>[]</code></li>
+<li><code>?category=</code> → 200, <code>[]</code></li>
+<li><code>?category=Learning</code> → 200, <code>[]</code> (완전 일치)</li>
+</ul>
+<pre><code class="language-json">[
+  {
+    &quot;id&quot;: 1,
+    &quot;title&quot;: &quot;실습 파일 보관&quot;,
+    &quot;content&quot;: &quot;실습 파일은 개인 폴더에 보관합니다.&quot;,
+    &quot;category&quot;: &quot;learning&quot;
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;title&quot;: &quot;질문 작성&quot;,
+    &quot;content&quot;: &quot;오류 메시지와 시도한 작업을 함께 적습니다.&quot;,
+    &quot;category&quot;: &quot;learning&quot;
+  }
+]
+</code></pre>
+<p>[ ] 필터 결과  [ ] 빈 배열  [ ] 파일 불변</p>
+<h2>변경 시나리오: K05 → K06 → K07 순서</h2>
+<p>다음 작업을 <strong>한 번씩</strong> 수행합니다. POST를 반복 클릭하면 다른 지식이 추가되므로 결과 개수가 달라집니다.
+서버가 돌려준 ID를 <code>created_id</code>로 기억합니다. 아래 숫자 4는 S0에서 정상 생성 1회일 때만의 예시입니다.</p>
+<h3>K05. POST /api/knowledge</h3>
+<p>요청 Body (<code>requests/POST_valid.json</code>):</p>
+<pre><code class="language-json">{
+  &quot;title&quot;: &quot;보충 학습&quot;,
+  &quot;content&quot;: &quot;복습 자료는 개인 폴더에서 확인합니다.&quot;,
+  &quot;category&quot;: &quot;learning&quot;
+}
+</code></pre>
+<p>예상: <strong>201</strong>. 초기화 직후 예시:</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: 4,
+  &quot;title&quot;: &quot;보충 학습&quot;,
+  &quot;content&quot;: &quot;복습 자료는 개인 폴더에서 확인합니다.&quot;,
+  &quot;category&quot;: &quot;learning&quot;
+}
+</code></pre>
+<p>목록은 4개이며 기존 1~3은 그대로이고, <code>data/knowledge.json</code>에 새 항목과 다음 ID가 함께 저장됩니다.
+일반 검증은 <code>created_id</code>가 기존 ID와 다르고, 저장된 id와 응답 id가 같으며, next_id가 이전보다 1 증가하는지 확인합니다.</p>
+<h3>K06. PUT /api/knowledge/{created_id}</h3>
+<p>요청 Body (<code>requests/PUT_valid.json</code>):</p>
+<pre><code class="language-json">{
+  &quot;title&quot;: &quot;보충 학습&quot;,
+  &quot;content&quot;: &quot;복습 자료와 예제 코드를 함께 확인합니다.&quot;,
+  &quot;category&quot;: &quot;learning&quot;
+}
+</code></pre>
+<p>예상: <strong>200</strong>, 같은 ID·같은 제목·같은 분류, 바뀐 본문. 초기화 직후 예시:</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: 4,
+  &quot;title&quot;: &quot;보충 학습&quot;,
+  &quot;content&quot;: &quot;복습 자료와 예제 코드를 함께 확인합니다.&quot;,
+  &quot;category&quot;: &quot;learning&quot;
+}
+</code></pre>
+<p>목록 4개·다음 ID 유지. <strong>Ctrl+C로 서버를 종료하고 같은 명령으로 재실행한 뒤 같은 ID를 GET하면 수정 내용이 유지</strong>되어야 합니다.
+[ ] PUT 응답  [ ] 파일의 본문  [ ] 재시작 후 본문</p>
+<h3>K07. DELETE /api/knowledge/{created_id}</h3>
+<p>예상: <strong>204</strong>, 응답 본문 길이 0. 문자열 <code>null</code>, <code>{}</code>, 삭제 메시지를 반환하지 않습니다.
+같은 ID를 GET하면 404·<code>{&quot;detail&quot;:&quot;Knowledge not found&quot;}</code>입니다. 재시작한 뒤에도 404여야 합니다.
+최종 목록은 다시 <strong>S0의 기존 세 항목</strong>이며, next_id는 초기화하지 않습니다(처음 한 번 수행했다면 5).
+[ ] 빈 204  [ ] 삭제 후404  [ ] 기존 세 항목 보존  [ ] 재시작 후 삭제 유지</p>
+<h2>예상값 비교 규칙</h2>
+<p>JSON 객체 키 순서와 공백·들여쓰기는 비교하지 않습니다. 목록 항목의 순서와 값은 비교합니다.
+<code>expected/*_example.json</code>의 id 4는 <strong>S0 기준 예시</strong>이지 모든 실행에 고정해야 하는 정답이 아닙니다.
+422의 영어 오류 메시지 전체나 헤더 순서는 버전별로 달라질 수 있으므로 계약의 필드·상태·규칙으로 판단합니다.</p>
+<footer>수업용 가상 데이터 · 로컬 환경 전용 · API와 PostgreSQL은 아직 연결하지 않습니다.</footer></main></html>

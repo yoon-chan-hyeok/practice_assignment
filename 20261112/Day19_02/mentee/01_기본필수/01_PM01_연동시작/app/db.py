@@ -1,0 +1,38 @@
+from functools import lru_cache
+from contextlib import contextmanager
+from collections.abc import Generator
+from sqlalchemy import create_engine, text
+from sqlalchemy.engine import Engine
+from sqlalchemy.orm import Session, sessionmaker
+from app.settings import get_settings
+
+@lru_cache
+def get_engine() -> Engine:
+    settings = get_settings()
+    if settings.db_password == "CHANGE_ME":
+        raise RuntimeError(".env의 DB_PASSWORD를 실제 학습용 비밀번호로 바꾸세요.")
+    return create_engine(settings.database_url, pool_pre_ping=True)
+
+@lru_cache
+def get_session_factory():
+    return sessionmaker(bind=get_engine(), autoflush=False, expire_on_commit=False)
+
+def get_db() -> Generator[Session, None, None]:
+    # TODO B02: 요청마다 Session을 열어 yield하고 요청이 끝나면 닫히게 하세요.
+    raise NotImplementedError("TODO B02")
+
+
+@contextmanager
+def transaction(db: Session):
+    """한 쓰기 요청의 flush와 commit을 같은 경계로 묶습니다."""
+    try:
+        yield
+        db.commit()
+    except Exception:
+        db.rollback()
+        raise
+
+def check_database() -> tuple[str, str]:
+    with get_engine().connect() as conn:
+        row = conn.execute(text("SELECT current_database(), current_user")).one()
+        return str(row[0]), str(row[1])

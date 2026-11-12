@@ -1,0 +1,19 @@
+test_all_level_rendering (__main__.ToolTests.test_all_level_rendering) ... ok
+test_capture_multiple_statements_rejected (__main__.ToolTests.test_capture_multiple_statements_rejected) ... ok
+test_capture_not_reexecuted (__main__.ToolTests.test_capture_not_reexecuted) ... ok
+test_comment_todo_allowed (__main__.ToolTests.test_comment_todo_allowed) ... ok
+test_dollar_block (__main__.ToolTests.test_dollar_block) ... ok
+test_line_comment (__main__.ToolTests.test_line_comment) ... ok
+test_nested_comments (__main__.ToolTests.test_nested_comments) ... ok
+test_parse_step (__main__.ToolTests.test_parse_step) ... ok
+test_quoted_semicolon (__main__.ToolTests.test_quoted_semicolon) ... ok
+test_runtime_replaced (__main__.ToolTests.test_runtime_replaced) ... ok
+test_students_are_not_solutions (__main__.ToolTests.test_students_are_not_solutions) ... ok
+test_unclosed_comment (__main__.ToolTests.test_unclosed_comment) ... ok
+test_unclosed_string (__main__.ToolTests.test_unclosed_string) ... ok
+test_unfinished_rejected (__main__.ToolTests.test_unfinished_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.027s
+
+OK

@@ -1,0 +1,37 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>환경·실행 안내</title><style>body{font-family:"Malgun Gothic","Apple SD Gothic Neo",Arial,sans-serif;color:#1f2937;background:#eef2f6;margin:0;line-height:1.7}main{max-width:1040px;margin:24px auto;padding:36px;background:white;border-radius:12px}h1{font-size:28px;line-height:1.35;color:#153454;border-bottom:4px solid #237785;padding-bottom:16px}h2{font-size:22px;color:#153454;margin-top:32px}h3{font-size:18px;margin-top:24px}p,li{font-size:15px}a{color:#09607c}table{border-collapse:collapse;width:100%;margin:20px 0;font-size:14px}th,td{border:1px solid #ccd6df;padding:9px;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#eaf1f6}pre{background:#102336;color:#edf5fa;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.55}code{font-family:Consolas,"Malgun Gothic",monospace;font-size:13px}blockquote{border-left:5px solid #237785;padding:6px 18px;background:#f1f7f8;margin:18px 0}img{max-width:100%}.badge{font-size:13px;color:#476376}nav{font-size:14px}section.card{border:1px solid #ccd6df;border-radius:8px;padding:12px 20px;margin:12px 0}.erd{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.entity{border:2px solid #237785;border-radius:8px;flex:1;min-width:250px;padding:14px}.entity h3{margin-top:0}.link{text-align:center;font-weight:700;color:#237785}footer{border-top:1px solid #d5dee7;padding-top:16px;margin-top:36px;font-size:12px;color:#5c6b77}@media print{body{background:white}main{padding:0;margin:0;max-width:none}h2,h3{break-after:avoid}pre,table{break-inside:avoid}nav{display:none}}</style><main><div class="badge">DAY 19 · 2026.11.12 오전 · 명세 기반 실습 v2</div><h1>환경·실행 안내</h1>
+<h2>기존 환경을 우선합니다</h2>
+<p>11월 10·11일에 정상 동작한 Python·FastAPI·PostgreSQL·pgAdmin을 재사용하세요.
+이번 오전 실습은 GPU·Docker·SQLAlchemy·Psycopg·Alembic 설치를 요구하지 않습니다.
+API는 JSON 파일, SQL은 PostgreSQL에서 각각 실행합니다. 둘은 연동하지 않습니다.</p>
+<h2>FastAPI 실행</h2>
+<p>선택한 수준의 <code>01_FastAPI</code>를 VS Code에서 폴더로 엽니다. 터미널의 현재 경로가 그 폴더인지 확인합니다.
+새 환경이 정말 필요할 때만 다음을 수행합니다.</p>
+<pre><code class="language-powershell">python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+</code></pre>
+<p>PowerShell 정책 때문에 활성화가 막히면 정책을 변경하지 말고 다음처럼 해당 Python을 직접 실행할 수 있습니다.</p>
+<pre><code class="language-powershell">.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8000 --reload
+</code></pre>
+<p>심화는 같은 프로젝트 루트에서 <code>main:app</code> 대신 <code>app.main:app</code>을 사용합니다.
+외부 공개를 위해 host를 0.0.0.0으로 바꾸거나 방화벽을 해제하지 않습니다. 단일 프로세스·한 서버만 사용합니다.
+검사 도구는 <code>requirements-check.txt</code>가 필요하지만 기본필수는 /docs 수동 확인으로 충분합니다.</p>
+<h2>PostgreSQL 준비</h2>
+<p>서버가 실행 중이고 pgAdmin으로 인증·접속할 수 있어야 합니다. 서버 설치 자체는 이번 구현 문제가 아닙니다.
+선택 수준의 <code>02_PostgreSQL/00_접속준비.sql</code>에 있는 구축용·CRUD용 DB 이름을 확인하세요.
+pgAdmin의 Databases에서 각각 새 DB를 만들고 해당 DB의 Query Tool을 엽니다.</p>
+<ol>
+<li><code>SELECT current_database(), current_user;</code>로 대상 확인</li>
+<li>Query Tool은 Auto commit ON을 기본으로 사용</li>
+<li>명시적 트랜잭션 문제는 BEGIN부터 COMMIT 또는 ROLLBACK까지 <strong>같은 Query Tool</strong>에서 실행</li>
+<li>의도한 오류 뒤 ROLLBACK을 <strong>따로 실행</strong>하고 다음 문제 진행</li>
+</ol>
+<p>기존 <code>knowledge_lab</code>은 초기화하지 않습니다. 수강생별 개인 DB를 사용하고 다른 학생의 데이터에 쓰지 않습니다.
+psql 사용자는 예를 들어 <code>psql -h localhost -p 5432 -U postgres -d day19_crud_b</code>로 접속합니다.
+비밀번호를 명령·README·화면 캡처·Git에 넣지 않습니다. 기존 설치에서 지정한 포트와 계정을 쓰세요.
+SQL 파일은 UTF-8로 저장되어 있습니다. psql에서 한글이 깨지면 <code>SET client_encoding='UTF8';</code>와 터미널 인코딩을 확인합니다.</p>
+<h2>완료 기준</h2>
+<p>기능별 명세의 예상값과 실제 응답·행을 비교합니다. 서버가 켜짐·테이블이 존재함만으로 완료하지 않습니다.
+미실행 결과를 실행 성공으로 표시하지 않습니다. 설치·접속이 막히면 한 문제에 오래 멈추지 말고 다른 실습의 구현을 진행합니다.</p>
+<footer>수업용 가상 데이터 · 로컬 환경 전용 · API와 PostgreSQL은 아직 연결하지 않습니다.</footer></main></html>

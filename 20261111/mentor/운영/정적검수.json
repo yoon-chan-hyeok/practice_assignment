@@ -1,0 +1,4356 @@
+{
+  "scope": "static_only",
+  "sql_execution": false,
+  "checks": [
+    {
+      "label": "01_기본필수_eight_exercises",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "01_connect.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "01_connect.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "01_connect.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "01_connect.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_PING_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_PING_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_DB_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_DB_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_INFO_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_INFO_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_ENCODING_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_ENCODING_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "01_connect.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "01_connect.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "01_connect.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "02_select.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "02_select.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "02_select.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "02_select.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_LIST_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_LIST_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_DETAIL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_DETAIL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_CATEGORY_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_CATEGORY_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_EMPTY_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_EMPTY_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "02_select.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "02_select.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "02_select.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "03_keys_erd.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "03_keys_erd.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "03_keys_erd.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "03_keys_erd.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_CREATE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_CREATE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_SEED_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_SEED_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_READ_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_READ_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_GONE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_GONE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "03_keys_erd.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "03_keys_erd.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "03_keys_erd.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "04_crud.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "04_crud.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "04_crud.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "04_crud.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_single_capture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_UPDATE_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_UPDATE_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_UPDATE_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_UPDATE_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_UPDATE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_UPDATE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_UPDATE_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_UPDATE_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_DELETE_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_DELETE_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_DELETE_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_DELETE_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_DELETE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_DELETE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_DELETE_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_DELETE_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_AFTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_AFTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "04_crud.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "04_crud.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "04_crud.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "05_join.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "05_join.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "05_join.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "05_join.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_JOIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_JOIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_GROUP_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_GROUP_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_LENGTH_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_LENGTH_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "05_join.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "05_join.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "05_join.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "06_constraints.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "06_constraints.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "06_constraints.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "06_constraints.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_CHECK_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_CHECK_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_CONTENT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_CONTENT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_CONTENT_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_CHECK_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_CHECK_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_FK_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_FK_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_FK_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_FK_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_FK_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_FK_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_FK_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_AFTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_AFTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "06_constraints.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "06_constraints.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "06_constraints.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "07_transaction_index.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "07_transaction_index.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "07_transaction_index.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "07_transaction_index.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_TEMP_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_TEMP_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_READ_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_READ_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_SAVE_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_SAVE_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_SAVE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_SAVE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_COMMIT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_COMMIT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_RECONNECT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_RECONNECT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_INDEX_INSPECT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_INDEX_INSPECT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PLAN_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PLAN_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_INDEX_CREATE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_INDEX_CREATE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PLAN_AFTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PLAN_AFTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_FINAL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_FINAL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "07_transaction_index.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "07_transaction_index.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "07_transaction_index.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "08_daily_project.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "08_daily_project.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "08_daily_project.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "08_daily_project.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E8_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E8_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_BASELINE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_BASELINE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_A_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_A_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_A_single_capture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_B_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_B_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_B_single_capture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_C_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_C_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_C_single_capture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_COMMIT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_COMMIT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_LIST_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_LIST_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_ORIGINAL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_ORIGINAL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_CANCEL_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_CANCEL_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_TEMP_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_TEMP_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_RESTORED_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_RESTORED_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_SAVE_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_SAVE_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_SAVE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_SAVE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_COMMIT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_COMMIT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_RECONNECT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_RECONNECT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_ERRORS_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_ERRORS_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_FAIL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_FAIL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_FAIL_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_FAIL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_FAIL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_FAIL_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_ERRORS_AFTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_ERRORS_AFTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_DELETE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_DELETE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_COMMIT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_COMMIT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FINAL_RECONNECT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FINAL_RECONNECT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_GROUP_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_GROUP_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_EXISTING_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_EXISTING_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "08_daily_project.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "08_daily_project.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "08_daily_project.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "01_기본필수_task_count",
+      "passed": true,
+      "detail": "18"
+    },
+    {
+      "label": "01_기본필수_unique_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "01_기본필수_no_cross_level_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "02_응용_eight_exercises",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/01_connect.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/01_connect.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/01_connect.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/01_connect.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_PING_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_PING_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_DB_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_DB_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_USER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_USER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_ENCODING_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_ENCODING_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/01_connect.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/01_connect.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/01_connect.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/02_select.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/02_select.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/02_select.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/02_select.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_LIST_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_LIST_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_DETAIL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_DETAIL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_CATEGORY_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_CATEGORY_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_EMPTY_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_EMPTY_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_COMBINED_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_COMBINED_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/02_select.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/02_select.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/02_select.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/03_keys_erd.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/03_keys_erd.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/03_keys_erd.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/03_keys_erd.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_CREATE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_CREATE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_SEED_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_SEED_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_READ_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_READ_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_GONE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_GONE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/03_keys_erd.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/03_keys_erd.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/03_keys_erd.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/04_crud.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/04_crud.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/04_crud.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/04_crud.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_single_capture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_NEW_READ_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_NEW_READ_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_UPDATE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_UPDATE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_DELETE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_DELETE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_ZERO_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_ZERO_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_AFTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_AFTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/04_crud.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/04_crud.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/04_crud.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/05_join.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/05_join.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/05_join.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/05_join.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_JOIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_JOIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_GROUP_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_GROUP_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_LENGTH_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_LENGTH_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_HAVING_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_HAVING_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/05_join.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/05_join.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/05_join.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/06_constraints.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/06_constraints.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/06_constraints.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/06_constraints.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_CHECK_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_CHECK_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_CONTENT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_CONTENT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_CONTENT_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_CHECK_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_CHECK_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_FK_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_FK_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_FK_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_FK_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_FK_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_FK_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_FK_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_NULL_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_NULL_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_NULL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_NULL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_NULL_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_NULL_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_NULL_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_UNIQUE_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_UNIQUE_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_UNIQUE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_UNIQUE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_UNIQUE_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_UNIQUE_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_UNIQUE_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_PARENT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_PARENT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_PARENT_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_AFTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_AFTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/06_constraints.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/06_constraints.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/06_constraints.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/07_transaction_index.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/07_transaction_index.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/07_transaction_index.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/07_transaction_index.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_TEMP_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_TEMP_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_READ_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_READ_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_SAVE_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_SAVE_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_SAVE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_SAVE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_COMMIT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_COMMIT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_RECONNECT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_RECONNECT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_READ_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_READ_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_INDEX_INSPECT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_INDEX_INSPECT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PLAN_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PLAN_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_INDEX_CREATE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_INDEX_CREATE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PLAN_AFTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PLAN_AFTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_FINAL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_FINAL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/07_transaction_index.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/07_transaction_index.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "sql/07_transaction_index.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E8_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E8_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_BASELINE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_BASELINE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_A_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_A_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_A_single_capture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_B_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_B_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_B_single_capture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_C_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_C_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_C_single_capture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_COMMIT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_COMMIT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_LIST_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_LIST_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_ORIGINAL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_ORIGINAL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_CANCEL_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_CANCEL_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_TEMP_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_TEMP_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_RESTORED_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_RESTORED_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_SAVE_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_SAVE_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_SAVE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_SAVE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_COMMIT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_COMMIT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_RECONNECT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_RECONNECT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_ERRORS_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_ERRORS_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_FAIL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_FAIL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_FAIL_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_FAIL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_FAIL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_FAIL_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_ERRORS_AFTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_ERRORS_AFTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_DELETE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_DELETE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_COMMIT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_COMMIT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FINAL_RECONNECT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FINAL_RECONNECT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_GROUP_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_GROUP_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_EXISTING_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_EXISTING_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FILTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FILTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_OTHER_CATEGORY_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_OTHER_CATEGORY_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "02_응용_task_count",
+      "passed": true,
+      "detail": "26"
+    },
+    {
+      "label": "02_응용_unique_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "02_응용_no_cross_level_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "03_심화_eight_exercises",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/01_connect.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/01_connect.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/01_connect.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/01_connect.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_PING_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_PING_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_DB_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_DB_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_USER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_USER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_ENCODING_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E1_ENCODING_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/01_connect.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/01_connect.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/01_connect.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/02_select.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/02_select.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/02_select.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/02_select.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_LIST_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_LIST_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_DETAIL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_DETAIL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_CATEGORY_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_CATEGORY_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_EMPTY_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_EMPTY_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_COMBINED_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_COMBINED_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_NULL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_NULL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_TIE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E2_TIE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/02_select.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/02_select.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/02_select.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "schema/03_try_ddl.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "schema/03_try_ddl.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "schema/03_try_ddl.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "schema/03_try_ddl.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_CREATE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_CREATE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "schema/03_try_ddl.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "schema/03_try_ddl.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "schema/03_try_ddl.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "seed/03_try_seed.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "seed/03_try_seed.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "seed/03_try_seed.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "seed/03_try_seed.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_SEED_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_SEED_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "seed/03_try_seed.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "seed/03_try_seed.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "seed/03_try_seed.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/03_try_verify.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/03_try_verify.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/03_try_verify.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/03_try_verify.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_READ_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_READ_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_GONE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E3_GONE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/03_try_verify.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/03_try_verify.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/03_try_verify.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "changes/04_crud.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "changes/04_crud.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "changes/04_crud.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "changes/04_crud.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_INSERT_single_capture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_NEW_READ_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_NEW_READ_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_UPDATE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_UPDATE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_DELETE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_DELETE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_ZERO_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_ZERO_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_COUNT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_COUNT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_AFTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E4_AFTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "changes/04_crud.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "changes/04_crud.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "changes/04_crud.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/05_reports.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/05_reports.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/05_reports.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/05_reports.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_JOIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_JOIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_GROUP_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_GROUP_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_LENGTH_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_LENGTH_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_HAVING_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_HAVING_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_ON_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_ON_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_WHERE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E5_WHERE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/05_reports.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/05_reports.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "queries/05_reports.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/06_constraints.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/06_constraints.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/06_constraints.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/06_constraints.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_CHECK_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_CHECK_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_CONTENT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_CONTENT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_CONTENT_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_ABORTED_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_ABORTED_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_ABORTED_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_CHECK_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_CHECK_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_FK_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_FK_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_FK_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_FK_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_FK_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_FK_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_FK_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_NULL_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_NULL_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_NULL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_NULL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_NULL_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_NULL_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_NULL_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_UNIQUE_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_UNIQUE_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_UNIQUE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_UNIQUE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_UNIQUE_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_UNIQUE_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_UNIQUE_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_PARENT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_PARENT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_BAD_PARENT_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_PARENT_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_AFTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E6_AFTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/06_constraints.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/06_constraints.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "checks/06_constraints.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "transactions/07_transactions.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "transactions/07_transactions.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "transactions/07_transactions.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "transactions/07_transactions.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_TEMP_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_TEMP_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_READ_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_CANCEL_READ_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_SAVE_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_SAVE_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_SAVE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_SAVE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_COMMIT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_COMMIT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_RECONNECT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_RECONNECT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_READ_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_READ_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PAIR_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_ATOMIC_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_ATOMIC_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_ATOMIC_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_ATOMIC_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_ATOMIC_FIRST_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_ATOMIC_FIRST_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_ATOMIC_FAIL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_ATOMIC_FAIL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_ATOMIC_FAIL_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_ATOMIC_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_ATOMIC_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_ATOMIC_AFTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_ATOMIC_AFTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "transactions/07_transactions.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "transactions/07_transactions.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "transactions/07_transactions.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "indexes/07_explain.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "indexes/07_explain.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "indexes/07_explain.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "indexes/07_explain.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_INDEX_INSPECT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_INDEX_INSPECT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PLAN_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PLAN_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_INDEX_CREATE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_INDEX_CREATE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PLAN_AFTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_PLAN_AFTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_FINAL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E7_FINAL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "indexes/07_explain.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "indexes/07_explain.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "indexes/07_explain.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_no_unfinished_teacher_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_no_drop_or_truncate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_no_psql_in_gui_sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_balanced_parentheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E8_GUARD_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "E8_GUARD_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_BASELINE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_BASELINE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_A_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_A_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_A_single_capture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_B_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_B_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_B_single_capture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_C_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_C_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_C_single_capture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_COMMIT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CREATE_COMMIT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_LIST_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_LIST_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_ORIGINAL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_ORIGINAL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_CANCEL_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_CANCEL_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_TEMP_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_TEMP_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_RESTORED_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_RESTORED_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_SAVE_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_SAVE_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_SAVE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_SAVE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_COMMIT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_COMMIT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_RECONNECT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_B_RECONNECT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_ERRORS_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_ERRORS_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_FAIL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_FAIL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_FAIL_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_CHECK_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_FAIL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_FAIL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_FAIL_known_expected_error",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_CANCEL_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FK_CANCEL_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_ERRORS_AFTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_ERRORS_AFTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_BEFORE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_BEFORE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_BEGIN_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_BEGIN_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_DELETE_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_DELETE_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_COMMIT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_COMMIT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FINAL_RECONNECT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FINAL_RECONNECT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_GROUP_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_GROUP_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_EXISTING_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_EXISTING_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FILTER_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_FILTER_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_OTHER_CATEGORY_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_OTHER_CATEGORY_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_ABSENT_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "D8_C_ABSENT_state_format",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_student_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_matching_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "project/08_daily_project.sql_answer_substitution_exact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "03_심화_task_count",
+      "passed": true,
+      "detail": "33"
+    },
+    {
+      "label": "03_심화_unique_task_ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "03_심화_no_cross_level_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "운영/sql_tools.py_python_compile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "운영/verify_postgres.py_python_compile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "운영/verify_package.py_python_compile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "운영/test_tools.py_python_compile",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "seed_lengths",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "label": "seed_sum",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "task_count": 77,
+  "paired_sql_files": 27,
+  "planned_execution_steps": 315,
+  "passed": true,
+  "failed_checks": []
+}

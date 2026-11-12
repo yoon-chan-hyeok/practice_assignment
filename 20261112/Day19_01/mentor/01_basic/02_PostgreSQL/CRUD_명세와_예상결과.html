@@ -1,0 +1,267 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>실습 2B · 기본필수 SQL 문제와 예상 결과</title><style>body{font-family:"Malgun Gothic","Apple SD Gothic Neo",Arial,sans-serif;color:#1f2937;background:#eef2f6;margin:0;line-height:1.7}main{max-width:1040px;margin:24px auto;padding:36px;background:white;border-radius:12px}h1{font-size:28px;line-height:1.35;color:#153454;border-bottom:4px solid #237785;padding-bottom:16px}h2{font-size:22px;color:#153454;margin-top:32px}h3{font-size:18px;margin-top:24px}p,li{font-size:15px}a{color:#09607c}table{border-collapse:collapse;width:100%;margin:20px 0;font-size:14px}th,td{border:1px solid #ccd6df;padding:9px;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#eaf1f6}pre{background:#102336;color:#edf5fa;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.55}code{font-family:Consolas,"Malgun Gothic",monospace;font-size:13px}blockquote{border-left:5px solid #237785;padding:6px 18px;background:#f1f7f8;margin:18px 0}img{max-width:100%}.badge{font-size:13px;color:#476376}nav{font-size:14px}section.card{border:1px solid #ccd6df;border-radius:8px;padding:12px 20px;margin:12px 0}.erd{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.entity{border:2px solid #237785;border-radius:8px;flex:1;min-width:250px;padding:14px}.entity h3{margin-top:0}.link{text-align:center;font-weight:700;color:#237785}footer{border-top:1px solid #d5dee7;padding-top:16px;margin-top:36px;font-size:12px;color:#5c6b77}@media print{body{background:white}main{padding:0;margin:0;max-width:none}h2,h3{break-after:avoid}pre,table{break-inside:avoid}nav{display:none}}</style><main><div class="badge">DAY 19 · 2026.11.12 오전 · 명세 기반 실습 v2</div><h1>실습 2B · 기본필수 SQL 문제와 예상 결과</h1>
+<h2>시작 데이터 S0</h2>
+<p>DB는 <code>day19_crud_b</code>, Schema는 public입니다. <code>B_CRUD/00_ready_database.sql</code>을 새 빈 DB에 성공적으로 한 번 실행한 상태입니다.</p>
+<h3>categories</h3>
+<table>
+<thead>
+<tr>
+  <th>id</th>
+  <th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td>learning</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>environment</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>reference</td>
+</tr>
+</tbody>
+</table>
+<h3>knowledge</h3>
+<table>
+<thead>
+<tr>
+  <th>id</th>
+  <th>title</th>
+  <th>content</th>
+  <th>category_id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td>실습 파일 보관</td>
+  <td>실습 파일은 개인 폴더에 보관합니다.</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>서버 실행</td>
+  <td>프로젝트 폴더에서 서버를 실행합니다.</td>
+  <td>2</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>질문 작성</td>
+  <td>오류 메시지와 시도한 작업을 함께 적습니다.</td>
+  <td>1</td>
+</tr>
+</tbody>
+</table>
+<p>초기 ID는 위 복원 SQL의 정상 완료 상태에서만 고정됩니다. 수정·삭제는 문제에서 지정한 ID에만 수행합니다.
+각 CASE의 <code>__TODO_...__</code>는 코드 미완성 표식이고, <code>__NEW_ID__</code>는 실행 후 채울 실제 ID입니다. 문법 오류를 CHECK·FK 성공 증거로 세지 않습니다.</p>
+<h2>1. 조회 문제 · 모두 S0 기준</h2>
+<h3>R01 · 전체 지식 목록</h3>
+<p><strong>구현 위치:</strong> <code>B_CRUD/tasks.sql</code>의 <code>B-SQL-01</code></p>
+<p><strong>요구사항:</strong> 초기 S0에서 id·title만 id 오름차순으로 조회하세요.</p>
+<p><strong>예상 결과:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>id</th>
+  <th>title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td>실습 파일 보관</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>서버 실행</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>질문 작성</td>
+</tr>
+</tbody>
+</table>
+<p>[ ] 열 이름·값·행 수·정렬 순서 일치</p>
+<h3>R02 · 상세 조회</h3>
+<p><strong>구현 위치:</strong> <code>B_CRUD/tasks.sql</code>의 <code>B-SQL-02</code></p>
+<p><strong>요구사항:</strong> ID 2의 id·title·content·category_id를 조회하세요.</p>
+<p><strong>예상 결과:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>id</th>
+  <th>title</th>
+  <th>content</th>
+  <th>category_id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>2</td>
+  <td>서버 실행</td>
+  <td>프로젝트 폴더에서 서버를 실행합니다.</td>
+  <td>2</td>
+</tr>
+</tbody>
+</table>
+<p>[ ] 열 이름·값·행 수·정렬 순서 일치</p>
+<h3>R03 · 분류명 JOIN</h3>
+<p><strong>구현 위치:</strong> <code>B_CRUD/tasks.sql</code>의 <code>B-SQL-03</code></p>
+<p><strong>요구사항:</strong> knowledge와 categories를 FK로 연결해 id·title·분류명(category)을 지식 id 오름차순으로 조회하세요.</p>
+<p><strong>예상 결과:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>id</th>
+  <th>title</th>
+  <th>category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td>실습 파일 보관</td>
+  <td>learning</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>서버 실행</td>
+  <td>environment</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>질문 작성</td>
+  <td>learning</td>
+</tr>
+</tbody>
+</table>
+<p>[ ] 열 이름·값·행 수·정렬 순서 일치</p>
+<h3>R04 · 빈 분류 포함 집계</h3>
+<p><strong>구현 위치:</strong> <code>B_CRUD/tasks.sql</code>의 <code>B-SQL-04</code></p>
+<p><strong>요구사항:</strong> 분류를 왼쪽에 두고 모든 분류명과 지식 수(knowledge_count)를 분류 id 순으로 조회하세요. reference는 0이어야 합니다.</p>
+<p><strong>예상 결과:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>category</th>
+  <th>knowledge_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>learning</td>
+  <td>2</td>
+</tr>
+<tr>
+  <td>environment</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>reference</td>
+  <td>0</td>
+</tr>
+</tbody>
+</table>
+<p>[ ] 열 이름·값·행 수·정렬 순서 일치</p>
+<h2>2. 변경 문제 · C01 → U01 → U02 → D01</h2>
+<p>각 단계는 같은 Query Tool에서 실행하되 <strong>BEGIN, 변경문(RETURNING 포함), COMMIT 또는 ROLLBACK, 후속 SELECT를 각각 따로 선택·실행</strong>합니다. 변경문의 RETURNING 결과를 확인한 후 종료문으로 이동하세요. 특히 C01의 INSERT 결과 ID를 기록하기 전에 다른 SELECT를 실행하지 않습니다.
+처음 C01에서 반환받은 ID를 나머지 <code>__NEW_ID__</code> 위치에 넣습니다. <strong>4라는 번호를 정답으로 고정하지 않습니다.</strong></p>
+<h3>C01 · 새 지식 생성</h3>
+<p><strong>구현 위치:</strong> <code>B_CRUD/tasks.sql</code>의 <code>B-SQL-05</code></p>
+<p><strong>요구사항:</strong> title='보충 학습', content='복습 자료는 개인 폴더에서 확인합니다.', category_id=1인 행을 INSERT하고 id·title·category_id를 RETURNING하세요. 실제 id를 기억합니다.</p>
+<p><strong>변경문 RETURNING 예상:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>id</th>
+  <th>title</th>
+  <th>category_id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>실제 NEW_ID</td>
+  <td>보충 학습</td>
+  <td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>종료 후 확인:</strong> COMMIT 뒤 knowledge_count=4. 기존 1~3의 모든 값은 동일합니다.</p>
+<p>[ ] 실제 ID 사용  [ ] 변경 1행  [ ] 종료 후 데이터 일치</p>
+<h3>U01 · 수정 후 취소</h3>
+<p><strong>구현 위치:</strong> <code>B_CRUD/tasks.sql</code>의 <code>B-SQL-06</code></p>
+<p><strong>요구사항:</strong> C01의 실제 <strong>NEW_ID</strong> 행만 content='복습 자료와 예제 코드를 함께 확인합니다.'로 UPDATE하고 id·content를 RETURNING하세요. 뒤의 ROLLBACK 후 원문이 남아야 합니다.</p>
+<p><strong>변경문 RETURNING 예상:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>id</th>
+  <th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>실제 NEW_ID</td>
+  <td>복습 자료와 예제 코드를 함께 확인합니다.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>종료 후 확인:</strong> UPDATE의 RETURNING은 위 새 본문입니다. ROLLBACK 후 SELECT는 <code>복습 자료는 개인 폴더에서 확인합니다.</code>로 돌아오고 총 4행입니다.</p>
+<p>[ ] 실제 ID 사용  [ ] 변경 1행  [ ] 종료 후 데이터 일치</p>
+<h3>U02 · 수정 후 확정</h3>
+<p><strong>구현 위치:</strong> <code>B_CRUD/tasks.sql</code>의 <code>B-SQL-07</code></p>
+<p><strong>요구사항:</strong> C01의 실제 <strong>NEW_ID</strong> 행에 같은 본문 수정을 실행하세요. 뒤의 COMMIT 후 변경한 본문이 남아야 합니다.</p>
+<p><strong>변경문 RETURNING 예상:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>id</th>
+  <th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>실제 NEW_ID</td>
+  <td>복습 자료와 예제 코드를 함께 확인합니다.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>종료 후 확인:</strong> COMMIT 뒤 SELECT도 위 새 본문입니다. ID·전체 4행·기존 1~3은 유지됩니다.</p>
+<p>[ ] 실제 ID 사용  [ ] 변경 1행  [ ] 종료 후 데이터 일치</p>
+<h3>D01 · 새 행 삭제</h3>
+<p><strong>구현 위치:</strong> <code>B_CRUD/tasks.sql</code>의 <code>B-SQL-08</code></p>
+<p><strong>요구사항:</strong> C01에서 만든 실제 <strong>NEW_ID</strong> 행만 DELETE하고 id를 RETURNING하세요. COMMIT 뒤 원래 지식 3건이 모두 그대로 남아야 합니다.</p>
+<p><strong>변경문 RETURNING 예상:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>실제 NEW_ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>종료 후 확인:</strong> DELETE RETURNING은 위 1행, COMMIT 뒤 같은 ID 조회는 0행입니다. 최종 지식은 S0의 세 행과 완전히 같습니다.</p>
+<p>[ ] 실제 ID 사용  [ ] 변경 1행  [ ] 종료 후 데이터 일치</p>
+<h2>3. 제공된 실패 요청 확인 · D01 뒤 수행</h2>
+<p>이 구간은 완성 SQL을 제공합니다. <strong>구현 TODO가 아니라 선언한 규칙을 실제로 확인하는 문제</strong>입니다.
+<code>B_CRUD/errors.sql</code>에서 CASE E01, E02 등을 각각 실행하고, 오류를 읽은 뒤 대응하는 RECOVER 구간을 <strong>따로 선택·실행</strong>합니다.</p>
+<ul>
+<li><p><strong>E01 빈 본문 CHECK:</strong> SQLSTATE <code>23514</code>, 제약조건 <code>knowledge_content_length</code> 확인 → ROLLBACK → 지식의 기존 세 행 내용 그대로.</p>
+</li>
+<li><p><strong>E02 없는 분류 FK:</strong> SQLSTATE <code>23503</code>, 제약조건 <code>knowledge_category_fk</code> 확인 → ROLLBACK → 지식의 기존 세 행 내용 그대로.</p>
+</li>
+</ul>
+<p>SQLSTATE 42601(문법 오류), 42P01(표 없음), 25P02(실패한 트랜잭션 상태)는 위 기대 제약 위반의 정답이 아닙니다.
+실패 후 IDENTITY의 다음 번호는 비교하지 않습니다. 실패·취소가 ID 번호까지 원복한다는 조건은 없습니다.</p>
+<h2>최종 확인</h2>
+<p><code>SELECT id,title,content,category_id FROM public.knowledge ORDER BY id;</code> 결과는 시작 S0의 세 행과 같아야 합니다.
+분류별 COUNT(k.id) 결과도 learning2·environment1·reference0입니다.
+실행 결과가 맞는지 각 문제 옆에서 확인하면 충분하며 별도 비교표나 긴 보고서를 작성하지 않습니다.</p>
+<footer>수업용 가상 데이터 · 로컬 환경 전용 · API와 PostgreSQL은 아직 연결하지 않습니다.</footer></main></html>

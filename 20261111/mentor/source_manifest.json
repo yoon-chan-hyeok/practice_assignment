@@ -1,0 +1,13 @@
+{
+  "source": "Day18_PostgreSQL_Knowledge_DB_20261111.pptx",
+  "source_sha256": "e4c6e7f20bd26ee9aa772d6c5fe1d1c4c11c76ab7d72111bd676841360473260",
+  "slides": 84,
+  "date": "2026-11-11",
+  "levels": [
+    "기본필수",
+    "응용",
+    "심화"
+  ],
+  "scope": "PostgreSQL SQL only; no API/ORM/RAG implementation",
+  "note": "DDL·Seed는 교안의 준비 완성본, TODO·파일 구조는 이번 실습 제작 설계"
+}

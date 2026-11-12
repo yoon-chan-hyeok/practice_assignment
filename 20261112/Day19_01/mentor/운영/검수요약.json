@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-08",
+  "scope": "11월12일 오전 명세 기반 실습 v2만",
+  "python": "3.13.5",
+  "platform": "Linux",
+  "versions": {
+    "fastapi": "0.128.2",
+    "pydantic": "2.13.5",
+    "starlette": "0.50.0",
+    "uvicorn": "0.48.0",
+    "httpx": "0.28.1",
+    "pytest": "9.0.2"
+  },
+  "implementation_pairs": 20,
+  "todo_blocks": 79,
+  "api_checks_total": 292,
+  "api_results": {
+    "instructor_B": 40,
+    "instructor_A": 46,
+    "instructor_H": 60,
+    "solved_B": 40,
+    "solved_A": 46,
+    "solved_H": 60
+  },
+  "real_server_paths": 6,
+  "real_restarts_total": 12,
+  "provided_pytest_cases_total": 4,
+  "html_render_count": 46,
+  "html_overflow_count": 0,
+  "local_links_checked": 84,
+  "sql_cases_extracted": 41,
+  "sql_read_expected_logic_checked": 20,
+  "postgresql_actual_execution": false,
+  "windows_powershell_pgadmin": false,
+  "fresh_dependency_installation": false
+}

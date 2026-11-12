@@ -1,5 +1,10 @@
 # Day18 · PostgreSQL·SQL·ERD 실습
 
+실습환경 준비 :  
+1. postgresql 다운로드 (18.6.x 버전으로 받아질거에요)
+https://www.postgresql.org/download/windows/
+2. 다운로드 완료 되면 설치! 비밀번호는 꼭 기억해주세요!  
+
 2026년 11월 11일(수) / 생성형 AI·LLM 및 RAG 엔지니어링 2/18
 
 전날의 상품 API가 메모리에만 저장하던 데이터를, 오늘은 **관계형 데이터베이스의 표와 관계**로 설계합니다. 오늘은 FastAPI와 DB를 연결하지 않습니다. Python ORM·Migration 라이브러리·배포까지 한꺼번에 배우지 않습니다.

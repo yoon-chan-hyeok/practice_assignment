@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+sqlalchemy>=2.0
+psycopg[binary]>=3.2
+pydantic-settings
+alembic
+httpx
+pytest

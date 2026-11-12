@@ -1,0 +1,23 @@
+### health
+GET http://127.0.0.1:8000/health
+
+### 목록
+GET http://127.0.0.1:8000/api/knowledge
+
+### 분류 필터
+GET http://127.0.0.1:8000/api/knowledge?category=learning
+
+### 생성
+POST http://127.0.0.1:8000/api/knowledge
+Content-Type: application/json
+
+{"title":"PM 연동 확인","content":"API가 PostgreSQL에 저장합니다.","category":"learning"}
+
+### 수정 - ID는 생성 응답의 실제 값으로 교체
+PUT http://127.0.0.1:8000/api/knowledge/4
+Content-Type: application/json
+
+{"title":"PM 연동 확인","content":"수정 내용이 PostgreSQL에 남습니다.","category":"learning"}
+
+### 삭제 - ID는 실제 값으로 교체
+DELETE http://127.0.0.1:8000/api/knowledge/4

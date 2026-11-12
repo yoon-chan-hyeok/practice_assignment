@@ -1,0 +1,732 @@
+{
+  "B": {
+    "level": "01_기본필수",
+    "build_db": "day19_build_b",
+    "crud_db": "day19_crud_b",
+    "build_files": [
+      "A_구축/build.sql"
+    ],
+    "cases": [
+      {
+        "id": "R01",
+        "title": "전체 지식 목록",
+        "requirement": "초기 S0에서 id·title만 id 오름차순으로 조회하세요.",
+        "sql": "SELECT id, title FROM public.knowledge ORDER BY id;",
+        "expected": {
+          "columns": [
+            "id",
+            "title"
+          ],
+          "rows": [
+            [
+              1,
+              "실습 파일 보관"
+            ],
+            [
+              2,
+              "서버 실행"
+            ],
+            [
+              3,
+              "질문 작성"
+            ]
+          ]
+        },
+        "block_id": "B-SQL-01",
+        "body": "-- CASE R01\n@@B-SQL-01@@\n-- ENDCASE R01\n",
+        "file": "B_CRUD/tasks.sql"
+      },
+      {
+        "id": "R02",
+        "title": "상세 조회",
+        "requirement": "ID 2의 id·title·content·category_id를 조회하세요.",
+        "sql": "SELECT id, title, content, category_id FROM public.knowledge WHERE id = 2;",
+        "expected": {
+          "columns": [
+            "id",
+            "title",
+            "content",
+            "category_id"
+          ],
+          "rows": [
+            [
+              2,
+              "서버 실행",
+              "프로젝트 폴더에서 서버를 실행합니다.",
+              2
+            ]
+          ]
+        },
+        "block_id": "B-SQL-02",
+        "body": "-- CASE R02\n@@B-SQL-02@@\n-- ENDCASE R02\n",
+        "file": "B_CRUD/tasks.sql"
+      },
+      {
+        "id": "R03",
+        "title": "분류명 JOIN",
+        "requirement": "knowledge와 categories를 FK로 연결해 id·title·분류명(category)을 지식 id 오름차순으로 조회하세요.",
+        "sql": "SELECT k.id, k.title, c.name AS category\nFROM public.knowledge AS k\nJOIN public.categories AS c ON c.id = k.category_id\nORDER BY k.id;",
+        "expected": {
+          "columns": [
+            "id",
+            "title",
+            "category"
+          ],
+          "rows": [
+            [
+              1,
+              "실습 파일 보관",
+              "learning"
+            ],
+            [
+              2,
+              "서버 실행",
+              "environment"
+            ],
+            [
+              3,
+              "질문 작성",
+              "learning"
+            ]
+          ]
+        },
+        "block_id": "B-SQL-03",
+        "body": "-- CASE R03\n@@B-SQL-03@@\n-- ENDCASE R03\n",
+        "file": "B_CRUD/tasks.sql"
+      },
+      {
+        "id": "R04",
+        "title": "빈 분류 포함 집계",
+        "requirement": "분류를 왼쪽에 두고 모든 분류명과 지식 수(knowledge_count)를 분류 id 순으로 조회하세요. reference는 0이어야 합니다.",
+        "sql": "SELECT c.name AS category, COUNT(k.id) AS knowledge_count\nFROM public.categories AS c\nLEFT JOIN public.knowledge AS k ON k.category_id = c.id\nGROUP BY c.id, c.name\nORDER BY c.id;",
+        "expected": {
+          "columns": [
+            "category",
+            "knowledge_count"
+          ],
+          "rows": [
+            [
+              "learning",
+              2
+            ],
+            [
+              "environment",
+              1
+            ],
+            [
+              "reference",
+              0
+            ]
+          ]
+        },
+        "block_id": "B-SQL-04",
+        "body": "-- CASE R04\n@@B-SQL-04@@\n-- ENDCASE R04\n",
+        "file": "B_CRUD/tasks.sql"
+      },
+      {
+        "id": "C01",
+        "title": "새 지식 생성",
+        "requirement": "title='보충 학습', content='복습 자료는 개인 폴더에서 확인합니다.', category_id=1인 행을 INSERT하고 id·title·category_id를 RETURNING하세요. 실제 id를 기억합니다.",
+        "sql": "-- 1. BEGIN만 선택하여 실행합니다.\nBEGIN;\n-- 2. 아래 INSERT ... RETURNING만 실행하고 실제 ID를 기록합니다.\nINSERT INTO public.knowledge(title,content,category_id)\nVALUES ('보충 학습','복습 자료는 개인 폴더에서 확인합니다.',1)\nRETURNING id,title,category_id;\n-- 3. COMMIT만 실행한 뒤 다음 SELECT를 따로 실행합니다.\nCOMMIT;\nSELECT COUNT(*) AS knowledge_count FROM public.knowledge;",
+        "block_id": "B-SQL-05",
+        "body": "-- CASE C01\n-- 1. BEGIN만 선택하여 실행합니다.\nBEGIN;\n-- 2. 아래 INSERT ... RETURNING만 실행하고 실제 ID를 기록합니다.\n@@B-SQL-05@@\n-- 3. COMMIT만 실행한 뒤 다음 SELECT를 따로 실행합니다.\nCOMMIT;\nSELECT COUNT(*) AS knowledge_count FROM public.knowledge;\n-- ENDCASE C01\n",
+        "file": "B_CRUD/tasks.sql"
+      },
+      {
+        "id": "U01",
+        "title": "수정 후 취소",
+        "requirement": "C01의 실제 __NEW_ID__ 행만 content='복습 자료와 예제 코드를 함께 확인합니다.'로 UPDATE하고 id·content를 RETURNING하세요. 뒤의 ROLLBACK 후 원문이 남아야 합니다.",
+        "sql": "BEGIN;\nUPDATE public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;\nROLLBACK;\nSELECT id,content FROM public.knowledge WHERE id=__NEW_ID__;",
+        "block_id": "B-SQL-06",
+        "body": "-- CASE U01\nBEGIN;\n@@B-SQL-06@@\nROLLBACK;\nSELECT id,content FROM public.knowledge WHERE id=__NEW_ID__;\n-- ENDCASE U01\n",
+        "file": "B_CRUD/tasks.sql"
+      },
+      {
+        "id": "U02",
+        "title": "수정 후 확정",
+        "requirement": "C01의 실제 __NEW_ID__ 행에 같은 본문 수정을 실행하세요. 뒤의 COMMIT 후 변경한 본문이 남아야 합니다.",
+        "sql": "BEGIN;\nUPDATE public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;\nCOMMIT;\nSELECT id,content FROM public.knowledge WHERE id=__NEW_ID__;",
+        "block_id": "B-SQL-07",
+        "body": "-- CASE U02\nBEGIN;\n@@B-SQL-07@@\nCOMMIT;\nSELECT id,content FROM public.knowledge WHERE id=__NEW_ID__;\n-- ENDCASE U02\n",
+        "file": "B_CRUD/tasks.sql"
+      },
+      {
+        "id": "D01",
+        "title": "새 행 삭제",
+        "requirement": "C01에서 만든 실제 __NEW_ID__ 행만 DELETE하고 id를 RETURNING하세요. COMMIT 뒤 원래 지식 3건이 모두 그대로 남아야 합니다.",
+        "sql": "BEGIN;\nDELETE FROM public.knowledge WHERE id=__NEW_ID__ RETURNING id;\nCOMMIT;\nSELECT id FROM public.knowledge WHERE id=__NEW_ID__;\nSELECT id,title,content,category_id FROM public.knowledge ORDER BY id;",
+        "block_id": "B-SQL-08",
+        "body": "-- CASE D01\nBEGIN;\n@@B-SQL-08@@\nCOMMIT;\nSELECT id FROM public.knowledge WHERE id=__NEW_ID__;\nSELECT id,title,content,category_id FROM public.knowledge ORDER BY id;\n-- ENDCASE D01\n",
+        "file": "B_CRUD/tasks.sql"
+      }
+    ],
+    "errors": [
+      {
+        "id": "E01",
+        "title": "빈 본문 CHECK",
+        "sql": "BEGIN;\nINSERT INTO public.knowledge(title,content,category_id) VALUES ('실패 검사','',1);",
+        "sqlstate": "23514",
+        "constraint": "knowledge_content_length"
+      },
+      {
+        "id": "E02",
+        "title": "없는 분류 FK",
+        "sql": "-- 아래 분류 ID가 0행인지 먼저 확인합니다. 존재한다면 다른 없는 ID로 바꿉니다.\nSELECT id FROM public.categories WHERE id=999999;\nBEGIN;\nINSERT INTO public.knowledge(title,content,category_id) VALUES ('실패 검사','정상 길이',999999);",
+        "sqlstate": "23503",
+        "constraint": "knowledge_category_fk"
+      }
+    ]
+  },
+  "A": {
+    "level": "02_응용",
+    "build_db": "day19_build_a",
+    "crud_db": "day19_crud_a",
+    "build_files": [
+      "A_구축/schema/01_categories.sql",
+      "A_구축/schema/02_knowledge.sql"
+    ],
+    "cases": [
+      {
+        "id": "R01",
+        "title": "전체 지식 목록",
+        "requirement": "초기 S0에서 id·title만 id 오름차순으로 조회하세요.",
+        "sql": "SELECT id, title FROM public.knowledge ORDER BY id;",
+        "expected": {
+          "columns": [
+            "id",
+            "title"
+          ],
+          "rows": [
+            [
+              1,
+              "실습 파일 보관"
+            ],
+            [
+              2,
+              "서버 실행"
+            ],
+            [
+              3,
+              "질문 작성"
+            ]
+          ]
+        },
+        "block_id": "A-SQL-01",
+        "body": "-- CASE R01\n@@A-SQL-01@@\n-- ENDCASE R01\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R02",
+        "title": "상세 조회",
+        "requirement": "ID 2의 id·title·content·category_id를 조회하세요.",
+        "sql": "SELECT id, title, content, category_id FROM public.knowledge WHERE id = 2;",
+        "expected": {
+          "columns": [
+            "id",
+            "title",
+            "content",
+            "category_id"
+          ],
+          "rows": [
+            [
+              2,
+              "서버 실행",
+              "프로젝트 폴더에서 서버를 실행합니다.",
+              2
+            ]
+          ]
+        },
+        "block_id": "A-SQL-02",
+        "body": "-- CASE R02\n@@A-SQL-02@@\n-- ENDCASE R02\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R03",
+        "title": "분류명 JOIN",
+        "requirement": "knowledge와 categories를 FK로 연결해 id·title·분류명(category)을 지식 id 오름차순으로 조회하세요.",
+        "sql": "SELECT k.id, k.title, c.name AS category\nFROM public.knowledge AS k\nJOIN public.categories AS c ON c.id = k.category_id\nORDER BY k.id;",
+        "expected": {
+          "columns": [
+            "id",
+            "title",
+            "category"
+          ],
+          "rows": [
+            [
+              1,
+              "실습 파일 보관",
+              "learning"
+            ],
+            [
+              2,
+              "서버 실행",
+              "environment"
+            ],
+            [
+              3,
+              "질문 작성",
+              "learning"
+            ]
+          ]
+        },
+        "block_id": "A-SQL-03",
+        "body": "-- CASE R03\n@@A-SQL-03@@\n-- ENDCASE R03\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R04",
+        "title": "빈 분류 포함 집계",
+        "requirement": "분류를 왼쪽에 두고 모든 분류명과 지식 수(knowledge_count)를 분류 id 순으로 조회하세요. reference는 0이어야 합니다.",
+        "sql": "SELECT c.name AS category, COUNT(k.id) AS knowledge_count\nFROM public.categories AS c\nLEFT JOIN public.knowledge AS k ON k.category_id = c.id\nGROUP BY c.id, c.name\nORDER BY c.id;",
+        "expected": {
+          "columns": [
+            "category",
+            "knowledge_count"
+          ],
+          "rows": [
+            [
+              "learning",
+              2
+            ],
+            [
+              "environment",
+              1
+            ],
+            [
+              "reference",
+              0
+            ]
+          ]
+        },
+        "block_id": "A-SQL-04",
+        "body": "-- CASE R04\n@@A-SQL-04@@\n-- ENDCASE R04\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R05",
+        "title": "조건 조합",
+        "requirement": "분류가 learning이면서 제목에 실습이 포함된 지식의 id·title·분류명(category)을 id 순으로 조회하세요.",
+        "sql": "SELECT k.id, k.title, c.name AS category\nFROM public.knowledge k JOIN public.categories c ON c.id=k.category_id\nWHERE c.name='learning' AND k.title ILIKE '%실습%' ORDER BY k.id;",
+        "expected": {
+          "columns": [
+            "id",
+            "title",
+            "category"
+          ],
+          "rows": [
+            [
+              1,
+              "실습 파일 보관",
+              "learning"
+            ]
+          ]
+        },
+        "block_id": "A-SQL-05",
+        "body": "-- CASE R05\n@@A-SQL-05@@\n-- ENDCASE R05\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R06",
+        "title": "빈 결과",
+        "requirement": "분류가 reference인 지식의 id·title을 id 순으로 조회하세요. 분류는 있지만 지식이 없으므로 0행입니다.",
+        "sql": "SELECT k.id, k.title FROM public.knowledge k\nJOIN public.categories c ON c.id=k.category_id\nWHERE c.name='reference' ORDER BY k.id;",
+        "expected": {
+          "columns": [
+            "id",
+            "title"
+          ],
+          "rows": []
+        },
+        "block_id": "A-SQL-06",
+        "body": "-- CASE R06\n@@A-SQL-06@@\n-- ENDCASE R06\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R07",
+        "title": "그룹 조건",
+        "requirement": "분류별 지식 수를 구한 뒤 2건 이상인 분류명(category)과 개수(knowledge_count)만 분류 id 순으로 조회하세요.",
+        "sql": "SELECT c.name AS category, COUNT(k.id) AS knowledge_count\nFROM public.categories c LEFT JOIN public.knowledge k ON k.category_id=c.id\nGROUP BY c.id,c.name HAVING COUNT(k.id)>=2 ORDER BY c.id;",
+        "expected": {
+          "columns": [
+            "category",
+            "knowledge_count"
+          ],
+          "rows": [
+            [
+              "learning",
+              2
+            ]
+          ]
+        },
+        "block_id": "A-SQL-07",
+        "body": "-- CASE R07\n@@A-SQL-07@@\n-- ENDCASE R07\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "C01",
+        "title": "새 지식 생성",
+        "requirement": "title='보충 학습', content='복습 자료는 개인 폴더에서 확인합니다.', category_id=1인 행을 INSERT하고 id·title·category_id를 RETURNING하세요. 실제 id를 기억합니다.",
+        "sql": "-- 1. BEGIN만 선택하여 실행합니다.\nBEGIN;\n-- 2. 아래 INSERT ... RETURNING만 실행하고 실제 ID를 기록합니다.\nINSERT INTO public.knowledge(title,content,category_id)\nVALUES ('보충 학습','복습 자료는 개인 폴더에서 확인합니다.',1)\nRETURNING id,title,category_id;\n-- 3. COMMIT만 실행한 뒤 다음 SELECT를 따로 실행합니다.\nCOMMIT;\nSELECT COUNT(*) AS knowledge_count FROM public.knowledge;",
+        "block_id": "A-SQL-08",
+        "body": "-- CASE C01\n-- 1. BEGIN만 선택하여 실행합니다.\nBEGIN;\n-- 2. 아래 INSERT ... RETURNING만 실행하고 실제 ID를 기록합니다.\n@@A-SQL-08@@\n-- 3. COMMIT만 실행한 뒤 다음 SELECT를 따로 실행합니다.\nCOMMIT;\nSELECT COUNT(*) AS knowledge_count FROM public.knowledge;\n-- ENDCASE C01\n",
+        "file": "B_CRUD/changes/02_crud.sql"
+      },
+      {
+        "id": "U01",
+        "title": "수정 후 취소",
+        "requirement": "C01의 실제 __NEW_ID__ 행만 content='복습 자료와 예제 코드를 함께 확인합니다.'로 UPDATE하고 id·content를 RETURNING하세요. 뒤의 ROLLBACK 후 원문이 남아야 합니다.",
+        "sql": "BEGIN;\nUPDATE public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;\nROLLBACK;\nSELECT id,content FROM public.knowledge WHERE id=__NEW_ID__;",
+        "block_id": "A-SQL-09",
+        "body": "-- CASE U01\nBEGIN;\n@@A-SQL-09@@\nROLLBACK;\nSELECT id,content FROM public.knowledge WHERE id=__NEW_ID__;\n-- ENDCASE U01\n",
+        "file": "B_CRUD/changes/02_crud.sql"
+      },
+      {
+        "id": "U02",
+        "title": "수정 후 확정",
+        "requirement": "C01의 실제 __NEW_ID__ 행에 같은 본문 수정을 실행하세요. 뒤의 COMMIT 후 변경한 본문이 남아야 합니다.",
+        "sql": "BEGIN;\nUPDATE public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;\nCOMMIT;\nSELECT id,content FROM public.knowledge WHERE id=__NEW_ID__;",
+        "block_id": "A-SQL-10",
+        "body": "-- CASE U02\nBEGIN;\n@@A-SQL-10@@\nCOMMIT;\nSELECT id,content FROM public.knowledge WHERE id=__NEW_ID__;\n-- ENDCASE U02\n",
+        "file": "B_CRUD/changes/02_crud.sql"
+      },
+      {
+        "id": "D01",
+        "title": "새 행 삭제",
+        "requirement": "C01에서 만든 실제 __NEW_ID__ 행만 DELETE하고 id를 RETURNING하세요. COMMIT 뒤 원래 지식 3건이 모두 그대로 남아야 합니다.",
+        "sql": "BEGIN;\nDELETE FROM public.knowledge WHERE id=__NEW_ID__ RETURNING id;\nCOMMIT;\nSELECT id FROM public.knowledge WHERE id=__NEW_ID__;\nSELECT id,title,content,category_id FROM public.knowledge ORDER BY id;",
+        "block_id": "A-SQL-11",
+        "body": "-- CASE D01\nBEGIN;\n@@A-SQL-11@@\nCOMMIT;\nSELECT id FROM public.knowledge WHERE id=__NEW_ID__;\nSELECT id,title,content,category_id FROM public.knowledge ORDER BY id;\n-- ENDCASE D01\n",
+        "file": "B_CRUD/changes/02_crud.sql"
+      }
+    ],
+    "errors": [
+      {
+        "id": "E01",
+        "title": "빈 본문 CHECK",
+        "sql": "BEGIN;\nINSERT INTO public.knowledge(title,content,category_id) VALUES ('실패 검사','',1);",
+        "sqlstate": "23514",
+        "constraint": "knowledge_content_length"
+      },
+      {
+        "id": "E02",
+        "title": "없는 분류 FK",
+        "sql": "-- 아래 분류 ID가 0행인지 먼저 확인합니다. 존재한다면 다른 없는 ID로 바꿉니다.\nSELECT id FROM public.categories WHERE id=999999;\nBEGIN;\nINSERT INTO public.knowledge(title,content,category_id) VALUES ('실패 검사','정상 길이',999999);",
+        "sqlstate": "23503",
+        "constraint": "knowledge_category_fk"
+      },
+      {
+        "id": "E03",
+        "title": "분류명 중복",
+        "sql": "BEGIN;\nINSERT INTO public.categories(name) VALUES ('learning');",
+        "sqlstate": "23505",
+        "constraint": null
+      }
+    ]
+  },
+  "H": {
+    "level": "03_심화",
+    "build_db": "day19_build_h",
+    "crud_db": "day19_crud_h",
+    "build_files": [
+      "A_구축/schema/01_categories.sql",
+      "A_구축/schema/02_knowledge.sql",
+      "A_구축/indexes/03_category_index.sql"
+    ],
+    "cases": [
+      {
+        "id": "R01",
+        "title": "전체 지식 목록",
+        "requirement": "초기 S0에서 id·title만 id 오름차순으로 조회하세요.",
+        "sql": "SELECT id, title FROM public.knowledge ORDER BY id;",
+        "expected": {
+          "columns": [
+            "id",
+            "title"
+          ],
+          "rows": [
+            [
+              1,
+              "실습 파일 보관"
+            ],
+            [
+              2,
+              "서버 실행"
+            ],
+            [
+              3,
+              "질문 작성"
+            ]
+          ]
+        },
+        "block_id": "H-SQL-01",
+        "body": "-- CASE R01\n@@H-SQL-01@@\n-- ENDCASE R01\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R02",
+        "title": "상세 조회",
+        "requirement": "ID 2의 id·title·content·category_id를 조회하세요.",
+        "sql": "SELECT id, title, content, category_id FROM public.knowledge WHERE id = 2;",
+        "expected": {
+          "columns": [
+            "id",
+            "title",
+            "content",
+            "category_id"
+          ],
+          "rows": [
+            [
+              2,
+              "서버 실행",
+              "프로젝트 폴더에서 서버를 실행합니다.",
+              2
+            ]
+          ]
+        },
+        "block_id": "H-SQL-02",
+        "body": "-- CASE R02\n@@H-SQL-02@@\n-- ENDCASE R02\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R03",
+        "title": "분류명 JOIN",
+        "requirement": "knowledge와 categories를 FK로 연결해 id·title·분류명(category)을 지식 id 오름차순으로 조회하세요.",
+        "sql": "SELECT k.id, k.title, c.name AS category\nFROM public.knowledge AS k\nJOIN public.categories AS c ON c.id = k.category_id\nORDER BY k.id;",
+        "expected": {
+          "columns": [
+            "id",
+            "title",
+            "category"
+          ],
+          "rows": [
+            [
+              1,
+              "실습 파일 보관",
+              "learning"
+            ],
+            [
+              2,
+              "서버 실행",
+              "environment"
+            ],
+            [
+              3,
+              "질문 작성",
+              "learning"
+            ]
+          ]
+        },
+        "block_id": "H-SQL-03",
+        "body": "-- CASE R03\n@@H-SQL-03@@\n-- ENDCASE R03\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R04",
+        "title": "빈 분류 포함 집계",
+        "requirement": "분류를 왼쪽에 두고 모든 분류명과 지식 수(knowledge_count)를 분류 id 순으로 조회하세요. reference는 0이어야 합니다.",
+        "sql": "SELECT c.name AS category, COUNT(k.id) AS knowledge_count\nFROM public.categories AS c\nLEFT JOIN public.knowledge AS k ON k.category_id = c.id\nGROUP BY c.id, c.name\nORDER BY c.id;",
+        "expected": {
+          "columns": [
+            "category",
+            "knowledge_count"
+          ],
+          "rows": [
+            [
+              "learning",
+              2
+            ],
+            [
+              "environment",
+              1
+            ],
+            [
+              "reference",
+              0
+            ]
+          ]
+        },
+        "block_id": "H-SQL-04",
+        "body": "-- CASE R04\n@@H-SQL-04@@\n-- ENDCASE R04\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R05",
+        "title": "조건 조합",
+        "requirement": "분류가 learning이면서 제목에 실습이 포함된 지식의 id·title·분류명(category)을 id 순으로 조회하세요.",
+        "sql": "SELECT k.id, k.title, c.name AS category\nFROM public.knowledge k JOIN public.categories c ON c.id=k.category_id\nWHERE c.name='learning' AND k.title ILIKE '%실습%' ORDER BY k.id;",
+        "expected": {
+          "columns": [
+            "id",
+            "title",
+            "category"
+          ],
+          "rows": [
+            [
+              1,
+              "실습 파일 보관",
+              "learning"
+            ]
+          ]
+        },
+        "block_id": "H-SQL-05",
+        "body": "-- CASE R05\n@@H-SQL-05@@\n-- ENDCASE R05\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R06",
+        "title": "빈 결과",
+        "requirement": "분류가 reference인 지식의 id·title을 id 순으로 조회하세요. 분류는 있지만 지식이 없으므로 0행입니다.",
+        "sql": "SELECT k.id, k.title FROM public.knowledge k\nJOIN public.categories c ON c.id=k.category_id\nWHERE c.name='reference' ORDER BY k.id;",
+        "expected": {
+          "columns": [
+            "id",
+            "title"
+          ],
+          "rows": []
+        },
+        "block_id": "H-SQL-06",
+        "body": "-- CASE R06\n@@H-SQL-06@@\n-- ENDCASE R06\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R07",
+        "title": "그룹 조건",
+        "requirement": "분류별 지식 수를 구한 뒤 2건 이상인 분류명(category)과 개수(knowledge_count)만 분류 id 순으로 조회하세요.",
+        "sql": "SELECT c.name AS category, COUNT(k.id) AS knowledge_count\nFROM public.categories c LEFT JOIN public.knowledge k ON k.category_id=c.id\nGROUP BY c.id,c.name HAVING COUNT(k.id)>=2 ORDER BY c.id;",
+        "expected": {
+          "columns": [
+            "category",
+            "knowledge_count"
+          ],
+          "rows": [
+            [
+              "learning",
+              2
+            ]
+          ]
+        },
+        "block_id": "H-SQL-07",
+        "body": "-- CASE R07\n@@H-SQL-07@@\n-- ENDCASE R07\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R08",
+        "title": "자식 없는 부모",
+        "requirement": "LEFT JOIN과 IS NULL로 지식이 없는 분류의 id와 name을 분류 id 순으로 조회하세요.",
+        "sql": "SELECT c.id, c.name FROM public.categories c\nLEFT JOIN public.knowledge k ON k.category_id=c.id\nWHERE k.id IS NULL ORDER BY c.id;",
+        "expected": {
+          "columns": [
+            "id",
+            "name"
+          ],
+          "rows": [
+            [
+              3,
+              "reference"
+            ]
+          ]
+        },
+        "block_id": "H-SQL-08",
+        "body": "-- CASE R08\n@@H-SQL-08@@\n-- ENDCASE R08\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "R09",
+        "title": "문자열 길이 조회",
+        "requirement": "각 지식의 id와 본문 글자 수(content_length)를 id 오름차순으로 조회하세요.",
+        "sql": "SELECT id, char_length(content) AS content_length FROM public.knowledge ORDER BY id;",
+        "expected": {
+          "columns": [
+            "id",
+            "content_length"
+          ],
+          "rows": [
+            [
+              1,
+              20
+            ],
+            [
+              2,
+              20
+            ],
+            [
+              3,
+              24
+            ]
+          ]
+        },
+        "block_id": "H-SQL-09",
+        "body": "-- CASE R09\n@@H-SQL-09@@\n-- ENDCASE R09\n",
+        "file": "B_CRUD/queries/01_reads.sql"
+      },
+      {
+        "id": "C01",
+        "title": "새 지식 생성",
+        "requirement": "title='보충 학습', content='복습 자료는 개인 폴더에서 확인합니다.', category_id=1인 행을 INSERT하고 id·title·category_id를 RETURNING하세요. 실제 id를 기억합니다.",
+        "sql": "-- 1. BEGIN만 선택하여 실행합니다.\nBEGIN;\n-- 2. 아래 INSERT ... RETURNING만 실행하고 실제 ID를 기록합니다.\nINSERT INTO public.knowledge(title,content,category_id)\nVALUES ('보충 학습','복습 자료는 개인 폴더에서 확인합니다.',1)\nRETURNING id,title,category_id;\n-- 3. COMMIT만 실행한 뒤 다음 SELECT를 따로 실행합니다.\nCOMMIT;\nSELECT COUNT(*) AS knowledge_count FROM public.knowledge;",
+        "block_id": "H-SQL-10",
+        "body": "-- CASE C01\n-- 1. BEGIN만 선택하여 실행합니다.\nBEGIN;\n-- 2. 아래 INSERT ... RETURNING만 실행하고 실제 ID를 기록합니다.\n@@H-SQL-10@@\n-- 3. COMMIT만 실행한 뒤 다음 SELECT를 따로 실행합니다.\nCOMMIT;\nSELECT COUNT(*) AS knowledge_count FROM public.knowledge;\n-- ENDCASE C01\n",
+        "file": "B_CRUD/changes/02_create.sql"
+      },
+      {
+        "id": "U01",
+        "title": "수정 후 취소",
+        "requirement": "C01의 실제 __NEW_ID__ 행만 content='복습 자료와 예제 코드를 함께 확인합니다.'로 UPDATE하고 id·content를 RETURNING하세요. 뒤의 ROLLBACK 후 원문이 남아야 합니다.",
+        "sql": "BEGIN;\nUPDATE public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;\nROLLBACK;\nSELECT id,content FROM public.knowledge WHERE id=__NEW_ID__;",
+        "block_id": "H-SQL-11",
+        "body": "-- CASE U01\nBEGIN;\n@@H-SQL-11@@\nROLLBACK;\nSELECT id,content FROM public.knowledge WHERE id=__NEW_ID__;\n-- ENDCASE U01\n",
+        "file": "B_CRUD/transactions/03_update.sql"
+      },
+      {
+        "id": "U02",
+        "title": "수정 후 확정",
+        "requirement": "C01의 실제 __NEW_ID__ 행에 같은 본문 수정을 실행하세요. 뒤의 COMMIT 후 변경한 본문이 남아야 합니다.",
+        "sql": "BEGIN;\nUPDATE public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;\nCOMMIT;\nSELECT id,content FROM public.knowledge WHERE id=__NEW_ID__;",
+        "block_id": "H-SQL-12",
+        "body": "-- CASE U02\nBEGIN;\n@@H-SQL-12@@\nCOMMIT;\nSELECT id,content FROM public.knowledge WHERE id=__NEW_ID__;\n-- ENDCASE U02\n",
+        "file": "B_CRUD/transactions/03_update.sql"
+      },
+      {
+        "id": "D01",
+        "title": "새 행 삭제",
+        "requirement": "C01에서 만든 실제 __NEW_ID__ 행만 DELETE하고 id를 RETURNING하세요. COMMIT 뒤 원래 지식 3건이 모두 그대로 남아야 합니다.",
+        "sql": "BEGIN;\nDELETE FROM public.knowledge WHERE id=__NEW_ID__ RETURNING id;\nCOMMIT;\nSELECT id FROM public.knowledge WHERE id=__NEW_ID__;\nSELECT id,title,content,category_id FROM public.knowledge ORDER BY id;",
+        "block_id": "H-SQL-13",
+        "body": "-- CASE D01\nBEGIN;\n@@H-SQL-13@@\nCOMMIT;\nSELECT id FROM public.knowledge WHERE id=__NEW_ID__;\nSELECT id,title,content,category_id FROM public.knowledge ORDER BY id;\n-- ENDCASE D01\n",
+        "file": "B_CRUD/changes/04_delete.sql"
+      },
+      {
+        "id": "T01",
+        "title": "복합 변경 취소",
+        "requirement": "두 UPDATE를 같은 트랜잭션에서 취소하고 기존 두 행을 비교합니다.",
+        "block_id": "H-SQL-14",
+        "sql": "BEGIN;\nUPDATE public.knowledge SET content='임시 내용 1' WHERE id=1;\nUPDATE public.knowledge SET content='임시 내용 2' WHERE id=2;\nROLLBACK;\nSELECT id,content FROM public.knowledge WHERE id IN (1,2) ORDER BY id;",
+        "body": "-- CASE T01\nBEGIN;\n@@H-SQL-14@@\nROLLBACK;\nSELECT id,content FROM public.knowledge WHERE id IN (1,2) ORDER BY id;\n-- ENDCASE T01\n",
+        "file": "B_CRUD/transactions/05_atomicity.sql"
+      }
+    ],
+    "errors": [
+      {
+        "id": "E01",
+        "title": "빈 본문 CHECK",
+        "sql": "BEGIN;\nINSERT INTO public.knowledge(title,content,category_id) VALUES ('실패 검사','',1);",
+        "sqlstate": "23514",
+        "constraint": "knowledge_content_length"
+      },
+      {
+        "id": "E02",
+        "title": "없는 분류 FK",
+        "sql": "-- 아래 분류 ID가 0행인지 먼저 확인합니다. 존재한다면 다른 없는 ID로 바꿉니다.\nSELECT id FROM public.categories WHERE id=999999;\nBEGIN;\nINSERT INTO public.knowledge(title,content,category_id) VALUES ('실패 검사','정상 길이',999999);",
+        "sqlstate": "23503",
+        "constraint": "knowledge_category_fk"
+      },
+      {
+        "id": "E03",
+        "title": "분류명 중복",
+        "sql": "BEGIN;\nINSERT INTO public.categories(name) VALUES ('learning');",
+        "sqlstate": "23505",
+        "constraint": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,476 @@
+{
+  "B-API-01": {
+    "requirement": "data의 entries를 id 오름차순으로 반환하세요. sorted(..., key=lambda e: e[\"id\"])를 사용할 수 있습니다. next_id는 응답하지 않습니다.",
+    "answer": "return sorted(data[\"entries\"], key=lambda e: e[\"id\"])",
+    "stub": "raise NotImplementedError(\"B-API-01: 주석 요구사항을 완성하세요.\")",
+    "explain": "파일 전체가 아니라 사용자용 entries 배열을 반환합니다. JSON의 next_id는 다음 ID 발급을 위한 내부 상태입니다."
+  },
+  "B-API-02": {
+    "requirement": "반복 중인 entry의 id가 knowledge_id와 같을 때 entry를 반환하세요. 목록 인덱스와 ID를 혼동하지 마세요.",
+    "answer": "if entry[\"id\"] == knowledge_id:\n    return entry",
+    "stub": "raise NotImplementedError(\"B-API-02: 주석 요구사항을 완성하세요.\")",
+    "explain": "반복 중인 entry의 id가 knowledge_id와 같을 때 entry를 반환하세요. 목록 인덱스와 ID를 혼동하지 마세요."
+  },
+  "B-API-03": {
+    "requirement": "payload를 dict로 변환하여 entry에 넣고, data의 next_id 값을 entry의 id로 넣으세요.",
+    "answer": "entry = payload.model_dump()\nentry[\"id\"] = data[\"next_id\"]",
+    "stub": "raise NotImplementedError(\"B-API-03: 주석 요구사항을 완성하세요.\")",
+    "explain": "payload를 dict로 변환하여 entry에 넣고, data의 next_id 값을 entry의 id로 넣으세요."
+  },
+  "B-API-04": {
+    "requirement": "entry를 entries에 추가하고 next_id를 1 늘린 뒤 write_data(data)로 저장하세요.",
+    "answer": "data[\"entries\"].append(entry)\ndata[\"next_id\"] += 1\nwrite_data(data)",
+    "stub": "raise NotImplementedError(\"B-API-04: 주석 요구사항을 완성하세요.\")",
+    "explain": "추가와 다음 번호를 같은 파일에 저장합니다. 삭제 가능한 목록에서는 len(entries)+1로 ID를 만들지 않습니다."
+  },
+  "B-API-05": {
+    "requirement": "찾은 위치 i의 항목을 updated로 교체한 뒤 저장하세요. 같은 ID를 유지하고 다른 항목은 변경하지 않습니다.",
+    "answer": "data[\"entries\"][i] = updated\nwrite_data(data)",
+    "stub": "raise NotImplementedError(\"B-API-05: 주석 요구사항을 완성하세요.\")",
+    "explain": "찾은 위치 i의 항목을 updated로 교체한 뒤 저장하세요. 같은 ID를 유지하고 다른 항목은 변경하지 않습니다."
+  },
+  "B-API-06": {
+    "requirement": "찾은 위치 i의 항목 하나만 삭제하고 저장하세요. next_id는 줄이지 않습니다.",
+    "answer": "data[\"entries\"].pop(i)\nwrite_data(data)",
+    "stub": "raise NotImplementedError(\"B-API-06: 주석 요구사항을 완성하세요.\")",
+    "explain": "한 항목만 삭제하고 저장한 뒤 바깥의 Response로 빈 204를 반환합니다. 목록 전체를 비우거나 next_id를 감소시키지 않습니다."
+  },
+  "A-API-01": {
+    "requirement": "category가 None이 아닐 때만 entries를 분류 문자열의 완전 일치로 필터링하세요. 빈 문자열도 조건입니다.",
+    "answer": "if category is not None:\n    entries = [x for x in entries if x[\"category\"] == category]",
+    "stub": "raise NotImplementedError(\"A-API-01: 주석 요구사항을 완성하세요.\")",
+    "explain": "category가 None이 아닐 때만 entries를 분류 문자열의 완전 일치로 필터링하세요. 빈 문자열도 조건입니다."
+  },
+  "A-API-02": {
+    "requirement": "entries에서 id가 knowledge_id인 첫 항목을 반환하세요. 없으면 None을 반환하세요.",
+    "answer": "for entry in entries:\n    if entry[\"id\"] == knowledge_id:\n        return entry\nreturn None",
+    "stub": "raise NotImplementedError(\"A-API-02: 주석 요구사항을 완성하세요.\")",
+    "explain": "entries에서 id가 knowledge_id인 첫 항목을 반환하세요. 없으면 None을 반환하세요."
+  },
+  "A-API-03": {
+    "requirement": "read_data()의 entries와 category를 filter_entries에 전달하여 결과를 반환하세요.",
+    "answer": "return filter_entries(data[\"entries\"], category)",
+    "stub": "raise NotImplementedError(\"A-API-03: 주석 요구사항을 완성하세요.\")",
+    "explain": "read_data()의 entries와 category를 filter_entries에 전달하여 결과를 반환하세요."
+  },
+  "A-API-04": {
+    "requirement": "find_entry에 data의 entries와 knowledge_id를 전달해 entry를 구하세요.",
+    "answer": "entry = find_entry(data[\"entries\"], knowledge_id)",
+    "stub": "raise NotImplementedError(\"A-API-04: 주석 요구사항을 완성하세요.\")",
+    "explain": "find_entry에 data의 entries와 knowledge_id를 전달해 entry를 구하세요."
+  },
+  "A-API-05": {
+    "requirement": "entry가 None이면 HTTPException(404, \"Knowledge not found\")을 raise하고, 있으면 반환하세요.",
+    "answer": "if entry is None:\n    raise HTTPException(404, \"Knowledge not found\")\nreturn entry",
+    "stub": "raise NotImplementedError(\"A-API-05: 주석 요구사항을 완성하세요.\")",
+    "explain": "entry가 None이면 HTTPException(404, \"Knowledge not found\")을 raise하고, 있으면 반환하세요."
+  },
+  "A-API-06": {
+    "requirement": "payload를 dict로 변환하고 next_id를 id로 부여한 entry를 만드세요.",
+    "answer": "entry = payload.model_dump()\nentry[\"id\"] = data[\"next_id\"]",
+    "stub": "raise NotImplementedError(\"A-API-06: 주석 요구사항을 완성하세요.\")",
+    "explain": "payload를 dict로 변환하고 next_id를 id로 부여한 entry를 만드세요."
+  },
+  "A-API-07": {
+    "requirement": "entry를 추가하고 next_id를 증가시킨 뒤 파일에 저장하세요.",
+    "answer": "data[\"entries\"].append(entry)\ndata[\"next_id\"] += 1\nwrite_data(data)",
+    "stub": "raise NotImplementedError(\"A-API-07: 주석 요구사항을 완성하세요.\")",
+    "explain": "entry를 추가하고 next_id를 증가시킨 뒤 파일에 저장하세요."
+  },
+  "A-API-08": {
+    "requirement": "같은 ID의 항목만 입력 세 필드로 교체하고 저장·반환하세요. 끝까지 없으면 잠금 블록 밖의 404로 진행합니다.",
+    "answer": "for i, entry in enumerate(data[\"entries\"]):\n    if entry[\"id\"] == knowledge_id:\n        updated = payload.model_dump()\n        updated[\"id\"] = knowledge_id\n        data[\"entries\"][i] = updated\n        write_data(data)\n        return updated",
+    "stub": "raise NotImplementedError(\"A-API-08: 주석 요구사항을 완성하세요.\")",
+    "explain": "같은 ID의 항목만 입력 세 필드로 교체하고 저장·반환하세요. 끝까지 없으면 잠금 블록 밖의 404로 진행합니다."
+  },
+  "A-API-09": {
+    "requirement": "같은 ID의 항목 하나만 삭제·저장한 뒤 Response(status_code=204)를 반환하세요. 없으면 이후 404로 진행합니다.",
+    "answer": "for i, entry in enumerate(data[\"entries\"]):\n    if entry[\"id\"] == knowledge_id:\n        data[\"entries\"].pop(i)\n        write_data(data)\n        return Response(status_code=204)",
+    "stub": "raise NotImplementedError(\"A-API-09: 주석 요구사항을 완성하세요.\")",
+    "explain": "같은 ID의 항목 하나만 삭제·저장한 뒤 Response(status_code=204)를 반환하세요. 없으면 이후 404로 진행합니다."
+  },
+  "H-API-01": {
+    "requirement": "category가 None이 아닐 때만 entries를 분류 완전 일치로 필터링하고 ID 오름차순 목록을 반환하세요.",
+    "answer": "if category is not None:\n    entries = [e for e in entries if e[\"category\"] == category]\nreturn sorted(entries, key=lambda e: e[\"id\"])",
+    "stub": "raise NotImplementedError(\"H-API-01: 주석 요구사항을 완성하세요.\")",
+    "explain": "category가 None이 아닐 때만 entries를 분류 완전 일치로 필터링하고 ID 오름차순 목록을 반환하세요."
+  },
+  "H-API-02": {
+    "requirement": "파일에서 읽은 entries에서 knowledge_id와 같은 id의 항목을 반환하고 없으면 None을 반환하세요.",
+    "answer": "for entry in data[\"entries\"]:\n    if entry[\"id\"] == knowledge_id:\n        return entry\nreturn None",
+    "stub": "raise NotImplementedError(\"H-API-02: 주석 요구사항을 완성하세요.\")",
+    "explain": "파일에서 읽은 entries에서 knowledge_id와 같은 id의 항목을 반환하고 없으면 None을 반환하세요."
+  },
+  "H-API-03": {
+    "requirement": "fields를 복사해 entry를 만들고 next_id로 ID를 발급하세요. entries에 추가하고 next_id를 1 늘리세요. 아직 여기서는 저장하지 않습니다.",
+    "answer": "entry = dict(fields)\nentry[\"id\"] = data[\"next_id\"]\ndata[\"entries\"].append(entry)\ndata[\"next_id\"] += 1",
+    "stub": "raise NotImplementedError(\"H-API-03: 주석 요구사항을 완성하세요.\")",
+    "explain": "fields를 복사해 entry를 만들고 next_id로 ID를 발급하세요. entries에 추가하고 next_id를 1 늘리세요. 아직 여기서는 저장하지 않습니다."
+  },
+  "H-API-04": {
+    "requirement": "변경된 data를 저장하고 entry를 반환하세요. 저장 실패를 성공 결과로 바꾸지 마세요.",
+    "answer": "write_data(data)\nreturn entry",
+    "stub": "raise NotImplementedError(\"H-API-04: 주석 요구사항을 완성하세요.\")",
+    "explain": "변경된 data를 저장하고 entry를 반환하세요. 저장 실패를 성공 결과로 바꾸지 마세요."
+  },
+  "H-API-05": {
+    "requirement": "해당 ID가 있는 위치만 fields 복사본과 같은 ID로 교체·저장·반환하세요. 없으면 None을 반환하세요.",
+    "answer": "for i, entry in enumerate(data[\"entries\"]):\n    if entry[\"id\"] == knowledge_id:\n        updated = dict(fields)\n        updated[\"id\"] = knowledge_id\n        data[\"entries\"][i] = updated\n        write_data(data)\n        return updated\nreturn None",
+    "stub": "raise NotImplementedError(\"H-API-05: 주석 요구사항을 완성하세요.\")",
+    "explain": "해당 ID가 있는 위치만 fields 복사본과 같은 ID로 교체·저장·반환하세요. 없으면 None을 반환하세요."
+  },
+  "H-API-06": {
+    "requirement": "같은 ID가 있으면 그 항목만 삭제·저장하고 True, 없으면 False를 반환하세요. HTTP 상태코드는 여기에서 결정하지 않습니다.",
+    "answer": "for i, entry in enumerate(data[\"entries\"]):\n    if entry[\"id\"] == knowledge_id:\n        data[\"entries\"].pop(i)\n        write_data(data)\n        return True\nreturn False",
+    "stub": "raise NotImplementedError(\"H-API-06: 주석 요구사항을 완성하세요.\")",
+    "explain": "같은 ID가 있으면 그 항목만 삭제·저장하고 True, 없으면 False를 반환하세요. HTTP 상태코드는 여기에서 결정하지 않습니다."
+  },
+  "H-API-07": {
+    "requirement": "entry가 None이면 404를 raise하고, 있으면 entry를 반환하세요.",
+    "answer": "if entry is None:\n    raise HTTPException(404, \"Knowledge not found\")\nreturn entry",
+    "stub": "raise NotImplementedError(\"H-API-07: 주석 요구사항을 완성하세요.\")",
+    "explain": "entry가 None이면 404를 raise하고, 있으면 entry를 반환하세요."
+  },
+  "H-API-08": {
+    "requirement": "payload.model_dump()를 repo.create에 전달하고 결과를 반환하세요. 201 선언과 파일 저장은 별개입니다.",
+    "answer": "return repo.create(payload.model_dump())",
+    "stub": "raise NotImplementedError(\"H-API-08: 주석 요구사항을 완성하세요.\")",
+    "explain": "payload.model_dump()를 repo.create에 전달하고 결과를 반환하세요. 201 선언과 파일 저장은 별개입니다."
+  },
+  "H-API-09": {
+    "requirement": "repo.update에 ID와 입력 dict를 전달하세요. 결과가 None이면 404, 있으면 변경 결과를 반환하세요.",
+    "answer": "entry = repo.update(knowledge_id, payload.model_dump())\nif entry is None:\n    raise HTTPException(404, \"Knowledge not found\")\nreturn entry",
+    "stub": "raise NotImplementedError(\"H-API-09: 주석 요구사항을 완성하세요.\")",
+    "explain": "repo.update에 ID와 입력 dict를 전달하세요. 결과가 None이면 404, 있으면 변경 결과를 반환하세요."
+  },
+  "H-API-10": {
+    "requirement": "repo.delete가 False이면 404를 raise하고, True이면 본문이 없는 204를 반환하세요.",
+    "answer": "if not repo.delete(knowledge_id):\n    raise HTTPException(404, \"Knowledge not found\")\nreturn Response(status_code=204)",
+    "stub": "raise NotImplementedError(\"H-API-10: 주석 요구사항을 완성하세요.\")",
+    "explain": "repo.delete가 False이면 404를 raise하고, True이면 본문이 없는 204를 반환하세요."
+  },
+  "H-API-11": {
+    "requirement": "빈 content 요청이 422인지 검사하고, 파일 bytes가 요청 전과 완전히 같은지 assert하세요.",
+    "answer": "assert response.status_code == 422\nassert data_file.read_bytes() == before",
+    "stub": "raise NotImplementedError(\"H-API-11: 주석 요구사항을 완성하세요.\")",
+    "explain": "422는 저장 로직 전에 거부됩니다. entries와 next_id 모두 보존되어야 합니다."
+  },
+  "H-API-12": {
+    "requirement": "삭제 응답이204이고 빈 본문인지, 같은ID 상세 재조회가404인지 assert하세요.",
+    "answer": "assert response.status_code == 204\nassert response.content == b\"\"\nassert client.get(f\"/api/knowledge/{created_id}\").status_code == 404",
+    "stub": "raise NotImplementedError(\"H-API-12: 주석 요구사항을 완성하세요.\")",
+    "explain": "상태코드, 본문 없음, 실제 삭제를 각각 검사합니다. 테스트는 임시 파일을 사용하므로 작업 파일을 지우지 않습니다."
+  },
+  "B-DDL-01": {
+    "requirement": "categories의 id를 BIGINT 자동 생성 IDENTITY와 PRIMARY KEY로 선언하세요. 쉼표까지 포함합니다.",
+    "answer": "id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,",
+    "stub": "id BIGINT __TODO_B_DDL_01__,",
+    "explain": "IDENTITY는 번호 생성, PRIMARY KEY는 유일성과 NULL 금지를 담당합니다. 실패·ROLLBACK으로 번호가 건너뛸 수 있으므로 ID를 행 수로 해석하지 않습니다."
+  },
+  "B-DDL-02": {
+    "requirement": "categories.name의 1~30자 길이 CHECK를 categories_name_length라는 이름으로 완성하세요.",
+    "answer": "CONSTRAINT categories_name_length CHECK (char_length(name) BETWEEN 1 AND 30)",
+    "stub": "CONSTRAINT categories_name_length CHECK (__TODO_B_DDL_02__)",
+    "explain": "categories.name의 1~30자 길이 CHECK를 categories_name_length라는 이름으로 완성하세요."
+  },
+  "B-DDL-03": {
+    "requirement": "title은 1~80자, content는 1~2000자인 두 CHECK를 명세의 이름으로 완성하세요. 각 줄 끝 쉼표가 필요합니다.",
+    "answer": "CONSTRAINT knowledge_title_length CHECK (char_length(title) BETWEEN 1 AND 80),\nCONSTRAINT knowledge_content_length CHECK (char_length(content) BETWEEN 1 AND 2000),",
+    "stub": "CONSTRAINT knowledge_title_length CHECK (__TODO_B_DDL_03_A__),\nCONSTRAINT knowledge_content_length CHECK (__TODO_B_DDL_03_B__),",
+    "explain": "NOT NULL과 길이 CHECK는 다른 규칙입니다. 빈 문자열은 NULL이 아니므로 길이 하한으로 막습니다. 제목 중복 금지나 공백 제거를 이 요구사항에 추가하지 않습니다."
+  },
+  "B-DDL-04": {
+    "requirement": "category_id가 public.categories(id)를 참조하도록 REFERENCES와 부모 삭제 RESTRICT를 완성하세요.",
+    "answer": "REFERENCES public.categories(id) ON DELETE RESTRICT",
+    "stub": "REFERENCES __TODO_B_DDL_04__",
+    "explain": "FK는 실제 부모 존재를 검사합니다. category_id의 NOT NULL과 함께 필수 관계를 만들고 RESTRICT는 참조 중인 부모 삭제를 막습니다. FK가 JOIN 결과를 자동으로 만들지는 않습니다."
+  },
+  "B-SQL-01": {
+    "requirement": "초기 S0에서 id·title만 id 오름차순으로 조회하세요.",
+    "answer": "SELECT id, title FROM public.knowledge ORDER BY id;",
+    "stub": "SELECT id, title FROM public.knowledge\n__TODO_B_SQL_01__ id;",
+    "explain": "초기 S0에서 id·title만 id 오름차순으로 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "B-SQL-02": {
+    "requirement": "ID 2의 id·title·content·category_id를 조회하세요.",
+    "answer": "SELECT id, title, content, category_id FROM public.knowledge WHERE id = 2;",
+    "stub": "SELECT id, title, content, category_id\nFROM public.knowledge\n__TODO_B_SQL_02__ id = 2;",
+    "explain": "ID 2의 id·title·content·category_id를 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "B-SQL-03": {
+    "requirement": "knowledge와 categories를 FK로 연결해 id·title·분류명(category)을 지식 id 오름차순으로 조회하세요.",
+    "answer": "SELECT k.id, k.title, c.name AS category\nFROM public.knowledge AS k\nJOIN public.categories AS c ON c.id = k.category_id\nORDER BY k.id;",
+    "stub": "SELECT k.id, k.title, c.name AS category\nFROM public.knowledge AS k\nJOIN public.categories AS c ON __TODO_B_SQL_03__\nORDER BY k.id;",
+    "explain": "knowledge와 categories를 FK로 연결해 id·title·분류명(category)을 지식 id 오름차순으로 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "B-SQL-04": {
+    "requirement": "분류를 왼쪽에 두고 모든 분류명과 지식 수(knowledge_count)를 분류 id 순으로 조회하세요. reference는 0이어야 합니다.",
+    "answer": "SELECT c.name AS category, COUNT(k.id) AS knowledge_count\nFROM public.categories AS c\nLEFT JOIN public.knowledge AS k ON k.category_id = c.id\nGROUP BY c.id, c.name\nORDER BY c.id;",
+    "stub": "SELECT c.name AS category, __TODO_B_SQL_04__ AS knowledge_count\nFROM public.categories AS c\nLEFT JOIN public.knowledge AS k ON k.category_id = c.id\nGROUP BY c.id, c.name ORDER BY c.id;",
+    "explain": "LEFT JOIN은 지식이 없는 reference 분류도 남깁니다. COUNT(k.id)는 NULL을 제외하므로 0이고 COUNT(*)는 바깥 조인 행 자체를 세어 1이 됩니다."
+  },
+  "B-SQL-05": {
+    "requirement": "title='보충 학습', content='복습 자료는 개인 폴더에서 확인합니다.', category_id=1인 행을 INSERT하고 id·title·category_id를 RETURNING하세요. 실제 id를 기억합니다.",
+    "answer": "INSERT INTO public.knowledge(title,content,category_id)\nVALUES ('보충 학습','복습 자료는 개인 폴더에서 확인합니다.',1)\nRETURNING id,title,category_id;",
+    "stub": "__TODO_B_SQL_05__ public.knowledge(title,content,category_id)\nVALUES ('보충 학습','복습 자료는 개인 폴더에서 확인합니다.',1)\nRETURNING id,title,category_id;",
+    "explain": "title='보충 학습', content='복습 자료는 개인 폴더에서 확인합니다.', category_id=1인 행을 INSERT하고 id·title·category_id를 RETURNING하세요. 실제 id를 기억합니다. ID는 제목이나 목록 위치와 다릅니다. 영향받은 행 1건을 확인합니다."
+  },
+  "B-SQL-06": {
+    "requirement": "C01의 실제 __NEW_ID__ 행만 content='복습 자료와 예제 코드를 함께 확인합니다.'로 UPDATE하고 id·content를 RETURNING하세요. 뒤의 ROLLBACK 후 원문이 남아야 합니다.",
+    "answer": "UPDATE public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;",
+    "stub": "__TODO_B_SQL_06__ public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;",
+    "explain": "C01의 실제 __NEW_ID__ 행만 content='복습 자료와 예제 코드를 함께 확인합니다.'로 UPDATE하고 id·content를 RETURNING하세요. 뒤의 ROLLBACK 후 원문이 남아야 합니다. ID는 제목이나 목록 위치와 다릅니다. 영향받은 행 1건을 확인합니다."
+  },
+  "B-SQL-07": {
+    "requirement": "C01의 실제 __NEW_ID__ 행에 같은 본문 수정을 실행하세요. 뒤의 COMMIT 후 변경한 본문이 남아야 합니다.",
+    "answer": "UPDATE public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;",
+    "stub": "__TODO_B_SQL_07__ public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;",
+    "explain": "C01의 실제 __NEW_ID__ 행에 같은 본문 수정을 실행하세요. 뒤의 COMMIT 후 변경한 본문이 남아야 합니다. ID는 제목이나 목록 위치와 다릅니다. 영향받은 행 1건을 확인합니다."
+  },
+  "B-SQL-08": {
+    "requirement": "C01에서 만든 실제 __NEW_ID__ 행만 DELETE하고 id를 RETURNING하세요. COMMIT 뒤 원래 지식 3건이 모두 그대로 남아야 합니다.",
+    "answer": "DELETE FROM public.knowledge WHERE id=__NEW_ID__ RETURNING id;",
+    "stub": "__TODO_B_SQL_08__ public.knowledge WHERE id=__NEW_ID__ RETURNING id;",
+    "explain": "C01에서 만든 실제 __NEW_ID__ 행만 DELETE하고 id를 RETURNING하세요. COMMIT 뒤 원래 지식 3건이 모두 그대로 남아야 합니다. ID는 제목이나 목록 위치와 다릅니다. 영향받은 행 1건을 확인합니다."
+  },
+  "A-DDL-01": {
+    "requirement": "categories.id를 BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY로 선언하세요. 쉼표를 포함합니다.",
+    "answer": "id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,",
+    "stub": "__TODO_A_DDL_01__",
+    "explain": "IDENTITY는 번호 생성, PRIMARY KEY는 유일성과 NULL 금지를 담당합니다. 실패·ROLLBACK으로 번호가 건너뛸 수 있으므로 ID를 행 수로 해석하지 않습니다."
+  },
+  "A-DDL-02": {
+    "requirement": "categories.name을 VARCHAR(30), 필수, 중복 불가로 선언하세요. 쉼표를 포함합니다.",
+    "answer": "name VARCHAR(30) NOT NULL UNIQUE,",
+    "stub": "__TODO_A_DDL_02__",
+    "explain": "categories.name을 VARCHAR(30), 필수, 중복 불가로 선언하세요. 쉼표를 포함합니다."
+  },
+  "A-DDL-03": {
+    "requirement": "categories_name_length CHECK로 name의 길이를 1~30자로 제한하세요.",
+    "answer": "CONSTRAINT categories_name_length CHECK (char_length(name) BETWEEN 1 AND 30)",
+    "stub": "__TODO_A_DDL_03__",
+    "explain": "categories_name_length CHECK로 name의 길이를 1~30자로 제한하세요."
+  },
+  "A-DDL-04": {
+    "requirement": "knowledge의 title VARCHAR(80), content TEXT, category_id BIGINT를 각각 NOT NULL로 선언하세요. 각 줄에 쉼표를 붙입니다.",
+    "answer": "title VARCHAR(80) NOT NULL,\ncontent TEXT NOT NULL,\ncategory_id BIGINT NOT NULL,",
+    "stub": "__TODO_A_DDL_04__",
+    "explain": "knowledge의 title VARCHAR(80), content TEXT, category_id BIGINT를 각각 NOT NULL로 선언하세요. 각 줄에 쉼표를 붙입니다."
+  },
+  "A-DDL-05": {
+    "requirement": "knowledge_title_length와 knowledge_content_length CHECK를 작성하세요. 각각 1~80자, 1~2000자이며 뒤에 쉼표를 붙입니다.",
+    "answer": "CONSTRAINT knowledge_title_length CHECK (char_length(title) BETWEEN 1 AND 80),\nCONSTRAINT knowledge_content_length CHECK (char_length(content) BETWEEN 1 AND 2000),",
+    "stub": "__TODO_A_DDL_05__",
+    "explain": "NOT NULL과 길이 CHECK는 다른 규칙입니다. 빈 문자열은 NULL이 아니므로 길이 하한으로 막습니다. 제목 중복 금지나 공백 제거를 이 요구사항에 추가하지 않습니다."
+  },
+  "A-DDL-06": {
+    "requirement": "knowledge_category_fk라는 FK로 category_id를 categories.id에 연결하고 ON DELETE RESTRICT를 설정하세요.",
+    "answer": "CONSTRAINT knowledge_category_fk FOREIGN KEY (category_id)\n    REFERENCES public.categories(id) ON DELETE RESTRICT",
+    "stub": "__TODO_A_DDL_06__",
+    "explain": "FK는 실제 부모 존재를 검사합니다. category_id의 NOT NULL과 함께 필수 관계를 만들고 RESTRICT는 참조 중인 부모 삭제를 막습니다. FK가 JOIN 결과를 자동으로 만들지는 않습니다."
+  },
+  "A-SQL-01": {
+    "requirement": "초기 S0에서 id·title만 id 오름차순으로 조회하세요.",
+    "answer": "SELECT id, title FROM public.knowledge ORDER BY id;",
+    "stub": "-- 전체 지식 목록 SQL을 작성하세요.\n__TODO_A_SQL_01__;",
+    "explain": "초기 S0에서 id·title만 id 오름차순으로 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "A-SQL-02": {
+    "requirement": "ID 2의 id·title·content·category_id를 조회하세요.",
+    "answer": "SELECT id, title, content, category_id FROM public.knowledge WHERE id = 2;",
+    "stub": "-- 상세 조회 SQL을 작성하세요.\n__TODO_A_SQL_02__;",
+    "explain": "ID 2의 id·title·content·category_id를 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "A-SQL-03": {
+    "requirement": "knowledge와 categories를 FK로 연결해 id·title·분류명(category)을 지식 id 오름차순으로 조회하세요.",
+    "answer": "SELECT k.id, k.title, c.name AS category\nFROM public.knowledge AS k\nJOIN public.categories AS c ON c.id = k.category_id\nORDER BY k.id;",
+    "stub": "-- 분류명 JOIN SQL을 작성하세요.\n__TODO_A_SQL_03__;",
+    "explain": "knowledge와 categories를 FK로 연결해 id·title·분류명(category)을 지식 id 오름차순으로 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "A-SQL-04": {
+    "requirement": "분류를 왼쪽에 두고 모든 분류명과 지식 수(knowledge_count)를 분류 id 순으로 조회하세요. reference는 0이어야 합니다.",
+    "answer": "SELECT c.name AS category, COUNT(k.id) AS knowledge_count\nFROM public.categories AS c\nLEFT JOIN public.knowledge AS k ON k.category_id = c.id\nGROUP BY c.id, c.name\nORDER BY c.id;",
+    "stub": "-- 빈 분류 포함 집계 SQL을 작성하세요.\n__TODO_A_SQL_04__;",
+    "explain": "LEFT JOIN은 지식이 없는 reference 분류도 남깁니다. COUNT(k.id)는 NULL을 제외하므로 0이고 COUNT(*)는 바깥 조인 행 자체를 세어 1이 됩니다."
+  },
+  "A-SQL-05": {
+    "requirement": "분류가 learning이면서 제목에 실습이 포함된 지식의 id·title·분류명(category)을 id 순으로 조회하세요.",
+    "answer": "SELECT k.id, k.title, c.name AS category\nFROM public.knowledge k JOIN public.categories c ON c.id=k.category_id\nWHERE c.name='learning' AND k.title ILIKE '%실습%' ORDER BY k.id;",
+    "stub": "-- 조건 조합 SQL을 작성하세요.\n__TODO_A_SQL_05__;",
+    "explain": "분류가 learning이면서 제목에 실습이 포함된 지식의 id·title·분류명(category)을 id 순으로 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "A-SQL-06": {
+    "requirement": "분류가 reference인 지식의 id·title을 id 순으로 조회하세요. 분류는 있지만 지식이 없으므로 0행입니다.",
+    "answer": "SELECT k.id, k.title FROM public.knowledge k\nJOIN public.categories c ON c.id=k.category_id\nWHERE c.name='reference' ORDER BY k.id;",
+    "stub": "-- 빈 결과 SQL을 작성하세요.\n__TODO_A_SQL_06__;",
+    "explain": "분류가 reference인 지식의 id·title을 id 순으로 조회하세요. 분류는 있지만 지식이 없으므로 0행입니다. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "A-SQL-07": {
+    "requirement": "분류별 지식 수를 구한 뒤 2건 이상인 분류명(category)과 개수(knowledge_count)만 분류 id 순으로 조회하세요.",
+    "answer": "SELECT c.name AS category, COUNT(k.id) AS knowledge_count\nFROM public.categories c LEFT JOIN public.knowledge k ON k.category_id=c.id\nGROUP BY c.id,c.name HAVING COUNT(k.id)>=2 ORDER BY c.id;",
+    "stub": "-- 그룹 조건 SQL을 작성하세요.\n__TODO_A_SQL_07__;",
+    "explain": "분류별 지식 수를 구한 뒤 2건 이상인 분류명(category)과 개수(knowledge_count)만 분류 id 순으로 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "A-SQL-08": {
+    "requirement": "title='보충 학습', content='복습 자료는 개인 폴더에서 확인합니다.', category_id=1인 행을 INSERT하고 id·title·category_id를 RETURNING하세요. 실제 id를 기억합니다.",
+    "answer": "INSERT INTO public.knowledge(title,content,category_id)\nVALUES ('보충 학습','복습 자료는 개인 폴더에서 확인합니다.',1)\nRETURNING id,title,category_id;",
+    "stub": "__TODO_A_SQL_08__;",
+    "explain": "title='보충 학습', content='복습 자료는 개인 폴더에서 확인합니다.', category_id=1인 행을 INSERT하고 id·title·category_id를 RETURNING하세요. 실제 id를 기억합니다. ID는 제목이나 목록 위치와 다릅니다. 영향받은 행 1건을 확인합니다."
+  },
+  "A-SQL-09": {
+    "requirement": "C01의 실제 __NEW_ID__ 행만 content='복습 자료와 예제 코드를 함께 확인합니다.'로 UPDATE하고 id·content를 RETURNING하세요. 뒤의 ROLLBACK 후 원문이 남아야 합니다.",
+    "answer": "UPDATE public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;",
+    "stub": "__TODO_A_SQL_09__;",
+    "explain": "C01의 실제 __NEW_ID__ 행만 content='복습 자료와 예제 코드를 함께 확인합니다.'로 UPDATE하고 id·content를 RETURNING하세요. 뒤의 ROLLBACK 후 원문이 남아야 합니다. ID는 제목이나 목록 위치와 다릅니다. 영향받은 행 1건을 확인합니다."
+  },
+  "A-SQL-10": {
+    "requirement": "C01의 실제 __NEW_ID__ 행에 같은 본문 수정을 실행하세요. 뒤의 COMMIT 후 변경한 본문이 남아야 합니다.",
+    "answer": "UPDATE public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;",
+    "stub": "__TODO_A_SQL_10__;",
+    "explain": "C01의 실제 __NEW_ID__ 행에 같은 본문 수정을 실행하세요. 뒤의 COMMIT 후 변경한 본문이 남아야 합니다. ID는 제목이나 목록 위치와 다릅니다. 영향받은 행 1건을 확인합니다."
+  },
+  "A-SQL-11": {
+    "requirement": "C01에서 만든 실제 __NEW_ID__ 행만 DELETE하고 id를 RETURNING하세요. COMMIT 뒤 원래 지식 3건이 모두 그대로 남아야 합니다.",
+    "answer": "DELETE FROM public.knowledge WHERE id=__NEW_ID__ RETURNING id;",
+    "stub": "__TODO_A_SQL_11__;",
+    "explain": "C01에서 만든 실제 __NEW_ID__ 행만 DELETE하고 id를 RETURNING하세요. COMMIT 뒤 원래 지식 3건이 모두 그대로 남아야 합니다. ID는 제목이나 목록 위치와 다릅니다. 영향받은 행 1건을 확인합니다."
+  },
+  "H-DDL-01": {
+    "requirement": "categories.id의 BIGINT·ALWAYS IDENTITY·PK를 선언하세요.",
+    "answer": "id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,",
+    "stub": "__TODO_H_DDL_01__",
+    "explain": "IDENTITY는 번호 생성, PRIMARY KEY는 유일성과 NULL 금지를 담당합니다. 실패·ROLLBACK으로 번호가 건너뛸 수 있으므로 ID를 행 수로 해석하지 않습니다."
+  },
+  "H-DDL-02": {
+    "requirement": "categories.name의 VARCHAR(30)·NOT NULL·UNIQUE를 선언하세요.",
+    "answer": "name VARCHAR(30) NOT NULL UNIQUE,",
+    "stub": "__TODO_H_DDL_02__",
+    "explain": "categories.name의 VARCHAR(30)·NOT NULL·UNIQUE를 선언하세요."
+  },
+  "H-DDL-03": {
+    "requirement": "categories_name_length CHECK를 작성하세요.",
+    "answer": "CONSTRAINT categories_name_length CHECK (char_length(name) BETWEEN 1 AND 30)",
+    "stub": "__TODO_H_DDL_03__",
+    "explain": "categories_name_length CHECK를 작성하세요."
+  },
+  "H-DDL-04": {
+    "requirement": "knowledge.id의 BIGINT·ALWAYS IDENTITY·PK를 선언하세요.",
+    "answer": "id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,",
+    "stub": "__TODO_H_DDL_04__",
+    "explain": "IDENTITY는 번호 생성, PRIMARY KEY는 유일성과 NULL 금지를 담당합니다. 실패·ROLLBACK으로 번호가 건너뛸 수 있으므로 ID를 행 수로 해석하지 않습니다."
+  },
+  "H-DDL-05": {
+    "requirement": "title VARCHAR(80), content TEXT, category_id BIGINT를 모두 필수 열로 선언하세요.",
+    "answer": "title VARCHAR(80) NOT NULL,\ncontent TEXT NOT NULL,\ncategory_id BIGINT NOT NULL,",
+    "stub": "__TODO_H_DDL_05__",
+    "explain": "title VARCHAR(80), content TEXT, category_id BIGINT를 모두 필수 열로 선언하세요."
+  },
+  "H-DDL-06": {
+    "requirement": "knowledge_title_length라는 CHECK로 제목 길이 1~80자를 검사하세요.",
+    "answer": "CONSTRAINT knowledge_title_length CHECK (char_length(title) BETWEEN 1 AND 80),",
+    "stub": "__TODO_H_DDL_06__",
+    "explain": "NOT NULL과 길이 CHECK는 다른 규칙입니다. 빈 문자열은 NULL이 아니므로 길이 하한으로 막습니다. 제목 중복 금지나 공백 제거를 이 요구사항에 추가하지 않습니다."
+  },
+  "H-DDL-07": {
+    "requirement": "knowledge_content_length라는 CHECK로 본문 길이 1~2000자를 검사하세요.",
+    "answer": "CONSTRAINT knowledge_content_length CHECK (char_length(content) BETWEEN 1 AND 2000),",
+    "stub": "__TODO_H_DDL_07__",
+    "explain": "NOT NULL과 길이 CHECK는 다른 규칙입니다. 빈 문자열은 NULL이 아니므로 길이 하한으로 막습니다. 제목 중복 금지나 공백 제거를 이 요구사항에 추가하지 않습니다."
+  },
+  "H-DDL-08": {
+    "requirement": "knowledge_category_fk를 선언하여 필수 분류 참조와 RESTRICT를 구현하세요.",
+    "answer": "CONSTRAINT knowledge_category_fk FOREIGN KEY (category_id)\n    REFERENCES public.categories(id) ON DELETE RESTRICT",
+    "stub": "__TODO_H_DDL_08__",
+    "explain": "FK는 실제 부모 존재를 검사합니다. category_id의 NOT NULL과 함께 필수 관계를 만들고 RESTRICT는 참조 중인 부모 삭제를 막습니다. FK가 JOIN 결과를 자동으로 만들지는 않습니다."
+  },
+  "H-DDL-09": {
+    "requirement": "idx_knowledge_category_id라는 비고유 B-tree 인덱스를 knowledge(category_id)에 만드세요.",
+    "answer": "CREATE INDEX idx_knowledge_category_id ON public.knowledge (category_id);",
+    "stub": "__TODO_H_DDL_09__",
+    "explain": "idx_knowledge_category_id라는 비고유 B-tree 인덱스를 knowledge(category_id)에 만드세요."
+  },
+  "H-SQL-01": {
+    "requirement": "초기 S0에서 id·title만 id 오름차순으로 조회하세요.",
+    "answer": "SELECT id, title FROM public.knowledge ORDER BY id;",
+    "stub": "-- 전체 지식 목록 SQL을 작성하세요.\n__TODO_H_SQL_01__;",
+    "explain": "초기 S0에서 id·title만 id 오름차순으로 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "H-SQL-02": {
+    "requirement": "ID 2의 id·title·content·category_id를 조회하세요.",
+    "answer": "SELECT id, title, content, category_id FROM public.knowledge WHERE id = 2;",
+    "stub": "-- 상세 조회 SQL을 작성하세요.\n__TODO_H_SQL_02__;",
+    "explain": "ID 2의 id·title·content·category_id를 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "H-SQL-03": {
+    "requirement": "knowledge와 categories를 FK로 연결해 id·title·분류명(category)을 지식 id 오름차순으로 조회하세요.",
+    "answer": "SELECT k.id, k.title, c.name AS category\nFROM public.knowledge AS k\nJOIN public.categories AS c ON c.id = k.category_id\nORDER BY k.id;",
+    "stub": "-- 분류명 JOIN SQL을 작성하세요.\n__TODO_H_SQL_03__;",
+    "explain": "knowledge와 categories를 FK로 연결해 id·title·분류명(category)을 지식 id 오름차순으로 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "H-SQL-04": {
+    "requirement": "분류를 왼쪽에 두고 모든 분류명과 지식 수(knowledge_count)를 분류 id 순으로 조회하세요. reference는 0이어야 합니다.",
+    "answer": "SELECT c.name AS category, COUNT(k.id) AS knowledge_count\nFROM public.categories AS c\nLEFT JOIN public.knowledge AS k ON k.category_id = c.id\nGROUP BY c.id, c.name\nORDER BY c.id;",
+    "stub": "-- 빈 분류 포함 집계 SQL을 작성하세요.\n__TODO_H_SQL_04__;",
+    "explain": "LEFT JOIN은 지식이 없는 reference 분류도 남깁니다. COUNT(k.id)는 NULL을 제외하므로 0이고 COUNT(*)는 바깥 조인 행 자체를 세어 1이 됩니다."
+  },
+  "H-SQL-05": {
+    "requirement": "분류가 learning이면서 제목에 실습이 포함된 지식의 id·title·분류명(category)을 id 순으로 조회하세요.",
+    "answer": "SELECT k.id, k.title, c.name AS category\nFROM public.knowledge k JOIN public.categories c ON c.id=k.category_id\nWHERE c.name='learning' AND k.title ILIKE '%실습%' ORDER BY k.id;",
+    "stub": "-- 조건 조합 SQL을 작성하세요.\n__TODO_H_SQL_05__;",
+    "explain": "분류가 learning이면서 제목에 실습이 포함된 지식의 id·title·분류명(category)을 id 순으로 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "H-SQL-06": {
+    "requirement": "분류가 reference인 지식의 id·title을 id 순으로 조회하세요. 분류는 있지만 지식이 없으므로 0행입니다.",
+    "answer": "SELECT k.id, k.title FROM public.knowledge k\nJOIN public.categories c ON c.id=k.category_id\nWHERE c.name='reference' ORDER BY k.id;",
+    "stub": "-- 빈 결과 SQL을 작성하세요.\n__TODO_H_SQL_06__;",
+    "explain": "분류가 reference인 지식의 id·title을 id 순으로 조회하세요. 분류는 있지만 지식이 없으므로 0행입니다. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "H-SQL-07": {
+    "requirement": "분류별 지식 수를 구한 뒤 2건 이상인 분류명(category)과 개수(knowledge_count)만 분류 id 순으로 조회하세요.",
+    "answer": "SELECT c.name AS category, COUNT(k.id) AS knowledge_count\nFROM public.categories c LEFT JOIN public.knowledge k ON k.category_id=c.id\nGROUP BY c.id,c.name HAVING COUNT(k.id)>=2 ORDER BY c.id;",
+    "stub": "-- 그룹 조건 SQL을 작성하세요.\n__TODO_H_SQL_07__;",
+    "explain": "분류별 지식 수를 구한 뒤 2건 이상인 분류명(category)과 개수(knowledge_count)만 분류 id 순으로 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "H-SQL-08": {
+    "requirement": "LEFT JOIN과 IS NULL로 지식이 없는 분류의 id와 name을 분류 id 순으로 조회하세요.",
+    "answer": "SELECT c.id, c.name FROM public.categories c\nLEFT JOIN public.knowledge k ON k.category_id=c.id\nWHERE k.id IS NULL ORDER BY c.id;",
+    "stub": "-- 자식 없는 부모 SQL을 작성하세요.\n__TODO_H_SQL_08__;",
+    "explain": "LEFT JOIN과 IS NULL로 지식이 없는 분류의 id와 name을 분류 id 순으로 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "H-SQL-09": {
+    "requirement": "각 지식의 id와 본문 글자 수(content_length)를 id 오름차순으로 조회하세요.",
+    "answer": "SELECT id, char_length(content) AS content_length FROM public.knowledge ORDER BY id;",
+    "stub": "-- 문자열 길이 조회 SQL을 작성하세요.\n__TODO_H_SQL_09__;",
+    "explain": "각 지식의 id와 본문 글자 수(content_length)를 id 오름차순으로 조회하세요. 빈 결과도 정상이며, ORDER BY로 결과 순서를 고정합니다."
+  },
+  "H-SQL-10": {
+    "requirement": "title='보충 학습', content='복습 자료는 개인 폴더에서 확인합니다.', category_id=1인 행을 INSERT하고 id·title·category_id를 RETURNING하세요. 실제 id를 기억합니다.",
+    "answer": "INSERT INTO public.knowledge(title,content,category_id)\nVALUES ('보충 학습','복습 자료는 개인 폴더에서 확인합니다.',1)\nRETURNING id,title,category_id;",
+    "stub": "__TODO_H_SQL_10__;",
+    "explain": "title='보충 학습', content='복습 자료는 개인 폴더에서 확인합니다.', category_id=1인 행을 INSERT하고 id·title·category_id를 RETURNING하세요. 실제 id를 기억합니다. ID는 제목이나 목록 위치와 다릅니다. 영향받은 행 1건을 확인합니다."
+  },
+  "H-SQL-11": {
+    "requirement": "C01의 실제 __NEW_ID__ 행만 content='복습 자료와 예제 코드를 함께 확인합니다.'로 UPDATE하고 id·content를 RETURNING하세요. 뒤의 ROLLBACK 후 원문이 남아야 합니다.",
+    "answer": "UPDATE public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;",
+    "stub": "__TODO_H_SQL_11__;",
+    "explain": "C01의 실제 __NEW_ID__ 행만 content='복습 자료와 예제 코드를 함께 확인합니다.'로 UPDATE하고 id·content를 RETURNING하세요. 뒤의 ROLLBACK 후 원문이 남아야 합니다. ID는 제목이나 목록 위치와 다릅니다. 영향받은 행 1건을 확인합니다."
+  },
+  "H-SQL-12": {
+    "requirement": "C01의 실제 __NEW_ID__ 행에 같은 본문 수정을 실행하세요. 뒤의 COMMIT 후 변경한 본문이 남아야 합니다.",
+    "answer": "UPDATE public.knowledge SET content='복습 자료와 예제 코드를 함께 확인합니다.'\nWHERE id=__NEW_ID__ RETURNING id,content;",
+    "stub": "__TODO_H_SQL_12__;",
+    "explain": "C01의 실제 __NEW_ID__ 행에 같은 본문 수정을 실행하세요. 뒤의 COMMIT 후 변경한 본문이 남아야 합니다. ID는 제목이나 목록 위치와 다릅니다. 영향받은 행 1건을 확인합니다."
+  },
+  "H-SQL-13": {
+    "requirement": "C01에서 만든 실제 __NEW_ID__ 행만 DELETE하고 id를 RETURNING하세요. COMMIT 뒤 원래 지식 3건이 모두 그대로 남아야 합니다.",
+    "answer": "DELETE FROM public.knowledge WHERE id=__NEW_ID__ RETURNING id;",
+    "stub": "__TODO_H_SQL_13__;",
+    "explain": "C01에서 만든 실제 __NEW_ID__ 행만 DELETE하고 id를 RETURNING하세요. COMMIT 뒤 원래 지식 3건이 모두 그대로 남아야 합니다. ID는 제목이나 목록 위치와 다릅니다. 영향받은 행 1건을 확인합니다."
+  },
+  "H-SQL-14": {
+    "requirement": "한 트랜잭션 안에서 ID 1·2의 본문을 각각 임시 내용 1·임시 내용 2로 바꾸세요. 제공된 ROLLBACK 뒤 두 원문이 모두 유지되어야 합니다.",
+    "answer": "UPDATE public.knowledge SET content='임시 내용 1' WHERE id=1;\nUPDATE public.knowledge SET content='임시 내용 2' WHERE id=2;",
+    "stub": "__TODO_H_SQL_14__",
+    "explain": "한 트랜잭션 안에서 ID 1·2의 본문을 각각 임시 내용 1·임시 내용 2로 바꾸세요. 제공된 ROLLBACK 뒤 두 원문이 모두 유지되어야 합니다."
+  }
+}
