@@ -1,0 +1,63 @@
+{
+  "ids": [
+    2,
+    5
+  ],
+  "embedding": [
+    2,
+    5,
+    8
+  ],
+  "encoder_output": [
+    2,
+    5,
+    8
+  ],
+  "pad_key_mask": [
+    [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  ],
+  "padding_positions": [
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      4
+    ]
+  ],
+  "padding_output_abs_sum": 13.881710052490234,
+  "padding_note": "key padding mask는 해당 KEY 위치를 못 보게 하며 출력의 PAD 위치를 자동 0으로 만들지는 않는다",
+  "components": {
+    "attention": "토큰 사이 정보 가중합",
+    "residual": "입력과 변환 출력을 더해 학습 경로를 제공",
+    "layernorm": "특징값을 정규화하여 수치 흐름 안정화",
+    "ffn": "위치별 feature 변환 (길이 자체를 바꾸지 않음)",
+    "input_shape": [
+      2,
+      5,
+      8
+    ],
+    "output_shape": [
+      2,
+      5,
+      8
+    ]
+  },
+  "bad_head_rejected": null,
+  "extra_shapes": {},
+  "architecture_note": "이 코드는 Encoder Layer의 Shape 실습"
+}

@@ -1,0 +1,47 @@
+{
+  "ids": [
+    2,
+    5
+  ],
+  "embedding": [
+    2,
+    5,
+    8
+  ],
+  "encoder_output": [
+    2,
+    5,
+    8
+  ],
+  "pad_key_mask": [
+    [
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  ],
+  "padding_positions": [],
+  "padding_output_abs_sum": null,
+  "padding_note": "PAD Mask는 Causal Mask와 별개",
+  "components": {
+    "attention": "토큰 간 정보",
+    "ffn": "특징 변환",
+    "shape": [
+      2,
+      5,
+      8
+    ]
+  },
+  "bad_head_rejected": null,
+  "extra_shapes": {},
+  "architecture_note": "이 코드는 Encoder Layer의 Shape 실습"
+}

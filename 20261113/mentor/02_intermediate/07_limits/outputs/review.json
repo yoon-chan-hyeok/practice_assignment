@@ -1,0 +1,34 @@
+{
+  "classification": [
+    {
+      "id": "F01",
+      "kind": "factual_mismatch"
+    },
+    {
+      "id": "F02",
+      "kind": "format"
+    },
+    {
+      "id": "F03",
+      "kind": "evidence"
+    }
+  ],
+  "definitions": {
+    "format": "JSON/응답에 필수 필드가 존재하는지 보는 구조 검증",
+    "evidence": "인용·출처 정보가 있는지와 적절한 근거인지 구분",
+    "factual_mismatch": "주장과 승인된 정답/원본이 모순되는지 사람·검증 규칙으로 확인"
+  },
+  "mitigation": {
+    "format": "API 응답 Schema 검증 + 구조화 출력 재시도 (11/16 후속 학습)",
+    "evidence": "RAG의 관련 문서 검색·출처 검증 (11/20 후속 학습)",
+    "factual_mismatch": "승인된 원본·정답 세트 대조 + 근거 검증"
+  },
+  "checks": [
+    "출처 ID가 실제 원문을 가리키는가",
+    "근거가 최신인가",
+    "원본이 변경됐을 때 검색 인덱스도 갱신됐는가"
+  ],
+  "agent_case": {},
+  "trust_rules": [],
+  "disclaimer": "예상 문제 유형을 분류한 수업용 규칙이며 실제 LLM 사실성 자동 판정이 아님"
+}

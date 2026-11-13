@@ -1,0 +1,128 @@
+{
+  "source_data": [
+    {
+      "id": "A",
+      "title": "실습 파일 보관",
+      "content": "실습 파일은 개인 폴더에 보관합니다.",
+      "category": "learning"
+    },
+    {
+      "id": "B",
+      "title": "서버 실행",
+      "content": "프로젝트 폴더에서 서버를 실행합니다.",
+      "category": "environment"
+    },
+    {
+      "id": "C",
+      "title": "질문 작성",
+      "content": "오류 메시지와 시도한 작업을 함께 적습니다.",
+      "category": "learning"
+    }
+  ],
+  "token": {
+    "tokens": [
+      "[BOS]",
+      "실습",
+      "파일은",
+      "개인",
+      "폴더에",
+      "보관합니다",
+      ".",
+      "[EOS]"
+    ],
+    "input_ids": [
+      2,
+      10,
+      15,
+      5,
+      16,
+      7,
+      4,
+      3
+    ],
+    "attention_mask": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "valid_length": 8,
+    "truncated": false,
+    "original_length": 8
+  },
+  "cosine": {
+    "A_B": 0.9701424837112427,
+    "A_C": -1.0
+  },
+  "scores_shape": [
+    3,
+    3
+  ],
+  "attention_weights": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.3302384614944458,
+      0.6697615385055542,
+      0.0
+    ],
+    [
+      0.24825508892536163,
+      0.24825508892536163,
+      0.5034898519515991
+    ]
+  ],
+  "row_sums": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "causal_mask": [
+    [
+      false,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      true
+    ],
+    [
+      false,
+      false,
+      false
+    ]
+  ],
+  "logits": [
+    2.0,
+    1.0,
+    0.0
+  ],
+  "probabilities": [
+    0.6652409434318542,
+    0.2447284758090973,
+    0.09003057330846786
+  ],
+  "next_token_demo": "출력A",
+  "custom_token_lengths": [],
+  "masked_unmasked_l1": null,
+  "platform": {
+    "FastAPI": "요청·응답",
+    "PostgreSQL": "원본 저장",
+    "LLM": "Token 출력",
+    "RAG": "외부 근거(후속)",
+    "Agent": "도구 제어(후속)"
+  },
+  "limitations": [
+    "교육용 수치 예제는 실제 학습된 LLM과 다르다"
+  ],
+  "scope": "교육용 독립 수치 계산; 실제 LLM/RAG/Agent 아님"
+}

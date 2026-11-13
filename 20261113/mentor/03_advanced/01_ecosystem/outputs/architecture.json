@@ -1,0 +1,93 @@
+{
+  "roles": {
+    "FastAPI": "HTTP 요청을 검증하고 함수·응답을 연결한다",
+    "PostgreSQL": "원본 지식·분류를 관계형 테이블에 저장한다",
+    "LLM": "문맥과 입력을 바탕으로 다음 Token을 생성한다",
+    "Response": "호출한 Client에 JSON 결과를 전달한다",
+    "Retriever": "관련 근거를 찾는 검색 계층(11/20 후속 구현)",
+    "EvidenceCheck": "답변의 근거·출처 일치 여부를 확인한다",
+    "ToolPermission": "조회/변경 권한을 실행 전에 애플리케이션이 확인한다"
+  },
+  "edges": [
+    [
+      "Client",
+      "FastAPI",
+      "HTTP 요청"
+    ],
+    [
+      "FastAPI",
+      "PostgreSQL",
+      "원본 지식 조회·수정"
+    ],
+    [
+      "PostgreSQL",
+      "FastAPI",
+      "원본 데이터"
+    ],
+    [
+      "FastAPI",
+      "LLM",
+      "입력·문맥(후속 구현)"
+    ],
+    [
+      "LLM",
+      "Response",
+      "생성 결과(후속 구현)"
+    ],
+    [
+      "Response",
+      "Client",
+      "JSON"
+    ],
+    [
+      "FastAPI",
+      "Retriever",
+      "질문·검색 조건(후속 구현)"
+    ],
+    [
+      "Retriever",
+      "PostgreSQL",
+      "원본·메타데이터 참조 가능"
+    ],
+    [
+      "Retriever",
+      "LLM",
+      "검색된 근거(후속 구현)"
+    ],
+    [
+      "LLM",
+      "EvidenceCheck",
+      "답변·출처 검증(후속 구현)"
+    ],
+    [
+      "Agent",
+      "ToolPermission",
+      "도구 실행 전 승인 확인(후속 구현)"
+    ],
+    [
+      "ToolPermission",
+      "FastAPI",
+      "허가된 범위의 요청만 전달"
+    ]
+  ],
+  "responsibility": {
+    "storage": "PostgreSQL은 지식 저장·관계를 책임진다",
+    "generation": "LLM은 다음 Token의 분포와 출력을 책임진다",
+    "implemented_today": [
+      "역할 개념도 작성"
+    ],
+    "not_implemented": [
+      "새 RAG 검색",
+      "새 Agent 실행",
+      "실제 LLM API 호출"
+    ]
+  },
+  "trust_boundary": {
+    "untrusted": [
+      "외부 문서 본문",
+      "검색된 근거의 지시문"
+    ],
+    "rule": "외부 텍스트는 데이터로 취급하며 시스템 권한을 부여하지 않는다",
+    "scope": "설계 설명만; Agent·보안 시스템은 실제 구현하지 않음"
+  }
+}

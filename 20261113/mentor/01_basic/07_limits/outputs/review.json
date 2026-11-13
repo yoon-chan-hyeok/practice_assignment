@@ -1,0 +1,26 @@
+{
+  "classification": [
+    {
+      "id": "F01",
+      "kind": "factual_mismatch"
+    },
+    {
+      "id": "F02",
+      "kind": "format"
+    },
+    {
+      "id": "F03",
+      "kind": "evidence"
+    }
+  ],
+  "definitions": {
+    "format": "JSON/응답에 필수 필드가 존재하는지 보는 구조 검증",
+    "evidence": "인용·출처 정보가 있는지와 적절한 근거인지 구분",
+    "factual_mismatch": "주장과 승인된 정답/원본이 모순되는지 사람·검증 규칙으로 확인"
+  },
+  "mitigation": {},
+  "checks": [],
+  "agent_case": {},
+  "trust_rules": [],
+  "disclaimer": "예상 문제 유형을 분류한 수업용 규칙이며 실제 LLM 사실성 자동 판정이 아님"
+}
